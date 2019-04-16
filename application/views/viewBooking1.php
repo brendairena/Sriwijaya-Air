@@ -2,16 +2,17 @@
 <!DOCTYPE html>
 <html lang="id">
 	<head>
+    
 	<link rel="shortcut icon" href="https://www.sriwijayaair.co.id/SJ/assets/images/sj_icon.png" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link href="https://www.sriwijayaair.co.id/SJ/assets/css/jquery-ui.css" rel="stylesheet">
-	<!--<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>-->
+	
 	<link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/font-awesome/css/font-googleapi-open-sans.css">
 	<link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/font-awesome/css/font-googleapi-open-sans_2.css">
-	<!-- link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css' -->
+	
 	<link id="bs-css" rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/bootstrap.css">
 	<link id="bs-css" rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/bootstrap-switch.css">
-	<!-- link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/bootstrap-datepicker.1.6.1.min.css" -->
+	
 	<link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/font-awesome.css">
 	<link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/flag-icon.css">
 	<link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/icomoon.css">
