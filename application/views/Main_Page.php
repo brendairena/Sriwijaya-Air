@@ -3,18 +3,7 @@
      <head>
      <meta name="google-site-verification" content="_TeZ5Stt0VkpcVBigqBgSasaeQp9QCOZELU_K03m_bs" />
      <title>KELOMPOK BRENDA</title>
-     <!--<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-     <meta name="author" content="NIEVE">	
-     <meta name="robots" content="index, follow">
-     <meta name="description" content="Pesan, Tiket, Pesawat, Sriwijaya Air, Online, Wisata, Tujuan, Liburan, Indonesia, Internasional, Dalam Negeri, Luar Negeri, Sriwijaya Air Your Flying Partner, Sriwijaya Air Group" itemprop="description">
-     <meta content="Pesan, Tiket, Pesawat, Sriwijaya Air, Online, Wisata, Tujuan, Liburan, Indonesia, Internasional, Dalam Negeri, Luar Negeri, Sriwijaya Air Your Flying Partner, Sriwijaya Air Group" itemprop="headline">
-     <meta name="keywords" content="Pesan, Tiket, Pesawat, Sriwijaya Air, Wisata, Tujuan, Liburan, Indonesia, Internasional, Dalam Negeri, Luar Negeri, Sriwijaya Air Your Flying Partner, Sriwijaya Air Group" itemprop="keywords">-->
-         <noscript>Your browser does not support JavaScript</noscript> 
-         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-         <meta name="keywords" content="sriwijaya air,sriwijaya,penerbangan sriwijaya,online booking,online ticket,flight,airline,indonesia,jakarta,tiket murah,penerbangan,domestik,internasional,singapore,singapura,penang,bali,denpasar,beli tiket,tiket pesawat,bayar online,atm bca,kartu kredit,promo,diskon,jalan jalan,harga tiket,maskapai,aman,nyaman,e-commerce,pembayaran tiket,purchase,cheap flight,low cost,flights to jakarta,flights to bali,low fares,tiket online,tiket surabaya,tiket yogyakarta,tiket medan,pangkal pinang,jadwal pesawat,jadwal penerbangan" />
-         <meta name="description" content="Sriwijaya Air, Your Flying Partner - is one of the Indonesian leading airlines, based in jakarta. Online booking and airline ticket purchase, domestic and international flight schedule. - Sriwijaya Air :: Your Flying Partner :: Online Booking &amp; Payment - Tiket dan Penerbangan Murah - Penerbangan Domestik dan Internasional - One of Indonesian Leading Airline - e-Ticket Purchase - Sriwijaya Air, Your Flying Partner - salah satu maskapai terbesar di indonesia, dengan pusat di jakarta. Penerbangan domestik dan internasional dengan tiket murah dapat dibeli secara online. - http://www.sriwijayaair.co.id/node" />
-         <meta name="abstract" content="Website resmi Sriwijaya Air, booking dan pembayaran tiket secara online" />
-         <meta name="dc.description" content="Sriwijaya Air, Your Flying Partner - is one of the Indonesian leading airlines, based in jakarta. Online booking and airline ticket purchase, domestic and international flight schedule. - Sriwijaya Air :: Your Flying Partner :: Online Booking &amp; Payment - Tiket dan Penerbangan Murah - Penerbangan Domestik dan Internasional - One of Indonesian Leading Airline - e-Ticket Purchase - Sriwijaya Air, Your Flying Partner - salah satu maskapai terbesar di indonesia, dengan pusat di jakarta. Penerbangan domestik dan internasional dengan tiket murah dapat dibeli secara online. - http://www.sriwijayaair.co.id/node" />
+     
          
      <link rel="shortcut icon" href="https://www.sriwijayaair.co.id/SJ/assets/images/sj_icon.png" type="image/x-icon" />
      
