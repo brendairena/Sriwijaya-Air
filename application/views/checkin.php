@@ -120,7 +120,7 @@
                                             <input type="text" class="form-control" id="departureDate" name="departureDate"
                                                    required data-bv-notempty-message="Required." autocomplete=off>
                                             <span class="input-group-btn">
-                                                <button class="btn btn-default" type="button" id="opendepartureDate"><span class="glyphicon glyphicon-calendar"></span></button>
+                                                <button class="btn btn-default" type="button" id="opendepartureDate"><span class="fas fa-calendar-week"></span></button>
                                             </span>
                                         </div>
                                     </div>
