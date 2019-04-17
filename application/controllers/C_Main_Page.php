@@ -38,4 +38,9 @@ class C_Main_Page extends CI_Controller {
 	{
 		$this->load->view('checkin');
 	}
+
+	public function jadwal_penerbangan()
+	{
+		$this->load->view('jadwal_penerbangan');
+	}
 }
