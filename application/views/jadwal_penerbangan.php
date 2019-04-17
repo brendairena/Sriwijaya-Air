@@ -2,31 +2,35 @@
 <html class="js no-touch backgroundsize csstransforms3d csstransitions" style="overflow-y: hidden;"><!--<head> FLIGHT VIEW--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Sriwijaya Air</title>
     
-    <link href="./Sriwijaya Air_files/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url().'assetsJadwal/jquery-ui.css'?>" rel="stylesheet" type="text/css">
 	
-	<link rel="stylesheet" type="text/css" href="./Sriwijaya Air_files/font-googleapi-open-sans.css">
-	<link rel="stylesheet" type="text/css" href="./Sriwijaya Air_files/font-googleapi-open-sans_2.css">
-    <link id="bs-css" rel="stylesheet" type="text/css" href="./Sriwijaya Air_files/bootstrap.css">
-	<link id="bs-css" rel="stylesheet" type="text/css" href="./Sriwijaya Air_files/bootstrap-switch.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/font-googleapi-open-sans.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/font-googleapi-open-sans_2.css'?>">
+    <link id="bs-css" rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/bootstrap.css'?>">
+	<link id="bs-css" rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/bootstrap-switch.css'?>">
 	<!-- link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/bootstrap-datepicker.1.6.1.min.css" -->
-	<link rel="stylesheet" type="text/css" href="./Sriwijaya Air_files/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="./Sriwijaya Air_files/flag-icon.css">
-	<link rel="stylesheet" type="text/css" href="./Sriwijaya Air_files/icomoon.css">
-	<link rel="stylesheet" type="text/css" href="./Sriwijaya Air_files/styles.css">
-	<link rel="stylesheet" type="text/css" href="./Sriwijaya Air_files/mystyles.css">
-	<link rel="stylesheet" type="text/css" href="./Sriwijaya Air_files/bootstrapValidator.min.css">
-	<link rel="stylesheet" type="text/css" href="./Sriwijaya Air_files/hippie-blue.css">
-	<link rel="stylesheet" type="text/css" href="./Sriwijaya Air_files/bootstrap-select.min.css">
-	<link rel="stylesheet" type="text/css" href="./Sriwijaya Air_files/sweetalert.css">
-	<link rel="stylesheet" type="text/css" href="./Sriwijaya Air_files/jquery.fancybox.css" media="screen">
-        <div class="fit-vids-style" id="fit-vids-style" style="display: none;">­<style>                 .fluid-width-video-wrapper {                   width: 100%;                                position: relative;                         padding: 0;                              }                                                                                       .fluid-width-video-wrapper iframe,          .fluid-width-video-wrapper object,          .fluid-width-video-wrapper embed {             position: absolute;                         top: 0;                                     left: 0;                                    width: 100%;                                height: 100%;                            }                                         </style></div><script async="" src="./Sriwijaya Air_files/analytics.js.download"></script><script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/font-awesome.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/flag-icon.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/icomoon.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/styles.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/mystyles.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/bootstrapValidator.min.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/hippie-blue.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/bootstrap-select.min.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/sweetalert.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/jquery.fancybox.css'?>" media="screen">
+        <div class="fit-vids-style" id="fit-vids-style" style="display: none;">­
+            <style>                 .fluid-width-video-wrapper {                   width: 100%;                                position: relative;                         padding: 0;                              }                                                                                       .fluid-width-video-wrapper iframe,          .fluid-width-video-wrapper object,          .fluid-width-video-wrapper embed {             position: absolute;                         top: 0;                                     left: 0;                                    width: 100%;                                height: 100%;                            }          </style>
+        </div>
+        <script async="" src="<?php echo base_url().'assetsJadwal/analytics.js.download'?>"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-55574965-1', 'auto');
-  ga('send', 'pageview');
+            ga('create', 'UA-55574965-1', 'auto');
+        ga('send', 'pageview');
 
 </script>
 <script type="application/ld+json">
@@ -41,7 +45,7 @@
   }]
 }
 </script>
-<link href="./Sriwijaya Air_files/jquery-ui.css" rel="stylesheet"><style>
+<link href="<?php echo base_url().'assetsJadwal/jquery-ui.css'?>" rel="stylesheet"><style>
         .fixedContainer {
             background-color:#ddd;
             position: fixed;
@@ -118,7 +122,8 @@
             height: 25px;
         }
 
-    </style><style type="text/css"></style><style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>    
+    </style><style type="text/css"></style>
+    <style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>    
 
     
 
@@ -133,7 +138,7 @@
                 <center>
                     
 
-                        <img src="./Sriwijaya Air_files/loading_en.gif" class="img-responsive">
+                    <img src="<?php echo base_url().'assetsJadwal/loading_en.gif'?>" class="img-responsive">
                         
                 </center>
                 <br>
@@ -149,39 +154,27 @@
                     <div class="modal-body" id="refresh-modal-body">
                         <div class="row">
                             <center>
-                                <img src="./Sriwijaya Air_files/plane_cloud.gif">
+                                <img src="<?php echo base_url().'assetsJadwal/plane_cloud.gif'?>">
                                 <br>
                                 <p>Your page is expired.</p>
                             </center>
                             <br>
                             <div class="col-md-6" style="text-align:left">
-                                <a href="https://www.sriwijayaair.co.id/" class="btn btn-danger" id="backToHome" name="backToHome">Back</a> 
+                                <a href="<?php echo base_url();?>" class="btn btn-danger" id="backToHome" name="backToHome">Back</a> 
                             </div>
-                            <!--  div class="col-md-6" style="text-align:right">
-                                <button class="btn btn-info text-white" type="button" id="continueFlight"  name="continueFlight" onClick="continue_flight();" style=";text-align:right">Continue</button>
-                            </div -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
         <div class="global-wrap">
-            
-
                 <nav class="navbar navbar-default navbar-fixed-top shadow example6">
                     <div class="container">
                         <div class="navbar-header">
                             <a class="navbar-brand text-hide" href="<?php echo base_url();?>">Official Website</a>  
-
-
                         </div>
                         <div id="navbar6" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav navbar-right">
-                                
-
-
                                 <li class="dropdown">
                                     <a href="https://www.sriwijayaair.co.id/SJ/Flights#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-gb shadow"></span> English<span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -251,15 +244,6 @@
                                                                                 <label>Promo Code</label>
                                                                                 <i class="input-icon fa fa-ticket tx-blue"></i>
                                                                                 <input type="text" class="form-control tx-blue ronly ronlyff" id="PromoCode_search" name="PromoCode_search" onkeyup="this.value = this.value.toUpperCase();" placeholder="Optional" value="">
-
-
-
-
-
-
-
-
-
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6">
@@ -270,17 +254,15 @@
                                                                                 </li>
                                                                                 <li data-placement="bottom" rel="tooltip" data-original-title="Adults (&gt;12years)">
                                                                                     <select class="form-control ronly ronlyff" id="AdultSrc_search" name="AdultSrc_search" onchange="return revalidPaxAmount(this.value, this.name);" required="">
-                                                                                                                <option value="1" selected="">1</option>
-                                                                                                                                                                                    <option value="2">2</option>
-                                                                                                                                                                                    <option value="3">3</option>
-                                                                                                                                                                                    <option value="4">4</option>
-                                                                                                                                                                                    <option value="5">5</option>
-                                                                                                                                                                                    <option value="6">6</option>
-                                                                                                                                                                                    <option value="7">7</option>
-                                                                                                                                                                                    <option value="8">8</option>
-                                                                                                                                                                                    <option value="9">9</option>
-                                                                                        
-
+                                                                                        <option value="1" selected="">1</option>
+                                                                                        <option value="2">2</option>
+                                                                                        <option value="3">3</option>
+                                                                                        <option value="4">4</option>
+                                                                                        <option value="5">5</option>
+                                                                                        <option value="6">6</option>
+                                                                                        <option value="7">7</option>
+                                                                                        <option value="8">8</option>
+                                                                                        <option value="9">9</option>
                                                                                     </select>
                                                                                 </li>
                                                                                 <li>
@@ -288,17 +270,15 @@
                                                                                 </li>
                                                                                 <li data-placement="bottom" rel="tooltip" data-original-title="Child (2-12years)">
                                                                                     <select class="form-control ronly ronlyff" id="ChildSrc_search" name="ChildSrc_search" onchange="return revalidPaxAmount(this.value, this.name);" required="">
-                                                                                                                <option value="0" selected="">0</option>
-                                                                                                                                                                                    <option value="1">1</option>
-                                                                                                                                                                                    <option value="2">2</option>
-                                                                                                                                                                                    <option value="3">3</option>
-                                                                                                                                                                                    <option value="4">4</option>
-                                                                                                                                                                                    <option value="5">5</option>
-                                                                                                                                                                                    <option value="6">6</option>
-                                                                                                                                                                                    <option value="7">7</option>
-                                                                                                                                                                                    <option value="8">8</option>
-                                                                                        
-
+                                                                                        <option value="0" selected="">0</option>
+                                                                                        <option value="1">1</option>
+                                                                                        <option value="2">2</option>
+                                                                                        <option value="3">3</option>
+                                                                                        <option value="4">4</option>
+                                                                                        <option value="5">5</option>
+                                                                                        <option value="6">6</option>
+                                                                                        <option value="7">7</option>
+                                                                                        <option value="8">8</option>
                                                                                     </select>
                                                                                 </li>
                                                                                 <li>
@@ -306,14 +286,11 @@
                                                                                 </li>
                                                                                 <li data-placement="bottom" rel="tooltip" data-original-title="Infant (7 days - 23 months)">
                                                                                     <select class="form-control ronly ronlyff" id="InfantSrc_search" name="InfantSrc_search" onchange="return revalidPaxAmount(this.value, this.name);" required="">
-                                                                                                                <option value="0" selected="">0</option>
-                                                                                                                                                                                    <option value="1">1</option>
-                                                                                        
-
+                                                                                        <option value="0" selected="">0</option>                          <option value="1">1</option>
                                                                                     </select>
                                                                                 </li>
                                                                             </ul>
-                                                                                                                                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group">
@@ -323,110 +300,26 @@
                                                         </div>
                                                     </div> 
                                                 </div>
-
                                             </div>
                                         </form>
                                     </div>
-
-
                                                 <!--HEADER RESULT SEARCH FLIGHT-->
-                                                <h5 class="booking-title">
-                                                                        </h5><h4 id="selDept"><b>Select Departure</b></h4>
-                                                    <h5><b>Jakarta (CGK) / Soekarno Hatta International Airport <i class="fa fa-arrow-right"></i> Ujung Pandang (UPG) / Makassar - Sultan Hasanuddin</b></h5>
-                                                    <p>
-                    18 May 2019 for 1 Adult 0 Child 0 Infant                                                        <small>
-                                                            <a class="popup-text btn btn-info" href="https://www.sriwijayaair.co.id/SJ/Flights#search-dialog" id="cari_rute" data-effect="mfp-zoom-out" style="float: right;">
+                                                <h5 class="booking-title"></h5>
+                                                <h4 id="selDept"><b>Select Departure</b></h4>
+                                                <h5><b>Jakarta (CGK) / Soekarno Hatta International Airport <i class="fa fa-arrow-right"></i> Ujung Pandang (UPG) / Makassar - Sultan Hasanuddin</b></h5>
+                                                <p>18 May 2019 for 1 Adult 0 Child 0 Infant                                  <small>
+                                                        <a class="popup-text btn btn-info" href="https://www.sriwijayaair.co.id/SJ/Flights#search-dialog" id="cari_rute" data-effect="mfp-zoom-out" style="float: right;">
                                                                 <b style="font-size:16px;" id="changeSearch">Change search</b>
-                                                            </a>
-                                                        </small>
-                                                    </p>
-                                                
-                                                <!---->
+                                                        </a>
+                                                    </small>
+                                                </p>
                                                 <br>
-
                                                 <div id="changeDate">
-                                                    <!--DATE PREV AND NEXT-->
-                                                    <!-- <table width="100%" border="1">
-                                                        <tbody><tr>								
-                                                            <td class="date-control">
-                                                                <button type="button" onclick="choose_date(&#39;Fri, 17 May 2019&#39;, &#39;a&#39;)" style="background:none;padding:0px;border:none">
-                                                                    <img alt="Previous Date" src="./Sriwijaya Air_files/prev_blue.png" title="Sriwijaya Air">
-                                                                </button> 	
-                                                            </td>
-
-                                                            <td style="text-align:center;background-color:#d5dcf1">
-                                                                <button type="button" id="submitDate" style="background:none;border:none;" name="submitDate" onclick="choose_date(&#39;Wed, 15 May 2019&#39;, &#39;b&#39;)">
-                                                                    <p align="center" id="DateThirdPrevID">
-                                                                        <b>Wed,</b><br>
-                                                                        <b>15 May 2019</b>
-                                                                    </p>
-
-                                                                </button>
-                                                            </td>
-                                                            <td style="text-align:center;background-color:#bdccf8">
-                                                                <button type="button" id="submitDate" style="background:none;border:none;" name="submitDate" onclick="choose_date(&#39;Thu, 16 May 2019&#39;, &#39;b&#39;)">
-                                                                    <p align="center" id="DateSecondPrevID">
-                                                                        <b>Thu,</b><br>
-                                                                        <b>16 May 2019</b>
-                                                                    </p>
-                                                                </button>
-                                                            </td>
-                                                            <td style="text-align:center;background-color:#9bafe8">
-                                                                <button type="button" id="submitDate" style="background:none;border:none;" name="submitDate" onclick="choose_date(&#39;Fri, 17 May 2019&#39;, &#39;b&#39;)">
-                                                                    <p align="center" id="DatePrevID">
-                                                                        <b>Fri,</b><br>
-                                                                        <b>17 May 2019</b>
-                                                                    </p>
-                                                                </button>
-                                                            </td>
-                                                            <td style="text-align:center;background:#1b3682;">
-                                                                <button type="button" id="submitDate" style="background:none;border:none;" name="submitDate" onclick="choose_date(&#39;Sat, 18 May 2019&#39;, &#39;b&#39;)">
-                                                                    <p align="center" style="color:#FFF;font-size:14px" id="DapartureResultID">
-                                                                        <b>Sat,</b><br>
-                                                                        <b>18 May 2019</b>
-                                                                    </p>
-                                                                </button>
-                                                            </td>
-                                                            <td style="text-align:center;background-color:#9bafe8">
-                                                                <button type="button" id="submitDate" style="background:none;border:none;" name="submitDate" onclick="choose_date(&#39;Sun, 19 May 2019&#39;, &#39;b&#39;)">
-                                                                    <p align="center" id="DateTmrwID">
-                                                                        <b>Sun,</b><br>
-                                                                        <b>19 May 2019</b>
-                                                                    </p>
-                                                                </button>
-                                                            </td>
-                                                            <td style="text-align:center;background-color:#bdccf8">
-                                                                <button type="button" id="submitDate" style="background:none;border:none;" name="submitDate" onclick="choose_date(&#39;Mon, 20 May 2019&#39;, &#39;b&#39;)">
-                                                                    <p align="center" id="DateSecondTmrwID">
-                                                                        <b>Mon,</b><br>
-                                                                        <b>20 May 2019</b>
-                                                                    </p>
-                                                                </button>
-                                                            </td>
-                                                            <td style="text-align:center;background-color:#d5dcf1">
-                                                                <button type="button" id="submitDate" style="background:none;border:none;" name="submitDate" onclick="choose_date(&#39;Tue, 21 May 2019&#39;, &#39;b&#39;)">
-                                                                    <p align="center" id="DateThirdTmrwID">
-                                                                        <b>Tue,</b><br>
-                                                                        <b>21 May 2019</b>
-                                                                    </p>
-                                                                </button>
-                                                            </td>
-                                                            <td class="date-control">
-                                                                <button type="button" onclick="choose_date(&#39;Sun, 19 May 2019&#39;, &#39;a&#39;)" style="background:none;border:none;padding:0px">
-                                                                    <img alt="Next Date" src="./Sriwijaya Air_files/next_blue.png" title="Sriwijaya Air">
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody></table> -->
-                                                    <!--END OF DATE PREV AND NEX-->
                                                 </div>
                                                 <br>
-
-
                                                 <div class="nav-drop booking-sort">
                                                     <h5 class="booking-sort-title"> Flights Departure</h5>
                                                 </div>
-
                                                 <!--RESULT SEARCH FLIGTH-->
                                                 <ul class="booking-list" id="spy-select">
                                                     <li>
@@ -556,7 +449,139 @@
                                                                         <!-- End Detail -->
                                                                     </div>
                                                                 </div>
-                                                        </li>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="booking-item-container">
+                                                            <!-- sini  -->
+                                                            <div class="booking-item" style="background-color:#C9ECFF">
+                                                                <div class="flight_detail">
+                                                                    <div class="row">
+                                                                        <div class="col-md-2">
+                                                                            <div class="booking-item-airline-logo" style="text-align:center;">
+                                                                                <img alt="Image Alternative text" src="./Sriwijaya Air_files/sj_flight_result.png" title="Image Title">
+                                                                                <p>SJ582<br></p>
+                                                                                <p class="booking-item-flight-class">Non Stop</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <div class="booking-item-flight-details">
+                                                                                <div class="booking-item-departure">
+                                                                                    <h5>
+                                                                                        <img alt="Image Departure" src="./Sriwijaya Air_files/takeoff.png" title="Departure" style="width:30px;height:30px">21:45               <p class="booking-item-flight-class" align="left" style="padding-top:10px;">
+                                                                                                Sat, May 18          
+                                                                                        </p>
+                                                                                    </h5>
+                                                                                </div>
+                                                                                <div class="booking-item-arrival">
+                                                                                    <h5>
+                                                                                        <img alt="Image Arrival" src="./Sriwijaya Air_files/landing.png" title="Departure" style="width:30px;height:30px">01:05
+                                                                                        <p class="booking-item-flight-class"align="left" style="padding-top:10px;">
+                                                                                                Sun, May 19</p>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-2" style="text-align:center">
+                                                                            <h5>02:20</h5>
+                                                                        </div>
+                                                                        <div class="col-md-5">
+                                                                            <div class="booking-item-flight-details">
+                                                                                <div class="booking-item-departure">
+                                                                                    <h5>
+                                                                                        <div class="text-disc">IDR 2.211.900</div>IDR 1.938.000<br></h5>
+                                                                                    <span>/passenger</span>
+                                                                                    <p class="booking-item-flight-class" style="line-height:3">Economy Class</p>
+                                                                                                <button type="button" class="btn btn-info btn_price_ec" id="btn_price_ec0" name="btn_price_ec" onclick=""" title="Click for more details" style="">
+                                                                                                    Select</button>
+                                                                                        </div>
+                                                                                        <div class="booking-item-arrival">
+                                                                                            <h5></h5>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- Start Detail -->
+                                                                        <div class="booking-item-payment detail-flight-1" id="detailFlight_1_0" style="display:none;">
+                                                                            <div class="row">
+                                                                                <div class="col-md-10 col-md-offset-2" style="font-size:14px;line-height:1.6">
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-12">
+                                                                                            <table class="table table-striped table-bordered table-responsive">
+                                                                                                <thead>
+                                                                                                    <tr>
+															                                            <th>Flight No</th>
+															                                            <th>Date</th>
+															                                            <th>Route</th>
+															                                            <th>STD</th>
+															                                            <th>STA</th>
+															                                            <th>Duration</th>
+															                                            <th>Transit</th>
+														                                            </tr>
+													                                            </thead>
+													                                            <tbody>
+                                                                                                    <tr>
+                                                                                                        <td style="vertical-align: middle;" class="text-center">
+                                                                                                            <img alt="SJ" src="./Sriwijaya Air_files/sj_w_icon.png" title="Image Title" style="width:20px;height:20px"> SJ582</td>
+														                                                <td style="vertical-align: middle;" class="text-center">18-MAY-19</td>
+														                                                <td style="vertical-align: middle;" class="text-center">CGK-UPG</td>
+														                                                <td style="vertical-align: middle;" class="text-center">21:45</td>
+														                                                <td style="vertical-align: middle;" class="text-center">01:05</td>
+														                                                <td style="vertical-align: middle;" class="text-center">02:20</td>
+														                                                <td style="vertical-align: middle;" class="text-center">0</td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+												                                            </table>
+													                                    </div>
+                                                                                    </div>
+                                                                                    <p style="color:#1B3682"></p>
+                                                                                    <div id="tripTransitA0" style="display:none;">
+                                                                                        <table class="table table-striped table-bordered table-responsive">
+													                                        <thead>
+														                                        <tr>
+															                                        <th rowspan="2" style="vertical-align: middle;">Flight No</th>
+															                                        <th colspan="2" style="vertical-align: middle;">Station</th>
+															                                        <th colspan="2" style="vertical-align: middle;">Time</th>
+														                                        </tr>
+														                                        <tr>
+															                                        <th style="vertical-align: middle;">Departure</th>
+															                                        <th style="vertical-align: middle;">Arrival</th>
+															                                        <th style="vertical-align: middle;">Departure</th>
+															                                        <th style="vertical-align: middle;">Arrival</th>
+														                                        </tr>
+													                                        </thead>
+													                                        <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="vertical-align: middle; text-align:center;">
+                                                                                                        <img alt="SJ" src="./Sriwijaya Air_files/sj_w_icon.png" title="Image Title" style="width:20px;height:20px"> SJ582</td>
+																                                    <td style="vertical-align: middle; text-align:center;">
+	                              									                                    <div>Jakarta, Soekarno Hatta </div>
+	                              								                                    </td>
+																                                    <td style="vertical-align: middle; text-align:center;">
+	                              									                                    <div>Ujung Pandang, Makassar - Sultan Hasanuddin</div>
+	                              								                                    </td>
+																                                    <td style="vertical-align: middle; text-align:center;">
+	                              									                                    <div>18-May-19 21:45 LT</div>
+	                              								                                    </td>
+																                                    <td style="vertical-align: middle; text-align:center;">
+	                              									                                    <div>19-May-19 01:05 LT</div>
+	                              								                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- End Detail -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
                                                            
                                                 <input type="hidden" id="returnDate" name="returnDate" value="">
 
@@ -2758,22 +2783,7 @@
         minutes = parseInt(seconds_left / 60);
         seconds = parseInt(seconds_left % 60);
         // format countdown string + set tag value
-        if (seconds_left < 0) {
-            //alert('TEST REFRESH');
-            $("#submitAll").remove();
-            clearInterval(ival);
-            swal({
-                'title': '',
-                'text': 'Your page is expired',
-                'type': 'warning',
-            }, function () {
-                window.location.href = 'https://www.sriwijayaair.co.id'
-            });
-// 				refreshShow();
-        }
-
-
-
+        
     }, 1000);
     //end counterdown
 
