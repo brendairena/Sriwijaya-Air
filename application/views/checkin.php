@@ -1,6 +1,6 @@
-@@ -0,0 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <head>
 
     <title>Web-Checkin</title>
@@ -120,7 +120,7 @@
                                             <input type="text" class="form-control" id="departureDate" name="departureDate"
                                                    required data-bv-notempty-message="Required." autocomplete=off>
                                             <span class="input-group-btn">
-                                                <button class="btn btn-default" type="button" id="opendepartureDate"><span class="glyphicon glyphicon-calendar"></span></button>
+                                                <button class="btn btn-default" type="button" id="opendepartureDate"><span class="fas fa-calendar-week"></span></button>
                                             </span>
                                         </div>
                                     </div>
