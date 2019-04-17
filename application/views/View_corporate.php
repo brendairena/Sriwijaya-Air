@@ -8,18 +8,18 @@
         <meta content="" name="description">
 
         <!-- Google Fonts -->
-        <link href="<?php echo base_url('application/views/AssetsCoorporate/css');?>"
+        <link href="<?php echo base_url('assets/AssetsCoorporate/css');?>"
         rel="stylesheet">
 
         <!-- Bootstrap CSS File -->
-        <link href="<?php echo base_url('application/views/AssetsCoorporate/bootstrap.min.css');?>" rel="stylesheet">
+        <link href="<?php echo base_url('assets/AssetsCoorporate/bootstrap.min.css');?>" rel="stylesheet">
 
         <!-- Libraries CSS Files -->
-        <link href="<?php echo base_url('application/views/AssetsCoorporate/font-awesome.min.css');?>" rel="stylesheet">
-        <link href="<?php echo base_url('application/views/AssetsCoorporate/animate.min.css');?>" rel="stylesheet">
+        <link href="<?php echo base_url('assets/AssetsCoorporate/font-awesome.min.css');?>" rel="stylesheet">
+        <link href="<?php echo base_url('assets/AssetsCoorporate/animate.min.css');?>" rel="stylesheet">
 
         <!-- Main Stylesheet File -->
-        <link href="<?php echo base_url('application/views/AssetsCoorporate/style.css');?>" rel="stylesheet">
+        <link href="<?php echo base_url('assets/AssetsCoorporate/style.css');?>" rel="stylesheet">
     </head>
 
     <body><button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>
@@ -30,7 +30,7 @@
             <div class="container">
  
                 <div id="logo" class="pull-left">
-                    <a href="https://sriwijayaair.co.id/corporate/#hero"> <img src="<?php echo base_url('application/views/AssetsCoorporate/LOGOSJHORIZONTALWHITE1.png');?>" alt="" title=""></a>
+                    <a href="https://sriwijayaair.co.id/corporate/#hero"> <img src="<?php echo base_url('assets/AssetsCoorporate/LOGOSJHORIZONTALWHITE1.png');?>" alt="" title=""></a>
                     <!-- Uncomment below if you prefer to use a text logo -->
                     <!--<h1><a href="#hero">Regna</a></h1>-->
                 </div> 
@@ -73,24 +73,24 @@
         </a>
 
         <!-- JavaScript Libraries -->
-        <script src="<?php echo base_url('application/views/AssetsCoorporate/jquery.min.js.download'); ?>" </script>
-        <script src="<?php echo base_url('application/views/AssetsCoorporate/jquery-migrate.min.js.download'); ?>" </script>
-        <script src="<?php echo base_url('application/views/AssetsCoorporate/bootstrap.bundle.min.js.download'); ?>" </script>
-        <script src="<?php echo base_url('application/views/AssetsCoorporate/easing.min.js.download'); ?>" </script>
-        <script src="<?php echo base_url('application/views/AssetsCoorporate/wow.min.js.download'); ?>" </script>
+        <script src="<?php echo base_url('assets/AssetsCoorporate/jquery.min.js.download'); ?>" </script>
+        <script src="<?php echo base_url('assets/AssetsCoorporate/jquery-migrate.min.js.download'); ?>" </script>
+        <script src="<?php echo base_url('assets/AssetsCoorporate/bootstrap.bundle.min.js.download'); ?>" </script>
+        <script src="<?php echo base_url('assets/AssetsCoorporate/easing.min.js.download'); ?>" </script>
+        <script src="<?php echo base_url('assets/AssetsCoorporate/wow.min.js.download'); ?>" </script>
 
-        <script src="<?php echo base_url('application/views/AssetsCoorporate/waypoints.min.js.download');?>" </script>
-        <script src="<?php echo base_url('application/views/AssetsCoorporate/counterup.min.js.download');?>" </script>
-        <script src="<?php echo base_url('application/views/AssetsCoorporate/hoverIntent.js.download');?>" </script>
-        <script src="<?php echo base_url('application/views/AssetsCoorporate/superfish.min.js.download');?>" </script>
+        <script src="<?php echo base_url('/AssetsCoorporate/waypoints.min.js.download');?>" </script>
+        <script src="<?php echo base_url('assets/AssetsCoorporate/counterup.min.js.download');?>" </script>
+        <script src="<?php echo base_url('assets/AssetsCoorporate/hoverIntent.js.download');?>" </script>
+        <script src="<?php echo base_url('assets/AssetsCoorporate/superfish.min.js.download');?>" </script>
       
 
         <!-- Contact Form JavaScript File -->
-        <script src="<?php echo base_url('application/views/AssetsCoorporate/contactform.js.download');?>" </script>
+        <script src="<?php echo base_url('assets/AssetsCoorporate/contactform.js.download');?>" </script>
         
 
         <!-- Template Main Javascript File -->
-        <script src="<?php echo base_url('application/views/AssetsCoorporate/main.js.download');?>" </script>
+        <script src="<?php echo base_url('assets/AssetsCoorporate/main.js.download');?>" </script>
         
 
     
