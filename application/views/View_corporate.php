@@ -7,10 +7,6 @@
         <meta content="" name="keywords">
         <meta content="" name="description">
 
-        <!-- Favicons -->
-        <!--<link href="img/favicon.png" rel="icon">
-        <link href="img/apple-touch-icon.png" rel="apple-touch-icon">-->
-
         <!-- Google Fonts -->
         <link href="./AssetsCoorporate/css" rel="stylesheet">
 
@@ -77,23 +73,23 @@
         <a href="https://sriwijayaair.co.id/corporate/#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
         <!-- JavaScript Libraries -->
-        <script src="./Sriwijaya Air_files/jquery.min.js.download"></script>
-        <script src="./Sriwijaya Air_files/jquery-migrate.min.js.download"></script>
-        <script src="./Sriwijaya Air_files/bootstrap.bundle.min.js.download"></script>
-        <script src="./Sriwijaya Air_files/easing.min.js.download"></script>
-        <script src="./Sriwijaya Air_files/wow.min.js.download"></script>
+        <script src="./AssetsCoorporate/jquery.min.js.download"></script>
+        <script src="./AssetsCoorporate/jquery-migrate.min.js.download"></script>
+        <script src="./AssetsCoorporate/bootstrap.bundle.min.js.download"></script>
+        <script src="./AssetsCoorporate/easing.min.js.download"></script>
+        <script src="./AssetsCoorporate/wow.min.js.download"></script>
         <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>-->
 
-        <script src="./Sriwijaya Air_files/waypoints.min.js.download"></script>
-        <script src="./Sriwijaya Air_files/counterup.min.js.download"></script>
-        <script src="./Sriwijaya Air_files/hoverIntent.js.download"></script>
-        <script src="./Sriwijaya Air_files/superfish.min.js.download"></script>
+        <script src="./AssetsCoorporate/waypoints.min.js.download"></script>
+        <script src="./AssetsCoorporate/counterup.min.js.download"></script>
+        <script src="./AssetsCoorporate/hoverIntent.js.download"></script>
+        <script src="./AssetsCoorporate/superfish.min.js.download"></script>
 
         <!-- Contact Form JavaScript File -->
-        <script src="./Sriwijaya Air_files/contactform.js.download"></script>
+        <script src="./AssetsCoorporate/contactform.js.download"></script>
 
         <!-- Template Main Javascript File -->
-        <script src="./Sriwijaya Air_files/main.js.download"></script>
+        <script src="./AssetsCoorporate/main.js.download"></script>
 
     
 
