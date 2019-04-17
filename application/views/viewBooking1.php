@@ -263,16 +263,6 @@
         animation: spin 2s linear infinite;
     }
 </style>
-            <div style="padding: 0px 0px;border: none;">
-                <div class="btn-group btn-breadcrumb">
-                    <a href="javascript:void(0);" class="btn btn-info popup-text" id="btnSearch" style="background:#1b3682;">Search</a>
-                    <a href="javascript:void(0);" class="btn btn-info" id="btnSelect" style="background:#1b3682;">Select</a>
-                    <a href="javascript:void(0);" class="btn btn-info" id="btnPsgrDet" style="background:#1b3682;">Passenger Details</a>
-                    <a href="javascript:void(0);" class="btn btn-info" id="btnPayment" style="background:#1b3682;">Payment</a>
-                    <a href="javascript:void(0);" class="btn btn-default disabled" id="btnConfirm">Confirmation</a>
-                </div>
-            </div>
-
                     <br>
         <!-- ul class="breadcrumb">
             <li style="line-height:2.2"><img alt="Image Alternative text" src="https://www.sriwijayaair.co.id/SJ/assets/images/icon/icon_step_eng.png" title="Infant"/></li>
@@ -1388,17 +1378,6 @@
             </div>
             <br>
             <div class="booking-item-payment">
-                <header class="clearfix">
-                    <table width="100%">
-                        <tr>
-                            <td><h5 class="mb0">Payment Details</h5></td>
-                                            <td style="text-align:right">
-                                    <button type="button" id="changePayment" class="btn btn-warning btn-md" name="changePayment" onClick="change_payment(0)">
-                                        <i class="fa fa-money" aria-hidden="true"></i>Change Payment</button>
-                                </td>
-                                    </tr>
-                    </table>
-                </header>
                                 <ul class="booking-item-payment-details" id="chanelBank"  style="display:none" >
                         <li>
                             <form id="changePaymentForm" name="changePaymentForm" method="post" action="https://www.sriwijayaair.co.id/SJ/GenerateTicket/changePayment">
@@ -1972,43 +1951,7 @@
                         </li>
                     </ul>
 
-                                                <ul class="booking-item-payment-details">
-                    <li>
-                        <table  style="width:80%;line-height:30px">
-                            <tr>
-                                <td ><b>Payment Selected</b></td>
-                                <td align="left">ATM</td>
-                            </tr>
-                                                    <tr>
-                                <td><b>Base Fare</b></td>
-                                <td align="right">IDR 1.555.000</td>
-                            </tr>
-                            <tr>
-                                <td><b>Others</b></td>
-                                <td align="right">IDR 245.500</td>
-                            </tr>
-                            <tr>
-                                <td><b>Extra Services</b></td>
-                                <td align="right">
-                                    IDR 35,000                                </td>
-                            </tr>
-                                                        <tr style="color:#FF797C">
-                                <td><b>Save</b></td>
-                                <td align="right">IDR 0</td>
-                            </tr>
-                                                                <tr>
-                                <td><b>Total</b></td>
-                                <td align="right">IDR 1.835.500</td>
-                            </tr>
-                                            <tr>
-                                    <td><b>Total amount to be paid</b></td>
-                                    <td align="right">IDR 1.835.500</td>
-                                </tr>
-                                     
-
-                        </table>
-                                                        </li>
-                </ul>
+                                                
                 <small style="margin-left:15px;color:#F00">
                                         </small>
             </div>
