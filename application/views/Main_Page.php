@@ -114,12 +114,13 @@
                                          <tr>
                                              <td>
                                                  <button type =submit class="btn btn-block btn-danger" onclick = "location.href=
-                                                 '<?php echo base_url(); ?>index.php/C_Main_Page/regist'">
+                                                 '<?php echo base_url('index.php/C_Main_Page/regist'); ?>'">
                                                  Register</button>
                                              </td>
                                              <td>&nbsp;</td>
                                              <td>
-                                                 <a class="btn btn-block btn-warning" href=#
+                                             <!-- TESTER LINK -->
+                                                 <a class="btn btn-block btn-warning" href="<?php echo base_url('C_Main_Page/regist');?>"
                                                  <!--"https://member.sriwijayaair.co.id/user/RegisBenefit"-->
                                                  SJ Travel Pass</a>
                                              </td>
@@ -398,14 +399,14 @@
             </a>
         </li>
         <li role="presentation">
-            <a href="https://webcheckin.sriwijayaair.co.id">
+            <a href="<?php echo base_url('index.php/C_Main_Page/cekin'); ?>">
                 <span><img class="round" alt="" src="https://www.sriwijayaair.co.id/SJ/assets/images/icon/sj_checkin.png" style="width:25px;" /></span>
                 <span>CHECK-IN</span>
                 <div class="arrow"></div>
             </a>
         </li>
         <li role="presentation">
-            <a href="#" onclick="MyLnk();">	
+            <a href="<?php echo base_url('index.php/C_Main_Page/corporate'); ?>" onclick="">	
                         <span></span> 
         <span>CORPORATE</span>
         <div class="arrow"></div>
@@ -569,10 +570,10 @@
      </div>
  </div>
  <script type="application/javascript">
- function MyLnk(){
-     //link muamalat finda
-     window.location.replace("https://sriwijayaair.co.id/corporate/");
- }
+//  function MyLnk(){
+//      //link muamalat finda
+//      window.location.replace("https://sriwijayaair.co.id/corporate/");
+//  }
  </script>
  <form id="findmybooking" name="findmybooking" action="FindMyBooking/index2" method="post">
      <input type="hidden" id="paramFindBooking" name="paramFindBooking" value="" >
