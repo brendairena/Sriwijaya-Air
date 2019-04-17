@@ -1,10 +1,10 @@
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 	<head>
     <meta name="google-site-verification" content="_TeZ5Stt0VkpcVBigqBgSasaeQp9QCOZELU_K03m_bs" />
     <title>Sriwijaya Air</title>
-0
+
         <noscript>Your browser does not support JavaScript</noscript> 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="keywords" content="sriwijaya air,sriwijaya,penerbangan sriwijaya,online booking,online ticket,flight,airline,indonesia,jakarta,tiket murah,penerbangan,domestik,internasional,singapore,singapura,penang,bali,denpasar,beli tiket,tiket pesawat,bayar online,atm bca,kartu kredit,promo,diskon,jalan jalan,harga tiket,maskapai,aman,nyaman,e-commerce,pembayaran tiket,purchase,cheap flight,low cost,flights to jakarta,flights to bali,low fares,tiket online,tiket surabaya,tiket yogyakarta,tiket medan,pangkal pinang,jadwal pesawat,jadwal penerbangan" />
@@ -16,13 +16,13 @@
 	
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://www.sriwijayaair.co.id/SJ/assets/css/jquery-ui.css" rel="stylesheet">
-	<!--<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>-->
+
 	<link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/font-awesome/css/font-googleapi-open-sans.css">
 	<link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/font-awesome/css/font-googleapi-open-sans_2.css">
-	<!-- link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css' -->
+	
 	<link id="bs-css" rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/bootstrap.css">
 	<link id="bs-css" rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/bootstrap-switch.css">
-	<!-- link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/bootstrap-datepicker.1.6.1.min.css" -->
+
 	<link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/font-awesome.css">
 	<link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/flag-icon.css">
 	<link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/icomoon.css">
@@ -34,7 +34,7 @@
 	<link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/sweetalert.css">
 	<link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/jquery.fancybox.css" type="text/css" media="screen" />
 	
-	<script type="text/javascript" src="https://www.sriwijayaair.co.id/SJ/assets/js/jquery.js"></script>
+<script type="text/javascript" src="https://www.sriwijayaair.co.id/SJ/assets/js/jquery.js"></script>
 <script type="text/javascript" src="https://www.sriwijayaair.co.id/SJ/assets/js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="https://www.sriwijayaair.co.id/SJ/assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="https://www.sriwijayaair.co.id/SJ/assets/js/slimmenu.js"></script>
@@ -105,18 +105,17 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fa fa-user"></i>
-                                            HUSNUL KHOTIMAH                                            <span class="caret"></span>
+                        <i class="fa fa-user"></i>HUSNUL KHOTIMAH<span class="caret"></span>
 					</a>
-										<ul class="dropdown-menu">
-												<li><a href="https://www.sriwijayaair.co.id/SJ/profile/index"><i class="fa fa-gear"></i> Profile</a></li>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.sriwijayaair.co.id/SJ/profile/index"><i class="fa fa-gear"></i> Profile</a></li>
 						<li><a href="https://www.sriwijayaair.co.id/SJ/home/logout" onclick="return confirm('Are you sure to log out ?')"><i class="fa fa-sign-out"></i> Log out</a></li>
 					</ul>
-									</li>
+						</li>
 				
 								
 				
-			
+
 			<!-- form class="navbar-form">-->
 				<div class="news">
                 	<marquee>
@@ -288,7 +287,7 @@
                         </div>
                         <div class="modal-body" style="margin:1%;padding-right:6%;text-align:justify">
                             <h5>Choose your flight that you want to cancel </h5>
-                                        <form action="" name="procSuspend" id="procSuspend" method="post">
+                                    <form action="" name="procSuspend" id="procSuspend" method="post">
                                     <input type="hidden" name="bookingCode" id="bookingCode" value="MMUBSL"/>
                                     <input type="hidden" name="totalSuspend" id="totalSuspend" value="0"/>
                                     <input type="hidden" name="ffno" id="ffno" value=""/>
@@ -330,12 +329,10 @@
                         </div>
                         <div class="modal-footer">
                             <div class="col-md-6" style="text-align:left">
-                                <button type="button" class="btn btn-default btn-info" onclick="submitSuspend()">
-                            Save                                </button>
+                                <button type="button" class="btn btn-default btn-info" onclick="submitSuspend()">Save</button>
                             </div>
                             <div class="col-md-6" style="text-align:right">
-                                <button type="button" class="btn btn-default btn-default" data-dismiss="modal">
-        Close                                </button>
+                                <button type="button" class="btn btn-default btn-default" data-dismiss="modal">Close</button>
                             </div>
 
                         </div>
@@ -1299,8 +1296,7 @@
                             </div>
                             <div class="form-group form-group-cc-number">
                                 <p>
-                                    <b>
-            Payment Limit                                    </b>
+                                    <b>Payment Limit</b>
                                 </p>
              <p style="color:#F00"><b>13 Apr 2019 01:57 (GMT+7)</b></p> </b></p>
 
@@ -1333,8 +1329,7 @@
                                     <td>1</td>
                                     <td>Ms HUSNUL KHOTIMAH FARID</td>
                                     <td>N/A</td>
-                                    <td>
-                                XCI                                     </td>
+                                    <td>XCI</td>
                                 </tr>
             
                         </table>
@@ -1348,7 +1343,7 @@
                 </header>
                 <ul class="booking-item-payment-details">
                     <li>
-                                            <div class="row">
+                                    <div class="row">
                                     <div class="col-md-12">
                                         <div class="row" style="font-size: 12px;">
                                             <div class="col-md-2">
@@ -1399,9 +1394,7 @@
                             <td><h5 class="mb0">Payment Details</h5></td>
                                             <td style="text-align:right">
                                     <button type="button" id="changePayment" class="btn btn-warning btn-md" name="changePayment" onClick="change_payment(0)">
-                                        <i class="fa fa-money" aria-hidden="true"></i> 
-                                        Change Payment
-                                    </button>
+                                        <i class="fa fa-money" aria-hidden="true"></i>Change Payment</button>
                                 </td>
                                     </tr>
                     </table>
@@ -2001,18 +1994,15 @@
                             </tr>
                                                         <tr style="color:#FF797C">
                                 <td><b>Save</b></td>
-                                <td align="right">
-            IDR 0                                </td>
+                                <td align="right">IDR 0</td>
                             </tr>
                                                                 <tr>
                                 <td><b>Total</b></td>
-                                <td align="right">
-                                    IDR 1.835.500                                </td>
+                                <td align="right">IDR 1.835.500</td>
                             </tr>
                                             <tr>
                                     <td><b>Total amount to be paid</b></td>
-                                    <td align="right">
-                IDR 1.835.500                                    </td>
+                                    <td align="right">IDR 1.835.500</td>
                                 </tr>
                                      
 
