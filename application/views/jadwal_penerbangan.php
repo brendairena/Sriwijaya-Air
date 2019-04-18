@@ -2,27 +2,27 @@
 <html class="js no-touch backgroundsize csstransforms3d csstransitions" style="overflow-y: hidden;"><!--<head> FLIGHT VIEW--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Sriwijaya Air</title>
     
-    <link href="<?php echo base_url().'assetsJadwal/jquery-ui.css'?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url().'assets/AssetsJadwal/jquery-ui.css'?>" rel="stylesheet" type="text/css">
 	
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/font-googleapi-open-sans.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/AssetsJadwal/font-googleapi-open-sans.css'?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/font-googleapi-open-sans_2.css'?>">
-    <link id="bs-css" rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/bootstrap.css'?>">
-	<link id="bs-css" rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/bootstrap-switch.css'?>">
+    <link id="bs-css" rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/AssetsJadwal/bootstrap.css'?>">
+	<link id="bs-css" rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/AssetsJadwal/bootstrap-switch.css'?>">
 	<!-- link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/bootstrap-datepicker.1.6.1.min.css" -->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/font-awesome.css'?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/flag-icon.css'?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/icomoon.css'?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/styles.css'?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/mystyles.css'?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/bootstrapValidator.min.css'?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/hippie-blue.css'?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/bootstrap-select.min.css'?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/sweetalert.css'?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assetsJadwal/jquery.fancybox.css'?>" media="screen">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/AssetsJadwal/font-awesome.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/AssetsJadwal/flag-icon.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/AssetsJadwal/icomoon.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/AssetsJadwal/styles.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/AssetsJadwal/mystyles.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/AssetsJadwal/bootstrapValidator.min.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/AssetsJadwal/hippie-blue.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/AssetsJadwal/bootstrap-select.min.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/AssetsJadwal/sweetalert.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/AssetsJadwal/jquery.fancybox.css'?>" media="screen">
         <div class="fit-vids-style" id="fit-vids-style" style="display: none;">­
             <style>                 .fluid-width-video-wrapper {                   width: 100%;                                position: relative;                         padding: 0;                              }                                                                                       .fluid-width-video-wrapper iframe,          .fluid-width-video-wrapper object,          .fluid-width-video-wrapper embed {             position: absolute;                         top: 0;                                     left: 0;                                    width: 100%;                                height: 100%;                            }          </style>
         </div>
-        <script async="" src="<?php echo base_url().'assetsJadwal/analytics.js.download'?>"></script>
+        <script async="" src="<?php echo base_url().'assets/AssetsJadwal/analytics.js.download'?>"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -45,7 +45,7 @@
   }]
 }
 </script>
-<link href="<?php echo base_url().'assetsJadwal/jquery-ui.css'?>" rel="stylesheet"><style>
+<link href="<?php echo base_url().'assets/AssetsJadwal/jquery-ui.css'?>" rel="stylesheet"><style>
         .fixedContainer {
             background-color:#ddd;
             position: fixed;
@@ -138,7 +138,7 @@
                 <center>
                     
 
-                    <img src="<?php echo base_url().'assetsJadwal/loading_en.gif'?>" class="img-responsive">
+                    <img src="<?php echo base_url().'assets/AssetsJadwal/loading_en.gif'?>" class="img-responsive">
                         
                 </center>
                 <br>
@@ -154,7 +154,7 @@
                     <div class="modal-body" id="refresh-modal-body">
                         <div class="row">
                             <center>
-                                <img src="<?php echo base_url().'assetsJadwal/plane_cloud.gif'?>">
+                                <img src="<?php echo base_url().'assets/AssetsJadwal/plane_cloud.gif'?>">
                                 <br>
                                 <p>Your page is expired.</p>
                             </center>
@@ -303,6 +303,7 @@
                                             </div>
                                         </form>
                                     </div>
+        
                                                 <!--HEADER RESULT SEARCH FLIGHT-->
                                                 <h5 class="booking-title"></h5>
                                                 <h4 id="selDept"><b>Select Departure</b></h4>
@@ -330,7 +331,7 @@
                                                                     <div class="row">
                                                                         <div class="col-md-2">
                                                                             <div class="booking-item-airline-logo" style="text-align:center;">
-                                                                                <img alt="Image Alternative text" src="./Sriwijaya Air_files/sj_flight_result.png" title="Image Title">
+                                                                                <img alt="Image Alternative text" src="<?php echo base_url().'assets/AssetsJadwal/sj_flight_result.png'?>" title="Image Title">
                                                                                 <p>SJ590<br></p>
                                                                                 <p class="booking-item-flight-class">Non Stop</p>
                                                                             </div>
@@ -339,14 +340,14 @@
                                                                             <div class="booking-item-flight-details">
                                                                                 <div class="booking-item-departure">
                                                                                     <h5>
-                                                                                        <img alt="Image Departure" src="./Sriwijaya Air_files/takeoff.png" title="Departure" style="width:30px;height:30px">05:00               <p class="booking-item-flight-class" align="left" style="padding-top:10px;">
+                                                                                        <img alt="Image Departure" src="<?php echo base_url().'assets/AssetsJadwal/takeoff.png'?>" title="Departure" style="width:30px;height:30px">05:00               <p class="booking-item-flight-class" align="left" style="padding-top:10px;">
                                                                                                 Sat, May 18          
                                                                                         </p>
                                                                                     </h5>
                                                                                 </div>
                                                                                 <div class="booking-item-arrival">
                                                                                     <h5>
-                                                                                        <img alt="Image Arrival" src="./Sriwijaya Air_files/landing.png" title="Departure" style="width:30px;height:30px">08:20
+                                                                                        <img alt="Image Arrival" src="<?php echo base_url().'assets/AssetsJadwal/landing.png'?>" title="Departure" style="width:30px;height:30px">08:20
                                                                                         <p class="booking-item-flight-class"align="left" style="padding-top:10px;">
                                                                                                 Sat, May 18</p>
                                                                                     </h5>
@@ -460,7 +461,7 @@
                                                                     <div class="row">
                                                                         <div class="col-md-2">
                                                                             <div class="booking-item-airline-logo" style="text-align:center;">
-                                                                                <img alt="Image Alternative text" src="./Sriwijaya Air_files/sj_flight_result.png" title="Image Title">
+                                                                                <img alt="Image Alternative text" src="<?php echo base_url().'assets/AssetsJadwal/sj_flight_result.png'?>" title="Image Title">
                                                                                 <p>SJ582<br></p>
                                                                                 <p class="booking-item-flight-class">Non Stop</p>
                                                                             </div>
@@ -469,14 +470,14 @@
                                                                             <div class="booking-item-flight-details">
                                                                                 <div class="booking-item-departure">
                                                                                     <h5>
-                                                                                        <img alt="Image Departure" src="./Sriwijaya Air_files/takeoff.png" title="Departure" style="width:30px;height:30px">21:45               <p class="booking-item-flight-class" align="left" style="padding-top:10px;">
+                                                                                        <img alt="Image Departure" src="<?php echo base_url().'assets/AssetsJadwal/takeoff.png'?>" title="Departure" style="width:30px;height:30px">21:45               <p class="booking-item-flight-class" align="left" style="padding-top:10px;">
                                                                                                 Sat, May 18          
                                                                                         </p>
                                                                                     </h5>
                                                                                 </div>
                                                                                 <div class="booking-item-arrival">
                                                                                     <h5>
-                                                                                        <img alt="Image Arrival" src="./Sriwijaya Air_files/landing.png" title="Departure" style="width:30px;height:30px">01:05
+                                                                                        <img alt="Image Arrival" src="<?php echo base_url().'assets/AssetsJadwal/landing.png'?>" title="Departure" style="width:30px;height:30px">01:05
                                                                                         <p class="booking-item-flight-class"align="left" style="padding-top:10px;">
                                                                                                 Sun, May 19</p>
                                                                                     </h5>
@@ -568,7 +569,7 @@
 	                              								                                    </td>
 																                                    <td style="vertical-align: middle; text-align:center;">
 	                              									                                    <div>19-May-19 01:05 LT</div>
-	                              								                                    </td>
+                                                                                                          </td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -582,761 +583,32 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                           
-                                                <input type="hidden" id="returnDate" name="returnDate" value="">
+                                                    <!-- END OF RESULT SEARCH FLIGHT -->
+                                                    <div class="col-md-12">
+                                                        <ul class="list-inline">
+                                                            <li>&nbsp;&nbsp;<input type="checkbox" id="insuranceSelected" name="insuranceSelected" value="1"> I agree to use extra cover insurance. 
+                                                            <a href="https://www.sriwijayaair.co.id/SJ/assets/images/CIU.jpg" target="_blank">Terms and Condition</a>
+                                                            </li>
+                                                        </ul>    
+                                                    </div>
 
-                                                <input type="hidden" id="chooseDate" name="chooseDate" class="chooseDate2" value="18-May-2019">
-                                                <input type="hidden" id="DatePrev" name="DatePrev" value="Fri, 17 May 2019">
-                                                <input type="hidden" id="DateTmrw" name="DateTmrw" value="Sun, 19 May 2019">
-                                                <input type="hidden" id="typeAction" name="typeAction" value="">
+                                                    <div class="col-md-12">
+                                                        <ul class="list-inline">
+                                                            <li>&nbsp;&nbsp;<input type="checkbox" id="ebtSelected" name="ebtSelected" value="0"> I agree to show extra baggage. <a href="https://www.sriwijayaair.co.id/SJ/download/EBT/PREPAID_EXCESS_BAGGAGE_CONDITION_2017.pdf" target="_blank">Terms and Condition</a></li>
+                                                        </ul>    
+                                                    </div>
+                                                    <p class="text-right">Not finding what are you looking for ? <a class="popup-text" href="https://www.sriwijayaair.co.id/SJ/Flights#search-dialog" data-effect="mfp-zoom-out">Try another search</a></p>
+                                                    <div class="gap gap-small"></div>
 
-                                                <input type="hidden" id="membership" name="membership" value="">
-                                                <input type="hidden" id="cardType" name="cardType" value="">
-                                                <input type="hidden" id="userLogin" name="userLogin" value="">
-
-
-
-                                                <input type="hidden" id="price_detail" name="price_detail" value="">
-                                                <input type="hidden" id="price_detail_return" name="price_detail_return" value="">
-
-                                                <input type="hidden" id="travelDetailDep" name="travelDetailDep" value="">
-                                                <input type="hidden" id="travelDetailRet" name="travelDetailRet" value="">
-                                                <input type="hidden" id="searchKeyDep" name="searchKeyDep" value="">
-                                                <input type="hidden" id="searchKeyRet" name="searchKeyRet" value="">
-
-                                                <input type="hidden" id="SearchKey" name="SearchKey" value="020800137676718073886779798282798188697879827784">
-
-                                                <input type="hidden" id="roundTrip" name="roundTrip" value="NO">
-                                                <input type="hidden" id="GrandTotal" name="GrandTotal" value="">
-                                                <input type="hidden" id="GrandTotalORI" name="GrandTotalORI" value="">
-                                                <input type="hidden" id="dataRedeem" name="dataRedeem" value="VzNzaVUxUkJWRWxQVGw5R1VrOU5Jam9pUTBkTElpd2lVMVJCVkVsUFRsOVVUeUk2SWxWUVJ5SXNJazFCV0VsTlZVMWZVRTlKVGxRaU9pSXhNREFpTENKTlNVNUpUVlZOWDFCUFNVNVVJam9pTVRBaUxDSk5RVmhKVFZWTlgwMUpURUZIUlNJNklqVXdJaXdpVFVsT1NVMVZUVjlOU1V4QlIwVWlPaUl6TWpBd01DSXNJa2xPUTFKRlRVVk9WRjlRVDBsT1ZDSTZJakV3TURBaUxDSkpSRkpmVUU5SlRsUWlPaUl4TURBaUxDSlVXVkJGSWpvaVFsVlRTVTVGVTFNaWZTeDdJbE5VUVZSSlQwNWZSbEpQVFNJNklrTkhTeUlzSWxOVVFWUkpUMDVmVkU4aU9pSlZVRWNpTENKTlFWaEpUVlZOWDFCUFNVNVVJam9pTVRBd0lpd2lUVWxPU1UxVlRWOVFUMGxPVkNJNklqRXdJaXdpVFVGWVNVMVZUVjlOU1V4QlIwVWlPaUkxTUNJc0lrMUpUa2xOVlUxZlRVbE1RVWRGSWpvaU1UZ3dNREFpTENKSlRrTlNSVTFGVGxSZlVFOUpUbFFpT2lJeE1EQXdJaXdpU1VSU1gxQlBTVTVVSWpvaU1UQXdJaXdpVkZsUVJTSTZJa1ZEVDA1UFRWa2lmVjA9">
-                                                <input type="hidden" id="usernameCheck" name="usernameCheck" value="">
-                                                <input type="hidden" id="FFNoCheck" name="FFNoCheck" value="&lt;? echo $FF_NO;  ?&gt;">
-                                                <input type="hidden" id="pointCheck" name="pointCheck" value="&lt;? //echo $FF_CONTACT[&#39;POINT&#39;];  ?&gt;">
-                                                <input type="hidden" id="ffType" name="ffType" value="REDEEM"> <!-- garudamiles -->
-                                                <input type="hidden" id="checkValidFF" name="checkValidFF" value="0">
-                                                
-                                                <input type="hidden" class="" id="EBT_A05_D" name="EBT_A05_D" value="0">
-                                                <input type="hidden" class="" id="EBT_A10_D" name="EBT_A10_D" value="0">
-                                                <input type="hidden" class="" id="EBT_A15_D" name="EBT_A15_D" value="0">
-                                                <input type="hidden" class="" id="EBT_A20_D" name="EBT_A20_D" value="0">
-                                                <input type="hidden" class="" id="EBT_A05_R" name="EBT_A05_R" value="0">
-                                                <input type="hidden" class="" id="EBT_A10_R" name="EBT_A10_R" value="0">
-                                                <input type="hidden" class="" id="EBT_A15_R" name="EBT_A15_R" value="0">
-                                                <input type="hidden" class="" id="EBT_A20_R" name="EBT_A20_R" value="0">
-                                                
-                                                <input type="hidden" class="" id="EBT_C05_D" name="EBT_C05_D" value="0">
-                                                <input type="hidden" class="" id="EBT_C10_D" name="EBT_C10_D" value="0">
-                                                <input type="hidden" class="" id="EBT_C15_D" name="EBT_C15_D" value="0">
-                                                <input type="hidden" class="" id="EBT_C20_D" name="EBT_C20_D" value="0">
-                                                <input type="hidden" class="" id="EBT_C05_R" name="EBT_C05_R" value="0">
-                                                <input type="hidden" class="" id="EBT_C10_R" name="EBT_C10_R" value="0">
-                                                <input type="hidden" class="" id="EBT_C15_R" name="EBT_C15_R" value="0">
-                                                <input type="hidden" class="" id="EBT_C20_R" name="EBT_C20_R" value="0">
-
-                                                <input type="hidden" class="bagReff" id="adultReffBag" name="adultReffBag" value="">
-                                                <input type="hidden" class="bagVal" id="adultPriceBagDep" name="adultPriceBagDep" value="0">
-                                                <input type="hidden" class="bagVal" id="adultPriceBagRet" name="adultPriceBagRet" value="0">
-                                                <!--finda ancill-->
-                                                <input type="hidden" class="bagVal" id="adultPriceOfBag" name="adultPriceOfBag" value="0">
-                                                <input type="hidden" class="bagReff" id="childReffBag" name="childReffBag" value="">
-                                                <input type="hidden" class="bagVal" id="childPriceBagDep" name="childPriceBagDep" value="0">
-                                                <input type="hidden" class="bagVal" id="childPriceBagRet" name="childPriceBagRet" value="0">
-                                                <input type="hidden" class="bagVal" id="childPriceOfBag" name="childPriceOfBag" value="0">
-                                                <input type="hidden" class="bagVal" id="totalPriceBag" name="totalPriceBag" value="0">
-
-                                                <input type="hidden" name="dataGoldenSeat" class="rmv-gs" id="dataGoldenSeat" value="">
-
-                                                <input type="hidden" name="TPriceGSD" id="TPriceGSD" class="rmv-gs-tp" value="0">
-                                                <input type="hidden" name="TPriceGSDA" id="TPriceGSDA" class="rmv-gs-tp" value="0">
-                                                <input type="hidden" name="TPriceGSDC" id="TPriceGSDC" class="rmv-gs-tp" value="0">
-
-                                                <input type="hidden" name="TPriceGSR" id="TPriceGSR" class="rmv-gs-tp" value="0">
-                                                <input type="hidden" name="TPriceGSRA" id="TPriceGSRA" class="rmv-gs-tp" value="0">
-                                                <input type="hidden" name="TPriceGSRC" id="TPriceGSRC" class="rmv-gs-tp" value="0">
-                                                <input type="hidden" name="SUM_TPriceGS" id="SUM_TPriceGS" class="rmv-gs-tp" value="0">
-                                                <input type="hidden" name="flagClassGSD" id="flagClassGSD" class="" value="">
-                                                <input type="hidden" name="flagClassGSR" id="flagClassGSR" class="" value="">
-
-                                                <input type="hidden" name="flagClassA" id="flagClassA" class="" value="">
-                                                <input type="hidden" name="flagClassAR" id="flagClassAR" class="" value="">
-
+                                            <!--GUEST PAYMENT-->
+                                            <div id="bookingForm" tabindex="-1">
                                                 <div class="booking-item">
                                                     <div class="panel-group" id="accordion">
                                                         <div class="panel panel-default">
                                                             <div class="panel-heading">
                                                                 <h4 class="panel-title">
-                                                                    <a data-toggle="collapse" data-parent="#accordion" href="https://www.sriwijayaair.co.id/SJ/Flights#collapse-contact" id="collapseContact">
-                Contact Detail                                                                        <span class="alert-danger badge" id="status-contact-detail">Uncompleted</span> 
-                                                                    </a>
-                                                                </h4>
-                                                            </div>
-                                                            <div class="panel-collapse collapse" id="collapse-contact">  
-                                                                <div class="panel-body">
-                                                                    <div class="col-md-4">
-                                                                                                                                                                    <div class="form-group form-group-icon-right">
-                                                                                <label>Email</label>
-                                                                                <i class="input-icon fa fa-envelope"></i>
-                                                                                <input class="form-control" type="email" placeholder="Enter Email" name="email" id="email" minlength="6" maxlength="50" onkeyup="this.value = this.value.toLowerCase();" value="">
-                                                                                <p id="msgValidator_email" style="color:#FF3737;display:none">Email required</p>
-                                                                            </div>
-                                                                            <div class="form-group">
-                                                                                <label>Password</label>
-                                                                                <input class="form-control" type="password" placeholder="Enter Password" name="password" maxlength="20" id="password" value="" data-bv-stringlength="true" data-bv-stringlength-min="6" data-bv-stringlength-message="The Password field must be at least 6 characters in length">
-                                                                                <p id="msgValidator_password" style="color:#FF3737;display:none">Password required</p>
-                                                                            </div>
-                                                                            <div class="checkbox">
-                                                                                <label>
-                                                                                    <input type="checkbox" id="checkMeOut" value="0" name="checkMeOut">Check me out</label>
-                                                                                <p id="msgValidator_checkMeOut" style="color:#FF3737;display:none">Please check the checkbox</p>
-                                                                            </div>
-                                                                            <input class="btn btn-info" type="button" value="Submit" style="" onclick="contactDetail();">
-                
-
-                                                                    </div>
-                                                                                        <div class="col-md-8">
-                                                                            <div class="form-group">
-                                                                                <ul>
-                                                                                    <li>Contact detail can be retrieved when you have stored your contact detail previously.</li>
-                                                                                </ul> 
-                                                                            </div>
-                                                                            <div class="form-group">
-                                                                                <ul>
-                                                                                    <li>Please fill in the form below to store your contact detail.</li>
-                                                                                </ul> 
-                                                                            </div>
-                                                                        </div>
-                                                                    
-
-
-                                                                    <div class="col-md-12">
-                                                                                            <br>
-                                                                            <hr>
-                                                                            <br>
-                
-
-                                                                        <div id="dataContactDetail">
-                                                                            <ul class="list-inline">
-                                                                                <li>
-                                                                                    <div class="form-group">
-                                                                                        <label>Title *</label>
-                                                                                        <select class="form-control ronly ronlyff" width="6px" name="titleName" id="titleName" data-bv-notempty="true" data-bv-notempty-message="Required">
-                                                                                                                                                                        <option value="Mr">Mr</option>
-                                                                                                                <option value="Mrs">Mrs</option>
-                                                                                                                <option value="Ms">Ms</option>
-                                                                                                        </select>
-                                                                                                                                                            </div>
-                                                                                </li>	
-                                                                                <li>
-                                                                                    <div class="form-group">
-                                                                                        <label>First Name *</label>
-                                                                                        <cd>
-                                                                                            <input class="form-control ronly ronlyff" placeholder="xxxx" type="text" name="firstName" id="firstName" onkeyup="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The first name is required" maxlength="30" onkeypress="return onlyAlphabets(event);" value="">
-                                                                                        </cd>
-                                                                                                                                                                                </div>
-                                                                                </li>	
-                                                                                <li>
-                                                                                    <div class="form-group">
-                                                                                        <label>Last Name *</label>
-                                                                                        <input class="form-control ronly ronlyff" placeholder="xxxx" type="text" name="lastName" id="lastName" onkeyup="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value="">
-                                                                                                    </div>
-                                                                                </li>	
-                                                                            </ul>
-                                                                                                                                                        <ul class="list-inline">
-                                                                                <li>
-                                                                                    <div class="form-group">
-                                                                                        <label>Address *</label> 
-                                                                                        <cd>
-                                                                                            <input class="form-control" placeholder="xxxx" type="text" width="5px" name="address" id="address" onkeyup="this.value = this.value.toUpperCase();" style="width:500px" data-bv-notempty="true" data-bv-notempty-message="The address is required" maxlength="150" value="">
-                                                                                        </cd>
-                                                                                                    </div>
-                                                                                </li>	
-                                                                            </ul>
-                                                                                                                                                        <ul class="list-inline">
-                                                                                <li>
-                                                                                    <div class="form-group">
-                                                                                        <label>Country *</label>
-                                                                                        <select class="form-control" name="country" id="countryName" data-bv-notempty="true" data-bv-notempty-message="Required">
-                                                                                            <option value="Indonesia">Indonesia</option>
-                                                                                            <option value="Afghanistan">Afghanistan</option>
-                                                                                            <option value="Albania">Albania</option>
-                                                                                            <option value="Algeria">Algeria</option>
-                                                                                            <option value="American Samoa">American Samoa</option>
-                                                                                            <option value="Andorra">Andorra</option>
-                                                                                            <option value="Angola">Angola</option>
-                                                                                            <option value="Anguilla">Anguilla</option>
-                                                                                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-                                                                                            <option value="Argentina">Argentina</option>
-                                                                                            <option value="Armenia">Armenia</option>
-                                                                                            <option value="Aruba">Aruba</option>
-                                                                                            <option value="Australia">Australia</option>
-                                                                                            <option value="Austria">Austria</option>
-                                                                                            <option value="Azerbaijan">Azerbaijan</option>
-                                                                                            <option value="Bahamas">Bahamas</option>
-                                                                                            <option value="Bahrain">Bahrain</option>
-                                                                                            <option value="Bangladesh">Bangladesh</option>
-                                                                                            <option value="Barbados">Barbados</option>
-                                                                                            <option value="Belarus">Belarus</option>
-                                                                                            <option value="Belgium">Belgium</option>
-                                                                                            <option value="Belize">Belize</option>
-                                                                                            <option value="Benin">Benin</option>
-                                                                                            <option value="Bermuda">Bermuda</option>
-                                                                                            <option value="Bhutan">Bhutan</option>
-                                                                                            <option value="Bolivia">Bolivia</option>
-                                                                                            <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-                                                                                            <option value="Botswana">Botswana</option>
-                                                                                            <option value="Brazil">Brazil</option>
-                                                                                            <option value="Brunei">Brunei</option>
-                                                                                            <option value="Bulgaria">Bulgaria</option>
-                                                                                            <option value="Burkina Faso">Burkina Faso</option>
-                                                                                            <option value="Burundi">Burundi</option>
-                                                                                            <option value="Cambodia">Cambodia</option>
-                                                                                            <option value="Cameroon">Cameroon</option>
-                                                                                            <option value="Canada">Canada</option>
-                                                                                            <option value="Cape Verde">Cape Verde</option>
-                                                                                            <option value="Cayman Islands">Cayman Islands</option>
-                                                                                            <option value="Central African Republic">Central African Republic</option>
-                                                                                            <option value="Chad">Chad</option>
-                                                                                            <option value="Chile">Chile</option>
-                                                                                            <option value="China">China</option>
-                                                                                            <option value="Christmas Island">Christmas Island</option>
-                                                                                            <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
-                                                                                            <option value="Colombia">Colombia</option>
-                                                                                            <option value="Comoros">Comoros</option>
-                                                                                            <option value="Cook Islands">Cook Islands</option>
-                                                                                            <option value="Costa Rica">Costa Rica</option>
-                                                                                            <option value="Croatia">Croatia</option>
-                                                                                            <option value="Cuba">Cuba</option>
-                                                                                            <option value="Cyprus">Cyprus</option>
-                                                                                            <option value="Czech Republic">Czech Republic</option>
-                                                                                            <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
-                                                                                            <option value="Denmark">Denmark</option>
-                                                                                            <option value="Djibouti">Djibouti</option>
-                                                                                            <option value="Dominica">Dominica</option>
-                                                                                            <option value="Dominican Republic">Dominican Republic</option>
-                                                                                            <option value="Ecuador">Ecuador</option>
-                                                                                            <option value="Egypt">Egypt</option>
-                                                                                            <option value="El Salvador">El Salvador</option>
-                                                                                            <option value="Equatorial Guinea">Equatorial Guinea</option>
-                                                                                            <option value="Eritrea">Eritrea</option>
-                                                                                            <option value="Estonia">Estonia</option>
-                                                                                            <option value="Ethiopia">Ethiopia</option>
-                                                                                            <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
-                                                                                            <option value="Faroe Islands">Faroe Islands</option>
-                                                                                            <option value="Fiji">Fiji</option>
-                                                                                            <option value="Finland">Finland</option>
-                                                                                            <option value="France">France</option>
-                                                                                            <option value="French Polynesia">French Polynesia</option>
-                                                                                            <option value="Gabon">Gabon</option>
-                                                                                            <option value="Gambia">Gambia</option>
-                                                                                            <option value="Georgia">Georgia</option>
-                                                                                            <option value="Germany">Germany</option>
-                                                                                            <option value="Ghana">Ghana</option>
-                                                                                            <option value="Gibraltar">Gibraltar</option>
-                                                                                            <option value="Greece">Greece</option>
-                                                                                            <option value="Greenland">Greenland</option>
-                                                                                            <option value="Grenada">Grenada</option>
-                                                                                            <option value="Guam">Guam</option>
-                                                                                            <option value="Guatemala">Guatemala</option>
-                                                                                            <option value="Guinea">Guinea</option>
-                                                                                            <option value="Guinea-Bissau">Guinea-Bissau</option>
-                                                                                            <option value="Guyana">Guyana</option>
-                                                                                            <option value="Haiti">Haiti</option>
-                                                                                            <option value="Honduras">Honduras</option>
-                                                                                            <option value="Hong Kong">Hong Kong</option>
-                                                                                            <option value="Hungary">Hungary</option>
-                                                                                            <option value="Iceland">Iceland</option>
-                                                                                            <option value="India">India</option>
-                                                                                            <option value="Iran">Iran</option>
-                                                                                            <option value="Iraq">Iraq</option>
-                                                                                            <option value="Ireland">Ireland</option>
-                                                                                            <option value="Israel">Israel</option>
-                                                                                            <option value="Italy">Italy</option>
-                                                                                            <option value="Ivory Coast">Ivory Coast</option>
-                                                                                            <option value="Jamaica">Jamaica</option>
-                                                                                            <option value="Japan">Japan</option>
-                                                                                            <option value="Jordan">Jordan</option>
-                                                                                            <option value="Kazakhstan">Kazakhstan</option>
-                                                                                            <option value="Kenya">Kenya</option>
-                                                                                            <option value="Kiribati">Kiribati</option>
-                                                                                            <option value="Kuwait">Kuwait</option>
-                                                                                            <option value="Kyrgyzstan">Kyrgyzstan</option>
-                                                                                            <option value="Lao Peoples Democratic Republic">Lao Peoples Democratic Republic</option>
-                                                                                            <option value="Latvia">Latvia</option>
-                                                                                            <option value="Lebanon">Lebanon</option>
-                                                                                            <option value="Lesotho">Lesotho</option>
-                                                                                            <option value="Liberia">Liberia</option>
-                                                                                            <option value="Libya">Libya</option>
-                                                                                            <option value="Liechtenstein">Liechtenstein</option>
-                                                                                            <option value="Lithuania">Lithuania</option>
-                                                                                            <option value="Luxembourg">Luxembourg</option>
-                                                                                            <option value="Macau">Macau</option>
-                                                                                            <option value="Macedonia">Macedonia</option>
-                                                                                            <option value="Madagascar">Madagascar</option>
-                                                                                            <option value="Malawi">Malawi</option>
-                                                                                            <option value="Malaysia">Malaysia</option>
-                                                                                            <option value="Maldives">Maldives</option>
-                                                                                            <option value="Mali">Mali</option>
-                                                                                            <option value="Malta">Malta</option>
-                                                                                            <option value="Marshall Islands">Marshall Islands</option>
-                                                                                            <option value="Mauritania">Mauritania</option>
-                                                                                            <option value="Mauritius">Mauritius</option>
-                                                                                            <option value="Mayotte">Mayotte</option>
-                                                                                            <option value="Mexico">Mexico</option>
-                                                                                            <option value="Micronesia">Micronesia</option>
-                                                                                            <option value="Moldova">Moldova</option>
-                                                                                            <option value="Monaco">Monaco</option>
-                                                                                            <option value="Mongolia">Mongolia</option>
-                                                                                            <option value="Montenegro">Montenegro</option>
-                                                                                            <option value="Montserrat">Montserrat</option>
-                                                                                            <option value="Morocco">Morocco</option>
-                                                                                            <option value="Mozambique">Mozambique</option>
-                                                                                            <option value="Myanmar">Myanmar</option>
-                                                                                            <option value="Namibia">Namibia</option>
-                                                                                            <option value="Nauru">Nauru</option>
-                                                                                            <option value="Nepal">Nepal</option>
-                                                                                            <option value="Netherlands">Netherlands</option>
-                                                                                            <option value="Netherlands Antilles">Netherlands Antilles</option>
-                                                                                            <option value="New Caledonia">New Caledonia</option>
-                                                                                            <option value="New Zealand">New Zealand</option>
-                                                                                            <option value="Nicaragua">Nicaragua</option>
-                                                                                            <option value="Niger">Niger</option>
-                                                                                            <option value="Nigeria">Nigeria</option>
-                                                                                            <option value="Niue">Niue</option>
-                                                                                            <option value="North Korea">North Korea</option>
-                                                                                            <option value="Northern Mariana Islands">Northern Mariana Islands</option>
-                                                                                            <option value="Norway">Norway</option>
-                                                                                            <option value="Oman">Oman</option>
-                                                                                            <option value="Others">Others</option>
-                                                                                            <option value="Pakistan">Pakistan</option>
-                                                                                            <option value="Palau">Palau</option>
-                                                                                            <option value="Palestine">Palestine</option>
-                                                                                            <option value="Panama">Panama</option>
-                                                                                            <option value="Papua New Guinea">Papua New Guinea</option>
-                                                                                            <option value="Paraguay">Paraguay</option>
-                                                                                            <option value="Peru">Peru</option>
-                                                                                            <option value="Philippines">Philippines</option>
-                                                                                            <option value="Pitcairn">Pitcairn</option>
-                                                                                            <option value="Poland">Poland</option>
-                                                                                            <option value="Portugal">Portugal</option>
-                                                                                            <option value="Puerto Rico">Puerto Rico</option>
-                                                                                            <option value="Qatar">Qatar</option>
-                                                                                            <option value="Reunion">Reunion</option>
-                                                                                            <option value="Romania">Romania</option>
-                                                                                            <option value="Russia">Russia</option>
-                                                                                            <option value="Rwanda">Rwanda</option>
-                                                                                            <option value="Saint Kitts">Saint Kitts</option>
-                                                                                            <option value="Saint Lucia">Saint Lucia</option>
-                                                                                            <option value="Samoa">Samoa</option>
-                                                                                            <option value="San Marino">San Marino</option>
-                                                                                            <option value="Saudi Arabia">Saudi Arabia</option>
-                                                                                            <option value="Senegal">Senegal</option>
-                                                                                            <option value="Serbia">Serbia</option>
-                                                                                            <option value="Seychelles">Seychelles</option>
-                                                                                            <option value="Sierra Leone">Sierra Leone</option>
-                                                                                            <option value="Singapore">Singapore</option>
-                                                                                            <option value="Slovakia">Slovakia</option>
-                                                                                            <option value="Slovenia">Slovenia</option>
-                                                                                            <option value="Solomon Islands">Solomon Islands</option>
-                                                                                            <option value="Somalia">Somalia</option>
-                                                                                            <option value="South Africa">South Africa</option>
-                                                                                            <option value="South Korea">South Korea</option>
-                                                                                            <option value="Spain">Spain</option>
-                                                                                            <option value="Sri Lanka">Sri Lanka</option>
-                                                                                            <option value="Sudan">Sudan</option>
-                                                                                            <option value="Suriname">Suriname</option>
-                                                                                            <option value="Swaziland">Swaziland</option>
-                                                                                            <option value="Sweden">Sweden</option>
-                                                                                            <option value="Switzerland">Switzerland</option>
-                                                                                            <option value="Syria">Syria</option>
-                                                                                            <option value="Taiwan">Taiwan</option>
-                                                                                            <option value="Tajikistan">Tajikistan</option>
-                                                                                            <option value="Tanzania">Tanzania</option>
-                                                                                            <option value="Thailand">Thailand</option>
-                                                                                            <option value="Timor-Leste">Timor-Leste</option>
-                                                                                            <option value="Togo">Togo</option>
-                                                                                            <option value="Tokelau">Tokelau</option>
-                                                                                            <option value="Tonga">Tonga</option>
-                                                                                            <option value="Trinidad and Tobago">Trinidad and Tobago</option>
-                                                                                            <option value="Tunisia">Tunisia</option>
-                                                                                            <option value="Turkey">Turkey</option>
-                                                                                            <option value="Turkmenistan">Turkmenistan</option>
-                                                                                            <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
-                                                                                            <option value="Tuvalu">Tuvalu</option>
-                                                                                            <option value="Uganda">Uganda</option>
-                                                                                            <option value="Ukraine">Ukraine</option>
-                                                                                            <option value="United Arab Emirates">United Arab Emirates</option>
-                                                                                            <option value="United Kingdom">United Kingdom</option>
-                                                                                            <option value="United States">United States</option>
-                                                                                            <option value="Uruguay">Uruguay</option>
-                                                                                            <option value="Uzbekistan">Uzbekistan</option>
-                                                                                            <option value="Vanuatu">Vanuatu</option>
-                                                                                            <option value="Vatican">Vatican</option>
-                                                                                            <option value="Venezuela">Venezuela</option>
-                                                                                            <option value="Vietnam">Vietnam</option>
-                                                                                            <option value="Virgin Islands">Virgin Islands</option>
-                                                                                            <option value="Wallis and Futuna Islands">Wallis and Futuna Islands</option>
-                                                                                            <option value="Western Sahara">Western Sahara</option>
-                                                                                            <option value="Yemen">Yemen</option>
-                                                                                            <option value="Zambia">Zambia</option>
-                                                                                            <option value="Zimbabwe">Zimbabwe</option>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                                                        </select>
-                                                                                                    </div>
-                                                                                </li>	
-                                                                                                                                                                <li>
-                                                                                    <div class="form-group">
-                                                                                        <label>City *</label>
-                                                                                        <cd>
-                                                                                            <input class="form-control" placeholder="xxxx" type="text" name="city" id="city" onkeyup="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The city is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value="">
-                                                                                        </cd>
-                                                                                                    </div>
-                                                                                </li>
-                                                                                                                                                            </ul>
-                                                                                                                                                        <ul class="list-inline">
-                                                                                <li>
-                                                                                    <div class="form-group">
-                                                                                        <label>Postal / Zipcode</label>
-                                                                                        <cd>
-                                                                                            <input class="form-control" placeholder="xxxx" type="text" width="5px" name="zipCode" id="zipCode" maxlength="10" onkeypress="return isNumberKey(event)" value="">
-                                                                                        </cd>
-                                                                                                    </div>
-                                                                                </li>	
-                                                                                <li>
-                                                                                    <div class="form-group">
-                                                                                        <label>Province / State *</label>
-                                                                                        <cd>
-                                                                                            <input class="form-control" placeholder="xxxx" type="text" name="province" id="province" onkeyup="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The province is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value="">
-                                                                                        </cd>
-                                                                                                    </div>
-                                                                                </li>	
-                                                                            </ul>
-                                                                                                                                                        <ul class="list-inline">
-                                                                                <label>Origin Phone *</label>
-                                                                                <li>
-                                                                                <cd>
-                                                                                    <input class="form-control" type="text" style="width:50px;background:#FFF;" name="originPhone1" id="originPhone1" maxlength="3" data-bv-notempty="true" data-bv-notempty-message="Required" onkeypress="return isNumberKey(event)" value="62">
-                                                                                </cd>
-                                                                                                </li>
-                                                                                <li>
-                                                                                    <div class="form-group">
-                                                                                        <cd>
-                                                                                            <input class="form-control" placeholder="xxxx" type="text" style="width:100px" name="originPhone2" id="originPhone2" maxlength="4" data-bv-notempty="true" data-bv-notempty-message="Required" onkeypress="return isNumberKey(event)" value="">
-                                                                                        </cd>
-                                                                                                    </div>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <div class="form-group">
-                                                                                        <cd>
-                                                                                            <input class="form-control" placeholder="xxxx" type="text" style="width:150px" name="originPhone3" id="originPhone3" size="14" maxlength="14" data-bv-notempty="true" data-bv-notempty-message="Required" onkeypress="return isNumberKey(event)" value="">
-                                                                                        </cd>
-                                                                                                    </div>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <select class="form-control" width="60px" name="phoneType" data-bv-notempty="true" data-bv-notempty-message="Required">
-                                                                                        <option value="home">Home </option>
-                                                                                        <option value="office">Office</option>
-                                                                                    </select>
-                                                                                                </li>
-
-                                                                            </ul>
-
-                                                                            <ul class="list-inline">
-                                                                                <label>Mobile Phone *</label>
-
-                                                                                <li>
-                                                                                <cd>
-                                                                                    <input class="form-control" type="text" style="width:50px;background:#FFF;" name="mobilePhone1" id="mobilePhone1" maxlength="3" data-bv-notempty="true" data-bv-notempty-message="Required" onkeypress="return isNumberKey(event)" value="62">
-                                                                                </cd>
-                                                                                                                                                                    </li>
-                                                                                <li>
-                                                                                    <div class="form-group">
-                                                                                        <cd>
-                                                                                            <input class="form-control" placeholder="xxxx" type="text" style="width:100px" name="mobilePhone2" id="mobilePhone2" maxlength="8" data-bv-notempty="true" data-bv-notempty-message="Required" onkeypress="return isNumberKey(event)" value="">
-                                                                                        </cd>
-                                                                                                    </div>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <div class="form-group">
-                                                                                        <cd>
-                                                                                            <input class="form-control" placeholder="xxxx" type="text" style="width:150px" name="mobilePhone3" id="mobilePhone3" size="14" maxlength="14" data-bv-notempty="true" data-bv-notempty-message="Required" onkeypress="return isNumberKey(event)" value="">
-                                                                                        </cd>
-                                                                                                    </div>
-                                                                                </li>
-
-                                                                            </ul>
-                                                                            <ul class="list-inline">
-                                                                                <li>
-                                                                                    <div class="form-group form-group-icon-right">
-                                                                                        <label>Email *</label>
-                                                                                        <i class="input-icon fa fa-envelope"></i>
-                                                                                        <cd>
-                                                                                            <input class="form-control ronly ronlyff" placeholder="Max 50 characters" type="email" name="emailAddress" id="emailAddress" data-bv-notempty="true" data-bv-notempty-message="The email is required" maxlength="50" data-bv-emailaddress="true" data-bv-emailaddress-message="The value is not a valid email address" onkeyup="this.value = this.value.toLowerCase();" value="" required="">
-                                                                                        </cd>
-                                                                                                    </div>
-                                                                                </li>	
-                                                                                <li>
-                                                                                    <div class="form-group form-group-icon-right">
-                                                                                        <label>Re-enter Email *</label>
-                                                                                        <i class="input-icon fa fa-envelope"></i>
-                                                                                        <cd>
-                                                                                            <input class="form-control ronly ronlyff" placeholder="Max 50 characters" type="text" name="REemailAddress" id="REemailAddress" data-bv-notempty="true" data-bv-notempty-message="The re-email is required" maxlength="50" data-bv-emailaddress="true" data-bv-emailaddress-message="The value is not a valid email address" onkeyup="this.value = this.value.toLowerCase();" value="">
-                                                                                        </cd>
-                                                                                          
-                                                                                    </div>
-                                                                                </li>	
-                                                                            </ul>
-                                                                        </div>
-                                                                        <hr>
-                                                                        <!--FINDA DIAMOND-->
-                                                                                            <div class="col-md-12">
-
-                                                                                <ul class="list-inline" id="agreeShowPass" style="display:none">
-                                                                                    <li>
-                                                                                        <input type="checkbox" name="checkBoxAgreePass" id="checkBoxAgreePass" value=""> &nbsp; 
-                    Yes, I would like to include in my passenger detail.                                                                                    </li>
-                                                                                </ul> 
-
-                                                                            </div>
-
-                                                                        
-
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                        <div class="panel panel-default">
-                                                            <div class="panel-heading">
-                                                                <h4 class="panel-title">
                                                                     <a data-toggle="collapse" data-parent="#accordion" href="https://www.sriwijayaair.co.id/SJ/Flights#collapse-1" id="passColapse">
-                                                                        Passenger Details                                                                        <span class="alert-danger badge" id="status-pax-detail">Uncompleted</span>
+                                                                        Passenger Details                                <span class="alert-danger badge" id="status-pax-detail">Uncompleted</span>
                                                                     </a>
                                                                 </h4>
                                                             </div>
@@ -1350,45 +622,39 @@
                                                                     <br>
                                                                         
 
-                                                                            <div id="passengerDetail">
-                                                                                <div class="col-md-12">
-                                                                                    <h4><b>Adult 1</b></h4>
-                                                                                    <ul class="list-inline">
-                                                                                        <li>
-                                                                                            <div class="form-group">
-                                                                                                <label>Title *</label>
-                                                                                                <pd>
-                                                                                                    <select class="form-control ronly ronlyff" width="6px" name="titleNameAdultPax1" id="titleNameAdultPax1" data-bv-notempty="true" data-bv-notempty-message="The title is required">
-
-
-                                                                                                        <option value="Mr">Mr</option>
-                                                                                                        <option value="Mrs">Mrs</option>
-
-
-                                                                                                        <option value="Ms">Ms</option>
-                                                                                                    </select>
-                                                                                                                        </pd>
-                                                                                            </div>
-                                                                                        </li>	
-                                                                                        <li>
-                                                                                            <div class="form-group">
-                                                                                                <label>First Name *</label>
-                                                                                                <pd>
-                                                                                                    <!--Finda Ancill-->
-                                                                                                    <input class="form-control firstNamePsgrAdult ui-autocomplete-input ronly ronlyff" autocomplete="off" placeholder="xxxx" type="text" name="firstNameAdultPax1" id="firstNameAdultPax1" onkeyup="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The first name is required" maxlength="30" onkeypress="return onlyAlphabets(event);" value="" role="textbox" aria-autocomplete="list" aria-haspopup="true">
-                                                                                                </pd>
-                                                                                                                    </div>
-                                                                                        </li>	
-                                                                                        <li>                                                                                                                                                                                             
-                                                                                            <div class="form-group">
-                                                                                                <label>Last Name *</label>
-                                                                                                <pd>
-                                                                                                    <input class="form-control lastNamePsgrAdult ui-autocomplete-input ronly ronlyff" autocomplete="off" placeholder="xxxx" type="text" name="lastNameAdultPax1" id="lastNameAdultPax1" onkeyup="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="30" onkeypress="return onlyAlphabets(event);" value="" role="textbox" aria-autocomplete="list" aria-haspopup="true">
-                                                                                                </pd>
-                                                                                                                    </div>
-                                                                                        </li>	
-                                                                                        <li>
-                                                                                            <label>Special Request *</label>
+                                                                    <div id="passengerDetail">
+                                                                        <div class="col-md-12">
+                                                                            <h4><b>Adult 1</b></h4>
+                                                                            <ul class="list-inline">
+                                                                                <li>
+                                                                                    <div class="form-group">
+                                                                                         <label>Title *</label>
+                                                                                        <pd>
+                                                                                            <select class="form-control ronly ronlyff" width="6px" name="titleNameAdultPax1" id="titleNameAdultPax1" data-bv-notempty="true" data-bv-notempty-message="The title is required">
+                                                                                                <option value="Mr">Mr</option>
+                                                                                                <option value="Mrs">Mrs</option>
+                                                                                                <option value="Ms">Ms</option>
+                                                                                            </select>
+                                                                                        </pd>
+                                                                                   </div>
+                                                                                </li>	
+                                                                                <li>
+                                                                                    <div class="form-group">
+                                                                                        <label>First Name *</label>
+                                                                                        <pd>                         <!--Finda Ancill-->
+                                                                                            <input class="form-control firstNamePsgrAdult ui-autocomplete-input ronly ronlyff" autocomplete="off" placeholder="xxxx" type="text" name="firstNameAdultPax1" id="firstNameAdultPax1" onkeyup="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The first name is required" maxlength="30" onkeypress="return onlyAlphabets(event);" value="" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+                                                                                        </pd>
+                                                                                    </div>
+                                                                                </li>	
+                                                                                <li>                                         <div class="form-group">
+                                                                                        <label>Last Name *</label>
+                                                                                        <pd>
+                                                                                            <input class="form-control lastNamePsgrAdult ui-autocomplete-input ronly ronlyff" autocomplete="off" placeholder="xxxx" type="text" name="lastNameAdultPax1" id="lastNameAdultPax1" onkeyup="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="30" onkeypress="return onlyAlphabets(event);" value="" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+                                                                                        </pd>
+                                                                                    </div>
+                                                                                </li>	
+                                                                                <li>
+                                                                                    <label>Special Request *</label>
                                                                                             <select class="form-control" name="specReqAdultPax1" id="specReqAdultPax1" data-bv-notempty="true" data-bv-notempty-message="The special request is required">
                                                                                                 <option value="None">None</option>
                                                                                                 <option value="WHCR">Wheel chair</option>
@@ -1401,7 +667,7 @@
                                                                                                 <label><h5><b>Buy Extra Baggage 1</b></h5></label>
                                                                                                 <label>
                                                                                                     <h5 style="color:#559BC1"><b>
-                        CGK&nbsp;&nbsp;<img alt="Image Departure" src="./Sriwijaya Air_files/landing.png" title="Departure" style="width:30px;height:30px">&nbsp;&nbsp;UPG                                                                                                        </b></h5>
+                        CGK&nbsp;&nbsp;<img alt="Image Departure" src="<?php echo base_url().'assets/AssetsJadwal/landing.png'?>" title="Departure" style="width:30px;height:30px">&nbsp;&nbsp;UPG                                                                                                        </b></h5>
                                                                                                 </label>
                                                                                                 <select class="form-control bag" width="6px" name="EBT_D_A1" id="EBT_D_A1" onchange="getEBT(this.value, &#39;D&#39;, &#39;A&#39;,1)">
                                                                                                     <option value="">No Thanks</option>
