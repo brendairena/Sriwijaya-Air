@@ -525,8 +525,7 @@
                             <div class="form-group">
                             <!-- SEARCH FLIGHT BELOM ADA -->
                                     <label>&nbsp;</label>
-                                        <a href="javascript:void(0);" class="btn btn-warning btn-block" id="redeemMiles" name="redeemMiles" onClick="#
-                                        <!-- searchFlightsRedeem('');" -->
+                                        <a href="<?php echo base_url('index.php/c_main_page/jadwal_penerbangan');?>" class="btn btn-warning btn-block" id="redeemMiles" name="redeemMiles" onClick="#"
                                         ><i class="fa fa-search"></i> Search</a>
                             </div>
                         </div>
