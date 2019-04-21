@@ -43,4 +43,14 @@ class C_Main_Page extends CI_Controller {
 	{
 		$this->load->view('jadwal_penerbangan');
 	}
+	public function indexFlight()
+	{
+		$this->load->view('indexFlight');
+	}
+
+	public function addFlight()
+	{
+		$this->load->view('addFlight');
+	}
+
 }

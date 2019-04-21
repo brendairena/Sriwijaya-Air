@@ -20,7 +20,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href=<?= base_url();?>Sriwijaya air</a>
+            <a class="navbar-brand" href="<?= base_url();?>Sriwijaya air"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -74,10 +74,10 @@
             <table class="table mt-5">
                 <thead>
                     <tr>
-                        <th class="text-center" scope="col">NAMA</th>
-                        <th class="text-center" scope="col">EMAIL</th>
-                        <th class="text-center" scope="col">NIM</th>
-                        <th class="text-center" scope="col">JURUSAN</th>
+                        <th class="text-center" scope="col">No Penerbangan</th>
+                        <th class="text-center" scope="col">Berangkat</th>
+                        <th class="text-center" scope="col">Tujuan</th>
+                        <th class="text-center" scope="col">Jam</th>
                         <th class="text-center" scope="col">AKSI</th>
                     </tr>
                 </thead>
@@ -97,7 +97,7 @@
             </table>
             <div class="row mt-3">
                 <div class="col md-6 text-center mt-5">
-                    <a href="<?= base_url(); ?>mahasiswa/tambah " class="btn btn-primary">Tambah Data Penerbangan</a>
+                    <a href="<?= base_url(); ?>index.php/C_Main_Page/addFlight " class="btn btn-primary">Tambah Data Penerbangan</a>
                 </div>
             </div>
 
