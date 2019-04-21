@@ -13,25 +13,25 @@
 
     <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/style.css">
 
-    <title><?php echo $judul ?></title>
+    <title>Flights - Kelompok Brenda</title>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href=<?= base_url(); ?>>Telkom University</a>
+            <a class="navbar-brand" href=<?= base_url();?>Sriwijaya air</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="<?= base_url(); ?>">Home</a>
                     <a class="nav-item nav-link" href="<?= base_url(); ?>mahasiswa">Mahasiswa</a>
                     <a class="nav-item nav-link" href="#">About</a>
 
                 </div>
-            </div>
+            </div> -->
         </div>
     </nav> 
 <div class="container">
@@ -39,7 +39,7 @@
     <div class="row mt-3">
         <div class="col-md-6">
             <div class="alert alert-success alert-dismissible fade show" role="alert">
-                Data Mahasiswa <strong>berhasil</strong> <?= $this->session->flashdata('flash'); ?>.
+                Data Penerbangan <strong>berhasil</strong> <?= $this->session->flashdata('flash'); ?>.
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -53,7 +53,7 @@
         <div class="col md-6">
             <form action="" method="post">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Cari data mahasiswa ... " name="keyword">
+                    <input type="text" class="form-control" placeholder="Cari data Penerbangan ... " name="keyword">
                     <div class="input-group-append">
                         <button class="btn btn-primary" type="submit">Cari</button>
                     </div>
@@ -64,7 +64,7 @@
 
     <div class="row mt-5">
         <div class="col">
-            <h3 class="text-center">Daftar Mahasiswa</h3>
+            <h3 class="text-center">Daftar Penerbangan</h3>
             <?php if (empty($mahasiswa)) : ?>
             <div class="alert alert-danger" role="alert">
                 Data tidak ditemukan
@@ -97,7 +97,7 @@
             </table>
             <div class="row mt-3">
                 <div class="col md-6 text-center mt-5">
-                    <a href="<?= base_url(); ?>mahasiswa/tambah " class="btn btn-primary">Tambah Data Mahasiswa</a>
+                    <a href="<?= base_url(); ?>mahasiswa/tambah " class="btn btn-primary">Tambah Data Penerbangan</a>
                 </div>
             </div>
 
