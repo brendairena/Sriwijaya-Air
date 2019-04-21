@@ -333,7 +333,7 @@
                                                                             <div class="booking-item-airline-logo" style="text-align:center;">
                                                                                 <img alt="Image Alternative text" src="<?php echo base_url().'assets/AssetsJadwal/sj_flight_result.png'?>" title="Image Title">
                                                                                 <p>SJ590<br></p>
-                                                                                <p class="booking-item-flight-class">Non Stop</p>
+                                                                                <p class="booking-item-flight-class">Non Stop< /p>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-3">

@@ -1,0 +1,77 @@
+body{
+    color: #737373;
+    font-family: 'Open Sans', Tahoma, Arial, helvetica, sans-serif;
+    font-family: 'Roboto', arial, helvetica, sans-serif;
+}
+p.text-1{
+    font-size: 23.66px;
+    line-height: 1.6em;
+    font-weight: 300;
+}    
+p.text-2{
+    font-size: 18.2px;
+    line-height: 1.6em;
+    font-weight: 300;
+}
+.jumbotron{
+    background-color: #ebf6fc;
+    width: 1000px;
+    height: auto;
+}
+.listKotak{
+    list-style-type: none;
+}
+p.text-3{
+    font-size: 12px;
+    line-height: 1.3em;
+    font-weight: 400;
+    text-align: center;
+}
+p.text-4{
+    font-size: 18px;
+}
+p.text-5{
+    font-size: 11px;
+    color: #8f8f8f;
+}
+p.text-6{
+    font-size: 18px;
+    text-decoration: line-through;
+    color: #F00;
+}
+p.text-7{
+    font-size: 14px;
+    line-height: 1.6em;
+    font-weight: 400;
+}
+.kotak1{
+    width: 99px;
+}
+.kotak2{
+    width: auto;
+}
+.btnSelect{
+    background-color: #1B3682;
+    width: 70px;
+    height: 30px;
+    color: #ffffff;
+    border-style: none;
+}
+
+table, th, td{
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    padding: 8px;
+}
+.tableSelect{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.tr1{
+    background-color: #1b3682;
+}
+.tr2{
+    background-color: #418bb9;
+}
