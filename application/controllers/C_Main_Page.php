@@ -52,5 +52,10 @@ class C_Main_Page extends CI_Controller {
 	{
 		$this->load->view('tambah_penerbangan');
 	}
+	
+	public function hotel()
+	{
+		$this->load->view('daftar_hotel');
+	}
 
 }
