@@ -119,9 +119,9 @@
                                              <td>&nbsp;</td>
                                              <td>
                                              <!-- TESTER LINK -->
-                                                 <a class="btn btn-block btn-warning" href="<?php echo base_url('C_Main_Page/regist');?>"
-                                                 <!--"https://member.sriwijayaair.co.id/user/RegisBenefit"-->
-                                                 SJ Travel Pass</a>
+                                                 <a class="btn btn-block btn-warning" href="<?php echo base_url('index.php/C_Main_Page/indexFlight');?>"
+                                                <!-- "https://member.sriwijayaair.co.id/user/RegisBenefit" -->
+                                                ADMIN</a>
                                              </td>
                                          </tr>
                                      </table>
