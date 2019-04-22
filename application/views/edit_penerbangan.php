@@ -313,7 +313,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Nomor Penerbangan </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="No_Penerbangan" id="No_Penerbangan" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="No_penerbangan" id="No_Penerbangan" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value="SJ590"/>
                                                                                                                    </div>
                                                     </li>	
                                               </ul>
@@ -321,7 +321,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Rute Penerbangan </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="Rute_Penerbangan" id="Rute_Penerbangan" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="Rute" id="Rute" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value="CGK-UPG"/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
@@ -329,7 +329,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Tanggal Keberangkatan </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="Tgl_Keberangkatan" id="Tgl_Keberangkatan" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="tgl_berangkat" id="Tgl_berangkat" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value="18 MAY 2019"/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
@@ -337,7 +337,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Waktu Keberangkatan </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="Waktu_Keberangkatan" id="Waktu_Keberangkatan" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="waktu_berangkat" id="waktu_berangkat" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value="05:00"/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
@@ -345,7 +345,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Waktu Tiba </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="Waktu_tiba" id="Waktu_tiba" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="waktu_tiba" id="waktu_tiba" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value="08:20"/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
@@ -353,7 +353,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Durasi </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="Durasi" id="Durasi" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="durasi" id="durasi" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value="02:20"/>
                                                                                                                    </div>
                                                     </li>	
                                               </ul>

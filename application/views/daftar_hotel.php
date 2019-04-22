@@ -17,27 +17,23 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="<?php echo base_url().'assets/styleJadwal.css'?>">
+    <link rel="stylesheet" href="<?php echo base_url().'assets/styleHotel.css'?>">
     <title>Jadwal Penerbangan</title>
 </head>
 <body>
-    <p class="text-1">Select Departure</p>
-    <p class="text-2">Jakarta (CGK) / Soekarno Hatta International Airport  Ujung Pandang (UPG) 
-        <span class="glyphicon glyphicon-arrow-right"></span>
-        Makassar - Sultan Hasanuddin</p>
-
+    <p class="text-1">Select Hotel</p>
+    <p class="text-2">Hotel in Bandung, Indonesia</p>
         <p>
-                    18 May 2019 for 1 Adult 0 Child 0 Infant
+                                                                                                                                                              
                                                                             <small>
                                                             <a class="popup-text btn btn-info" style="position:relative;left:8px;bottom:8px;" href="<?php echo site_url("c_main_page/addFlight")?>" id="cari_rute" data-effect="mfp-zoom-out" style="float: right;">
-                                                                <b style="font-size:16px;" id="changeSearch">Tambah Penerbangan</b>
+                                                                <b style="font-size:16px;" id="changeSearch">Tambah Hotel</b>
                                                             </a>
                                                         </small>
         </p>
 <br>
-<p class="text-2">Flights Departure
-</p>
-<!-- PENERBANGAN 1 -->
+
+<!-- HOTEL 1 -->
 <div class="jumbotron">
     <!-- BARIS 1 -->
     <div class="row">
