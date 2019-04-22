@@ -17,7 +17,7 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styleJadwal.css">
+    <link rel="stylesheet" href="<?php echo base_url().'assets/styleJadwal.css'?>">
     <title>Jadwal Penerbangan</title>
 </head>
 <body>
@@ -35,7 +35,7 @@
             <div class="kotak1">
                 <ul class="listKotak">
                     <li>
-                        <img src="assets/AssetsJadwal/sj_flight_result.png" alt="">
+                        <img src="<?php echo base_url().'assets/AssetsJadwal/sj_flight_result.png'?>" alt="">
                     </li>
                     <li>
                         <p class="text-3">SJ590 Non Stop</p>
@@ -49,7 +49,7 @@
                 <ul class="listKotak">
                     <li>
                         <p class="text-4">
-                            <img src="assets/AssetsJadwal/takeoff.png" alt="" style="width:32px;">
+                            <img src="<?php echo base_url().'assets/AssetsJadwal/takeoff.png'?>" alt="" style="width:32px;">
                             05.00
                         </p>
                     </li>
@@ -65,7 +65,7 @@
                 <ul class="listKotak">
                     <li>
                         <p class="text-4">
-                            <img src="assets/AssetsJadwal/landing.png" alt="" style="width:32px;">
+                            <img src="<?php echo base_url().'assets/AssetsJadwal/landing.png'?>" alt="" style="width:32px;">
                             08.20
                         </p>
                     </li>
@@ -148,7 +148,7 @@
             <div class="kotak1">
                 <ul class="listKotak">
                     <li>
-                        <img src="assets/AssetsJadwal/sj_flight_result.png" alt="">
+                        <img src="<?php echo base_url().'assets/AssetsJadwal/sj_flight_result.png'?>" alt="">
                     </li>
                     <li>
                         <p class="text-3">SJ582 Non Stop</p>
@@ -162,7 +162,7 @@
                 <ul class="listKotak">
                     <li>
                         <p class="text-4">
-                            <img src="assets/AssetsJadwal/takeoff.png" alt="" style="width:32px;">
+                            <img src="<?php echo base_url().'assets/AssetsJadwal/takeoff.png'?>" alt="" style="width:32px;">
                             21.45
                         </p>
                     </li>
@@ -178,7 +178,7 @@
                 <ul class="listKotak">
                     <li>
                         <p class="text-4">
-                            <img src="assets/AssetsJadwal/landing.png" alt="" style="width:32px;">
+                            <img src="<?php echo base_url().'assets/AssetsJadwal/landing.png'?>" alt="" style="width:32px;">
                             01.05
                         </p>
                     </li>
@@ -261,7 +261,7 @@
                 <div class="kotak1">
                     <ul class="listKotak">
                         <li>
-                            <img src="assets/AssetsJadwal/sj_flight_result.png" alt="">
+                            <img src="<?php echo base_url().'assets/AssetsJadwal/sj_flight_result.png'?>" alt="">
                         </li>
                         <li>
                             <p class="text-3">SJ588 Non Stop</p>
@@ -275,7 +275,7 @@
                     <ul class="listKotak">
                         <li>
                             <p class="text-4">
-                                <img src="assets/AssetsJadwal/takeoff.png" alt="" style="width:32px;">
+                                <img src="<?php echo base_url().'assets/AssetsJadwal/takeoff.png'?>" alt="" style="width:32px;">
                                 18.55
                             </p>
                         </li>
@@ -291,7 +291,7 @@
                     <ul class="listKotak">
                         <li>
                             <p class="text-4">
-                                <img src="assets/AssetsJadwal/landing.png" alt="" style="width:32px;">
+                                <img src="<?php echo base_url().'assets/AssetsJadwal/landing.png'?>" alt="" style="width:32px;">
                                 21.15
                             </p>
                         </li>
