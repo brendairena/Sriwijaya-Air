@@ -19,6 +19,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="<?php echo base_url().'assets/styleJadwal.css'?>">
     <title>Jadwal Penerbangan</title>
+    <style type="text/css">
+        .noborder table,tr,td {
+            border-style: none;
+        }
+    </style>
 </head>
 <body>
     <p class="text-1">Select Departure</p>
@@ -120,19 +125,25 @@
                         <input type="hidden" name="no_penerbangan" value=""/>
                         <input type="hidden" name="no_booking" value=""/>
 
-                        <button type="submit" name="button" class="btnSelect">Select</button>
-                        <button type="submit" name="button" class="btnSelect">Edit</button>
-                        <button type="submit" name="button" class="btnSelect">Delete</button>
                     </li>
                 </ul>
             </div>
         </div>
     </form>
+
+    <section class="noborder">
+    <table >
+    <tr><td><button  onclick="klik()" name="button" class="btnSelect" >Select</button></td></tr>
+    <tr><td><button name="button" class="btnSelect">Edit</button></td></tr>
+    <tr><td><button  name="button" class="btnSelect">Delete</button></td></tr>
+    </table>
+    </section>
+
     </div>
     <!-- BARIS 2 -->
     <div class="row">
         <div class="col">
-            <div class="tableSelect">
+            <div id="klik" class="tableSelect" style="display: none;">
                 <table>
                     <tr class="tr1">
                         <th>Flight No</th>
@@ -240,20 +251,25 @@
                         <input type="hidden" name="id_penerbangan" value=""/>
                         <input type="hidden" name="no_penerbangan" value=""/>
                         <input type="hidden" name="no_booking" value=""/>
-
-                        <button type="submit" name="button" class="btnSelect">Select</button>
-                        <button type="submit" name="button" class="btnSelect">Edit</button>
-                        <button type="submit" name="button" class="btnSelect">Delete</button>
                     </li>
                 </ul>
             </div>
         </div>
     </form>
+
+    <section class="noborder">
+    <table >
+    <tr><td><button  onclick="klik1()" name="button" class="btnSelect" >Select</button></td></tr>
+    <tr><td><button name="button" class="btnSelect">Edit</button></td></tr>
+    <tr><td><button  name="button" class="btnSelect">Delete</button></td></tr>
+    </table>
+    </section>
+
     </div>
     <!-- BARIS 2 -->
     <div class="row">
         <div class="col">
-            <div class="tableSelect">
+            <div class="tableSelect" id="klik1" style="display: none;">
                 <table>
                     <tr class="tr1">
                         <th>Flight No</th>
@@ -362,19 +378,28 @@
                         <input type="hidden" name="no_penerbangan" value=""/>
                         <input type="hidden" name="no_booking" value=""/>
 
-                        <button type="submit" name="button" class="btnSelect">Select</button>
-                        <button type="submit" name="button" class="btnSelect">Edit</button>
-                        <button type="submit" name="button" class="btnSelect">Delete</button>
                     </li>
                 </ul>
             </div>
         </div>
     </form>
+
+    <section class="noborder">
+    <table >
+    <tr><td><button  onclick="klik2()" name="button" class="btnSelect" >Select</button></td></tr>
+    <tr><td><button  name="button" class="btnSelect">Edit</button></td></tr>
+    <tr><td><button  name="button" class="btnSelect">Delete</button></td></tr>
+    </table>
+    </section>
+    
     </div>
+
+
+
     <!-- BARIS 2 -->
     <div class="row">
         <div class="col">
-            <div class="tableSelect">
+            <div id="klik2" class="tableSelect " style="display: none;">
                 <table>
                     <tr class="tr1">
                         <th>Flight No</th>
@@ -404,6 +429,21 @@
      
 
 
+    }
+
+    function klik() {
+    var x = document.getElementById("klik");
+    x.style.display = "flex";  
+    }
+
+    function klik1() {
+    var x = document.getElementById("klik1");
+    x.style.display = "flex";  
+    }
+
+    function klik2() {
+    var x = document.getElementById("klik2");
+    x.style.display = "flex";  
     }
     </script>
    

@@ -385,7 +385,7 @@
             </a>
         </li>
                 <li role="presentation">
-            <a href="<?php echo base_url('index.php//C_Main_Page/hotel');?>">
+            <a href="<?php echo base_url('index.php/C_Main_Page/hotel');?>">
                 <span><img class="round" alt="" src="https://www.sriwijayaair.co.id/SJ/assets/images/icon/hotelb.png" style="width:25px;" /></span>
                 <span>HOTEL</span>
                 <div class="arrow"></div>
