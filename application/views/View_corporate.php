@@ -1,33 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
+<!-- saved from url=(0037)https://sriwijayaair.co.id/corporate/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
         <title>Sriwijaya Air</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
 
-        <!-- Favicons -->
-        <!--<link href="img/favicon.png" rel="icon">
-        <link href="img/apple-touch-icon.png" rel="apple-touch-icon">-->
-
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+        <link href="./AssetsCoorporate/css" rel="stylesheet">
 
         <!-- Bootstrap CSS File -->
-        <link href="assets_corporate/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./AssetsCoorporate/bootstrap.min.css" rel="stylesheet">
 
         <!-- Libraries CSS Files -->
-        <link href="assets_corporate/css/font-awesome.min.css" rel="stylesheet">
-        <link href="assets_corporate/css/animate.min.css" rel="stylesheet">
+        <link href="./AssetsCoorporate/font-awesome.min.css" rel="stylesheet">
+        <link href="./AssetsCoorporate/animate.min.css" rel="stylesheet">
 
         <!-- Main Stylesheet File -->
-        <link href="assets_corporate/css/style.css" rel="stylesheet">
-        <link href="https://sriwijayaair.co.id/corporate/assets_corporate/css/style_bankMuamalat.css" rel="stylesheet">
+        <link href="./AssetsCoorporate/style.css" rel="stylesheet">
     </head>
 
-    <body>
-
+    <body><button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>
         <!--==========================
         Header
         ============================-->
@@ -35,28 +29,26 @@
             <div class="container">
 
                 <div id="logo" class="pull-left">
-                    <a href="#hero"><img src="assets_corporate/images/LOGOSJHORIZONTALWHITE1.png" alt="" title="" /></img></a>
+                    <a href="https://sriwijayaair.co.id/corporate/#hero"><img src="./Sriwijaya Air_files/LOGOSJHORIZONTALWHITE1.png" alt="" title=""></a>
                     <!-- Uncomment below if you prefer to use a text logo -->
                     <!--<h1><a href="#hero">Regna</a></h1>-->
                 </div> 
                 <nav id="nav-menu-container">
-                    <ul class="nav-menu"> 
-                        <li class="menu-has-children"><a href="" style="font-size: 18px;">Asosiasi</a> 
-                            <ul>
+                    <ul class="nav-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;"> 
+                        <li class="menu-has-children"><a href="https://sriwijayaair.co.id/corporate/" style="font-size: 18px;" class="sf-with-ul">Asosiasi</a> 
+                            <ul style="display: none;">
                                 <li><a href="https://sriwijayaair.co.id/corporate/REI/" style="font-size: 18px;">REI</a></li>                             
                             </ul>
                         </li>
-                        <li class="menu-has-children"><a href="" style="font-size: 18px;">BANK</a>
+                        <li class="menu-has-children"><a href="https://sriwijayaair.co.id/corporate/" style="font-size: 18px;" class="sf-with-ul">BANK</a>
                             <!--<ul>
                                 <li><a href="https:///MUAMALAT/" style="font-size: 18px;">Bank Muamalat</a></li>                             
                             </ul>-->
-                            <ul>
+                            <ul style="display: none;">
                                 <li><a href="https://sriwijayaair.co.id/corporate/Muamalat/" style="font-size: 18px;">Muamalat</a></li>                             
                             </ul>
                         </li>
                         <li class="menu"><a href="https://sriwijayaair.co.id/BPJS/" style="font-size: 18px;">BPJS</a></li>
-
-
                     </ul>
                 </nav><!-- #nav-menu-container -->
             </div>
@@ -78,26 +70,45 @@
        
         
 
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <a href="https://sriwijayaair.co.id/corporate/#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
         <!-- JavaScript Libraries -->
-        <script src="assets_corporate/js/jquery.min.js"></script>
-        <script src="assets_corporate/js/jquery-migrate.min.js"></script>
-        <script src="assets_corporate/js/bootstrap.bundle.min.js"></script>
-        <script src="assets_corporate/js/easing.min.js"></script>
-        <script src="assets_corporate/js/wow.min.js"></script>
+        <script src="./AssetsCoorporate/jquery.min.js.download"></script>
+        <script src="./AssetsCoorporate/jquery-migrate.min.js.download"></script>
+        <script src="./AssetsCoorporate/bootstrap.bundle.min.js.download"></script>
+        <script src="./AssetsCoorporate/easing.min.js.download"></script>
+        <script src="./AssetsCoorporate/wow.min.js.download"></script>
         <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>-->
 
-        <script src="assets_corporate/js/waypoints.min.js"></script>
-        <script src="assets_corporate/js/counterup.min.js"></script>
-        <script src="assets_corporate/js/hoverIntent.js"></script>
-        <script src="assets_corporate/js/superfish.min.js"></script>
+        <script src="./AssetsCoorporate/waypoints.min.js.download"></script>
+        <script src="./AssetsCoorporate/counterup.min.js.download"></script>
+        <script src="./AssetsCoorporate/hoverIntent.js.download"></script>
+        <script src="./AssetsCoorporate/superfish.min.js.download"></script>
 
         <!-- Contact Form JavaScript File -->
-        <script src="assets_corporate/js/contactform.js"></script>
+        <script src="./AssetsCoorporate/contactform.js.download"></script>
 
         <!-- Template Main Javascript File -->
-        <script src="assets_corporate/js/main.js"></script>
+        <script src="./AssetsCoorporate/main.js.download"></script>
 
-    </body>
-</html>
+    
+
+<nav id="mobile-nav">
+                    <ul class="" style="touch-action: pan-y;" id=""> 
+                        <li class="menu-has-children"><i class="fa fa-chevron-down"></i><a href="https://sriwijayaair.co.id/corporate/" style="font-size: 18px;" class="sf-with-ul">Asosiasi</a> 
+                            <ul style="display: none;">
+                                <li><a href="https://sriwijayaair.co.id/corporate/REI/" style="font-size: 18px;">REI</a></li>                             
+                            </ul>
+                        </li>
+                        <li class="menu-has-children"><i class="fa fa-chevron-down"></i><a href="https://sriwijayaair.co.id/corporate/" style="font-size: 18px;" class="sf-with-ul">BANK</a>
+                            <!--<ul>
+                                <li><a href="https:///MUAMALAT/" style="font-size: 18px;">Bank Muamalat</a></li>                             
+                            </ul>-->
+                            <ul style="display: none;">
+                                <li><a href="https://sriwijayaair.co.id/corporate/Muamalat/" style="font-size: 18px;">Muamalat</a></li>                             
+                            </ul>
+                        </li>
+                        <li class="menu"><a href="https://sriwijayaair.co.id/BPJS/" style="font-size: 18px;">BPJS</a></li>
+
+                    </ul>
+                </nav><div id="mobile-body-overly"></div></body></html>

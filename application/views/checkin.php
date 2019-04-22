@@ -71,7 +71,7 @@
                 </button>
 
                 <!-- LOGO PINDAH KE KIRI, HREF -->
-                <a class="navbar-brand" href="#"><img src="https://webcheckin.sriwijayaair.co.id/webcheckin/assets//images/SJ_Horizontal3.png" class="img-responsive"></a>
+                <a class="navbar-brand" href="<?php echo base_url();?>"><img src="https://webcheckin.sriwijayaair.co.id/webcheckin/assets//images/SJ_Horizontal3.png" class="img-responsive"></a>
             </div>
         </div><!--/.container-fluid -->
     </nav>

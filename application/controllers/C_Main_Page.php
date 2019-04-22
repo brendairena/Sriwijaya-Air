@@ -21,11 +21,26 @@ class C_Main_Page extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('main_page');
-		// $this->load->view('footer');
+
 	}
 
 	public function regist()
 	{
 		$this->load->view('page_signup');
+	}
+
+	public function corporate()
+	{
+		$this->load->view('View_corporate');
+	}
+
+	public function cekin()
+	{
+		$this->load->view('checkin');
+	}
+
+	public function jadwal_penerbangan()
+	{
+		$this->load->view('jadwal_penerbangan');
 	}
 }
