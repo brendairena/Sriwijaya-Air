@@ -50,7 +50,7 @@ class C_Main_Page extends CI_Controller {
 
 	public function addFlight()
 	{
-		$this->load->view('addFlight');
+		$this->load->view('tambah_penerbangan');
 	}
 
 }

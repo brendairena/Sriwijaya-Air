@@ -26,6 +26,13 @@
         <span class="glyphicon glyphicon-arrow-right"></span>
         Makassar - Sultan Hasanuddin</p>
 
+        <p>
+                    18 May 2019 for 1 Adult 0 Child 0 Infant                                                        <small>
+                                                            <a class="popup-text btn btn-info" style="position:relative;left:8px;bottom:8px;" href="<?php echo site_url("c_main_page/addFlight")?>" id="cari_rute" data-effect="mfp-zoom-out" style="float: right;">
+                                                                <b style="font-size:16px;" id="changeSearch">Tambah Penerbangan</b>
+                                                            </a>
+                                                        </small>
+                                                    </p>
 <!-- PENERBANGAN 1 -->
 <div class="jumbotron">
     <!-- BARIS 1 -->
@@ -88,6 +95,7 @@
                     </div>
         </div>
         <!-- COLUMN 5 -->
+        <form method="POST" action="<?php echo site_url("c_main_page/")?>" >
         <div class="col">
             <div class="kotak2">
                 <ul class="listKotak">
@@ -104,11 +112,16 @@
                         <p class="text-5">Economy Class</p>
                     </li>
                     <li>
-                        <button type="button" name="button" class="btnSelect">Select</button>
+                        <input type="hidden" name="id_penerbangan" value=""/>
+                        <input type="hidden" name="no_penerbangan" value=""/>
+                        <input type="hidden" name="no_booking" value=""/>
+
+                        <button type="submit" name="button" class="btnSelect">Select</button>
                     </li>
                 </ul>
             </div>
         </div>
+    </form>
     </div>
     <!-- BARIS 2 -->
     <div class="row">
@@ -138,232 +151,14 @@
         </div>
     </div>
 </div>
+<script>
+    function order(){
+     
 
-<!-- PENERBANGAN 2 -->
-<div class="jumbotron">
-    <!-- BARIS 1 -->
-    <div class="row">
-        <!-- COLOUMN 1 -->
-        <div class="col">
-            <div class="kotak1">
-                <ul class="listKotak">
-                    <li>
-                        <img src="<?php echo base_url().'assets/AssetsJadwal/sj_flight_result.png'?>" alt="">
-                    </li>
-                    <li>
-                        <p class="text-3">SJ582 Non Stop</p>
-                    </li>
-                </ul>
-            </div>
-        </div>    
-        <!-- COLOUMN 2 -->
-        <div class="col">
-            <div class="kotak2">
-                <ul class="listKotak">
-                    <li>
-                        <p class="text-4">
-                            <img src="<?php echo base_url().'assets/AssetsJadwal/takeoff.png'?>" alt="" style="width:32px;">
-                            21.45
-                        </p>
-                    </li>
-                    <li>
-                        <p class="text-5">Sat, May 18</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- COLOUMN 3 -->
-        <div class="col">
-            <div class="kotak2">
-                <ul class="listKotak">
-                    <li>
-                        <p class="text-4">
-                            <img src="<?php echo base_url().'assets/AssetsJadwal/landing.png'?>" alt="" style="width:32px;">
-                            01.05
-                        </p>
-                    </li>
-                    <li>
-                        <p class="text-5">Sun, May 19</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- COLOUMN 4 -->
-        <div class="col">
-            <div class="kotak2">
-                <ul class="listKotak">
-                    <li>
-                        <p class="text-4">
-                        02.20
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- COLUMN 5 -->
-        <div class="col">
-            <div class="kotak2">
-                <ul class="listKotak">
-                    <li>
-                        <p class="text-6">IDR 2.211.900</p>
-                    </li>
-                    <li>
-                        <p class="text-4">IDR 1.938.000</p>
-                    </li>
-                    <li>
-                        <p class="text-7">/passenger</p>
-                    </li>
-                    <li>
-                        <p class="text-5">Economy Class</p>
-                    </li>
-                    <li>
-                        <button type="button" name="button" class="btnSelect">Select</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- BARIS 2 -->
-    <div class="row">
-        <div class="col">
-            <div class="tableSelect">
-                <table>
-                    <tr class="tr1">
-                        <th>Flight No</th>
-                        <th>Date</th>
-                        <th>Route</th>
-                        <th>STD</th>
-                        <th>STA</th>
-                        <th>Duration</th>
-                        <th>Transit</th>
-                    </tr>
-                    <tr class="tr2">
-                        <th>SJ582</th>
-                        <th>18-MAY-19</th>
-                        <th>CGK-UPG</th>
-                        <th>21:45</th>
-                        <th>01:05</th>
-                        <th>02:20</th>
-                        <th>0</th>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- PENERBANGAN 3 -->
-<div class="jumbotron">
-    <!-- BARIS 1 -->
-        <div class="row">
-            <!-- COLOUMN 1 -->
-            <div class="col">
-                <div class="kotak1">
-                    <ul class="listKotak">
-                        <li>
-                            <img src="<?php echo base_url().'assets/AssetsJadwal/sj_flight_result.png'?>" alt="">
-                        </li>
-                        <li>
-                            <p class="text-3">SJ588 Non Stop</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>    
-            <!-- COLOUMN 2 -->
-            <div class="col">
-                <div class="kotak2">
-                    <ul class="listKotak">
-                        <li>
-                            <p class="text-4">
-                                <img src="<?php echo base_url().'assets/AssetsJadwal/takeoff.png'?>" alt="" style="width:32px;">
-                                18.55
-                            </p>
-                        </li>
-                        <li>
-                            <p class="text-5">Sat, May 18</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- COLOUMN 3 -->
-            <div class="col">
-                <div class="kotak2">
-                    <ul class="listKotak">
-                        <li>
-                            <p class="text-4">
-                                <img src="<?php echo base_url().'assets/AssetsJadwal/landing.png'?>" alt="" style="width:32px;">
-                                21.15
-                            </p>
-                        </li>
-                        <li>
-                            <p class="text-5">Sat, May 18</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- COLOUMN 4 -->
-            <div class="col">
-                    <div class="kotak2">
-                            <ul class="listKotak">
-                                <li>
-                                    <p class="text-4">
-                                    02.20
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-            </div>
-            <!-- COLUMN 5 -->
-            <div class="col">
-                <div class="kotak2">
-                    <ul class="listKotak">
-                        <li>
-                            <p class="text-6">IDR 2.211.900</p>
-                        </li>
-                        <li>
-                            <p class="text-4">IDR 1.817.000</p>
-                        </li>
-                        <li>
-                            <p class="text-7">/passenger</p>
-                        </li>
-                        <li>
-                            <p class="text-5">Economy Class</p>
-                        </li>
-                        <li>
-                            <button type="button" name="button" class="btnSelect">Select</button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- BARIS 2 -->
-        <div class="row">
-            <div class="col">
-                <div class="tableSelect">
-                    <table>
-                        <tr class="tr1">
-                            <th>Flight No</th>
-                            <th>Date</th>
-                            <th>Route</th>
-                            <th>STD</th>
-                            <th>STA</th>
-                            <th>Duration</th>
-                            <th>Transit</th>
-                        </tr>
-                        <tr class="tr2">
-                            <th>SJ588</th>
-                            <th>18-MAY-19</th>
-                            <th>CGK-UPG</th>
-                            <th>18:55</th>
-                            <th>21:15</th>
-                            <th>02:20</th>
-                            <th>0</th>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
+    }
+    </script>
+   
     
     
     
