@@ -119,7 +119,7 @@
                                              <td>&nbsp;</td>
                                              <td>
                                              <!-- TESTER LINK -->
-                                                 <a class="btn btn-block btn-warning" href="<?php echo base_url('index.php/C_Main_Page/indexFlight');?>"
+                                                 <a class="btn btn-block btn-warning" href="<?php echo base_url('index.php/C_Main_Page/main_page_admin');?>"
                                                 <!-- "https://member.sriwijayaair.co.id/user/RegisBenefit" -->
                                                 ADMIN</a>
                                              </td>

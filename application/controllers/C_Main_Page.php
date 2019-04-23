@@ -20,7 +20,7 @@ class C_Main_Page extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('main_page');
+		$this->load->view('Main_Page_User');
 
 	}
 
@@ -63,4 +63,8 @@ class C_Main_Page extends CI_Controller {
 		$this->load->view('tambah_hotel');
 	}
 
+	public function main_page_admin()
+	{
+		$this->load->view('Main_Page_admin');
+	}
 }
