@@ -18,7 +18,7 @@ class FlightModel extends CI_Model{
       }
 
       public function update_data($table,$nim,$data){
-        $this->db->where('nim', $nim);
+        $this->db->where('id_penerbangan', $nim);
         $update = $this->db->update($table,$data);
     
         if ($update){
@@ -28,5 +28,21 @@ class FlightModel extends CI_Model{
         }
       }
 
+      public function get_data_id($table,$id){
+        $this->db->where('id_penerbangan',$id);
+        $hasil = $this->db->get($table);
+        return $hasil->row_array();
+      }
+
+      public function delete_data($table,$id){
+        $this->db->where('id_penerbangan', $id);
+        $delete = $this->db->delete($table);
+    
+        if ($delete){
+          return TRUE;
+        }else{
+          return FALSE;
+        }
+      }
 
 }
