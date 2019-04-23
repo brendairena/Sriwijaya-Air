@@ -55,7 +55,8 @@
                         </p>
                     </li>
                     <li>
-                        <p class="text-4">Sat, May 18</p>
+                        <input type="text" class="form-control" id="departureDate" name="departureDate" required="" data-bv-notempty-message="Required." autocomplete="off">
+                        <!-- <p class="text-4">Sat, May 18</p> -->
                     </li>
                 </ul>
             </div>
