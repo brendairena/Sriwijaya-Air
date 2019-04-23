@@ -301,7 +301,7 @@
                               	<div class="col-md-12" style="padding:20px"> 
                 
                 					<div class="col-md-12">
-                                        <h3>Tambah Penerbangan</h3>
+                                        <h3>Tambah Hotel</h3>
                                         <p>You can register on this page, by joining Sriwijaya Air you can be given the easiest way to book our flight.</p>
                                         <p>You don't have to fill it again your personal data if you logged in. Enjoy your flight!</p>
                                     </div>
