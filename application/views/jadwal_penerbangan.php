@@ -85,7 +85,7 @@
                                 </p>
                             </li>
                         </ul>
-                    </div>
+                </div>
         </div>
         <!-- COLUMN 5 -->
         <div class="col">
@@ -108,34 +108,6 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </div>
-    <!-- BARIS 2 -->
-    <div class="row">
-        <div class="col">
-            <div class="tableSelect">
-                <table>
-                    <tr class="tr1">
-                        <th>Flight No</th>
-                        <th>Date</th>
-                        <th>Route</th>
-                        <th>STD</th>
-                        <th>STA</th>
-                        <th>Duration</th>
-                        <th>Transit</th>
-                    </tr>
-                    <tr class="tr2">
-                        <th>SJ590</th>
-                        <th>18-MAY-19</th>
-                        <th>CGK-UPG</th>
-                        <th>05:00</th>
-                        <th>08:20</th>
-                        <th>02:20</th>
-                        <th>0</th>
-                    </tr>
-                </table>
-            </div>
-        </div>
     </div>
 </div>
 
