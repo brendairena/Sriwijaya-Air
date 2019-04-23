@@ -23,6 +23,7 @@
     <title>Daftar Hotel</title>
 </head>
 <body>
+    <div class="container-fluid">
     <p class="text-1">Select Hotel</p>
     <p class="text-2">Hotel in Bandung, Indonesia</p>
         <p>
