@@ -29,7 +29,10 @@
     <p class="text-2">Hotel in Bandung, Indonesia</p>
 <br>
 
+<?php foreach($data_ke_view as $data):?>
 <!-- HOTEL 1 -->
+<form method="POST" action="<?php echo site_url('c_main_page')?>">
+
 <div class="jumbotron">
     <!-- BARIS 1 -->
     <div class="row">
@@ -41,7 +44,7 @@
                         <img src="<?php echo base_url().'assets/AssetsHotel/luxury.png'?>" alt="" width="100px">
                     </li>
                     <li>
-                        <p class="text-3">The Trans Luxury Hotel</p>
+                        <p class="text-3"><?php echo $data['nama_hotel']?></p>
                     </li>
                 </ul>
             </div>
@@ -64,19 +67,21 @@
                 </ul>
             </div>
         </div>
+        
         <!-- COLOUMN 3 -->
+
         <div class="col">
             <div class="kotak2">
                 <ul class="listKotak">
                     <li>
                         <p class="text-5">
-                        <button class="btn btn-default" type="button" id="opendepartureDate"><span class="fas fa-calendar-week"></span></button>
+                        <button class="btn btn-default" type="button" id="checkout"><span class="fas fa-calendar-week"></span></button>
                             <!-- <i class='fas fa-calendar-alt'></i> -->
-                            cek in
+                            cek out
                         </p>
                     </li>
                     <li>
-                        <input type="text" class="form-control" id="departureDate" name="departureDate" required="" data-bv-notempty-message="Required." autocomplete="off">
+                        <input type="text" class="form-control" id="checkoutdate" name="checkout" required="" data-bv-notempty-message="Required." autocomplete="off">
                         <!-- <p class="text-4">Sat, May 18</p> -->
                     </li>
                 </ul>
@@ -97,7 +102,6 @@
                     </div>
         </div>
         <!-- COLUMN 5 -->
-        <form method="POST" action="">
         <div class="col">
             <div class="kotak2">
                 <ul class="listKotak">
@@ -121,11 +125,11 @@
                 </ul>
             </div>
         </div>
-    </form>
 
     <section class="noborder">
     <table >
-    <tr><td><button  onclick="klik()" name="button" class="btnSelect" >Select</button></td></tr>
+    <tr><td><button name="button" class="btnSelect" >Select</button></td></tr>
+
     </table>
     </section>
 
@@ -158,6 +162,9 @@
         </div>
     </div>
 </div>
+</form>
+
+<?php endforeach;?>
 
 <script>
     function order(){
@@ -177,10 +184,20 @@
             timepicker:false,
             format:'d-m-Y'
         });
+
+        $('#checkoutdate').datetimepicker({
+            timepicker:false,
+            format:'d-m-Y'
+        });
+
+
         $('#opendepartureDate').click(function(){
             $('#departureDate').datetimepicker('show');
         });
 
+        $('#checkout').click(function(){
+            $('#checkoutdate').datetimepicker('show');
+        });
         $(document).ready(function() {
             /*window.setTimeout(function() {
                 $(".alert-danger").slideUp(500, function(){
