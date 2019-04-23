@@ -19,4 +19,5 @@ class hotelmodel extends CI_Model{
         return $hasil->result_array();
       }
 
+      
 }

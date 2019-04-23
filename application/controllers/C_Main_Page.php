@@ -66,7 +66,14 @@ class C_Main_Page extends CI_Controller {
 		$hasil =$this->hotelmodel->get_data($table);
 		$data['data_ke_view']= $hasil;
 		$this->load->view('daftar_hotel_cust',$data);
+		
 	}
+	public function lihat_data_hotel(){
+		$table = 'pemesanan_hotel';
+		$hasil =$this->hotelmodel->get_data($table);
+		$data['data_ke_view']= $hasil;
+		$this->load->view('daftar_hotel_cust',$data);
+	  }
 	// ADMIN
 
 	public function main_page_admin()
