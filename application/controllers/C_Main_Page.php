@@ -48,22 +48,11 @@ class C_Main_Page extends CI_Controller {
 		$this->load->view('indexFlight');
 	}
 
-	public function addFlight()
-	{
-		$this->load->view('tambah_penerbangan');
-	}
-	
 	public function hotelUser()
 	{
 		$this->load->view('header');
 		$this->load->view('daftar_hotel');
 	}
-
-	public function addHotel()
-	{
-		$this->load->view('tambah_hotel');
-	}
-
 	// ADMIN
 
 	public function main_page_admin()
