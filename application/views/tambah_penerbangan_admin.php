@@ -291,7 +291,7 @@
 <link rel="stylesheet" href="https://www.sriwijayaair.co.id/SJ/assets/css/signin.css">
 
 <script src="https://www.sriwijayaair.co.id/SJ/assets/js/jaktutorial.js"></script>
-            		<div class="panel panel-info shadow" style="border-color:#1B3682">
+            	<div class="panel panel-info shadow" style="border-color:#1B3682">
                 	<div class="panel-heading" style="background-color:#1B3682;color:#FFF">
                           <h3 class="panel-title">Join Sriwijaya Air Group</h3>
                      </div>
@@ -359,28 +359,22 @@
                                               </ul>
                                             </form>
                                         <div class="col-md-6" style="padding-left:0px">
-                                                       <input class="btn btn-outline btn-primary btn-sm" type="submit" value="Save" name="submitButton" style="background-color:#1B3682">
+                                            <input class="btn btn-outline btn-primary btn-sm" type="submit" value="Save" name="submitButton" style="background-color:#1B3682">
                                         </div>
                                         <div class="col-md-6" align="right">
-                                                       <a href="<?php echo site_url("c_main_page/jadwal_penerbangan")?>" class="btn btn-danger btn-sm">Back</a>
+                                            <a href="<?php echo site_url("c_main_page/jadwal_penerbangan")?>" class="btn btn-danger btn-sm">Back</a>
                                         </div>
-                                      </div>  
-              						
+                                    </div>  
               					</div>
               				</div>
-                      </div>
-              	  </div>
+                        </div>
+              	</div>
 		
-<script type="text/javascript">			
-</script>
-				</div>
-			</div>
-		</div>
-<div class="container-full" style="background:#EEF1F9">
+<!-- <div class="container-full" style="background:#EEF1F9">
     <div class="container" id="main-footer">
         <br>
             <div class="col-md-12">
-            	<div class="row">
+            	<div class="row">   
                     <div class="col-md-5">
                         <div class="row">
                             <div class="col-md-6">
@@ -457,7 +451,7 @@
             </div>
         <div class="gap"></div>
     </div>
-</div>
+</div> -->
 <div id="goto"></div>
 
 
@@ -551,12 +545,7 @@
 		$('#goto').html(html);
 	
 	}
-	
-	
-	
+
 </script>
-
-
-
 	</body>
 </html>
