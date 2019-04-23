@@ -39,10 +39,9 @@ class C_Main_Page extends CI_Controller {
 		$this->load->view('checkin');
 	}
 
-	public function jadwal_penerbangan_user()
+	public function jadwal_penerbangan()
 	{
-		$this->load->view('header');
-		$this->load->view('jadwal_penerbangan_cust');
+		$this->load->view('jadwal_penerbangan');
 	}
 	public function indexFlight()
 	{
@@ -52,10 +51,8 @@ class C_Main_Page extends CI_Controller {
 	public function hotelUser()
 	{
 		$this->load->view('header');
-		$this->load->view('daftar_hotel_cust');
+		$this->load->view('daftar_hotel');
 	}
-
-
 	// ADMIN
 
 	public function main_page_admin()
@@ -65,7 +62,7 @@ class C_Main_Page extends CI_Controller {
 
 	public function hotelAdmin()
 	{
-		$this->load->view('header');
+		
 		$this->load->view('daftar_hotel_admin');
 	}
 

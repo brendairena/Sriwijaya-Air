@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Kacangrebus
- * Date: 23/03/2019
- * Time: 3:02
- */
 
 class BelajarModel extends CI_Model
 {

@@ -154,12 +154,8 @@
              
              <!-- form class="navbar-form">-->
                  <div class="news">
-                     <marquee>
-                     Re-edited by Rere Gilang Nuri Auladi                     </marquee>
-                                             <!--<marquee direction="right">BERGERAK KE KANAN</marquee>nt-example1
-                         <ul id="nt-example1">
-                             <li>Untuk Pengguna SJ Travel Pass, mohon agar segera memperbarui identitas Anda demi kenyamanan perjalanan Anda. Terima Kasih.</li>						</ul>-->
-                                     </div>
+                     <marquee>MAIN PAGE USER</marquee>
+                </div>
              <!--</form -->
          </div>
          <!--/.nav-collapse -->
