@@ -19,7 +19,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://webcheckin.sriwijayaair.co.id/webcheckin/assets/css/jquery.datetimepicker.css">
     <link rel="stylesheet" href="<?php echo base_url().'assets/styleHotel.css'?>">
+
     <title>Daftar Hotel</title>
 </head>
 <body>
@@ -414,7 +416,107 @@
     }
 </script>
     
-    
-    
+    <script type="text/javascript" language="javascript" src="https://webcheckin.sriwijayaair.co.id/webcheckin/assets/js/jquery.datetimepicker.js"></script>
+    <script type="text/javascript">
+        $('#departureDate').datetimepicker({
+            timepicker:false,
+            format:'d-m-Y'
+        });
+        $('#opendepartureDate').click(function(){
+            $('#departureDate').datetimepicker('show');
+        });
+
+        $(document).ready(function() {
+            /*window.setTimeout(function() {
+                $(".alert-danger").slideUp(500, function(){
+                    $(this).remove();
+                });
+            }, 3000);*/
+            $('#departureDate').change(function() {
+                $('#formCheckin').bootstrapValidator('revalidateField', 'departureDate');
+            });
+
+
+            $('#formCheckin').bootstrapValidator({
+                message : 'This value is not valid',
+                feedbackIcons : {
+                    valid : 'glyphicon glyphicon-ok',
+                    invalid : 'glyphicon glyphicon-remove',
+                    validating : 'glyphicon glyphicon-refresh'
+                },
+                submitButtons: 'button[type="submit"]',
+                fields : {
+                    departureDate : {
+                        validators : {
+                            validators: {
+                                date: {
+                                    format: 'DD-MM-YYYY',
+                                    message: 'The format is dd-mm-yyyy.'
+                                }
+                            }
+                        }
+                    },
+                    bookingCode : {
+                        validators : {
+                            callback : {
+                                callback : function(value, validator, $field) {
+                                    if (value.length != 6) {
+                                        return {
+                                            valid: false,
+                                            message: '6 Digits Alphabets.'
+                                    }
+                                }else{
+                                    return true;
+                                }
+                            }
+                        }
+                    }
+                },
+                agree: {
+                    validators : {
+                        callback : {
+                            callback : function(value, validator, $field) {
+                                alert(value.val());
+                                if (value.val() != 'yes') {
+                                    return {
+                                        valid: false
+                                    }
+                                }else{
+                                    return true;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }).on('status.field.bv', function(e, data) {
+
+            data.bv.disableSubmitButtons(false);
+
+
+        }).on('success.form.bv', function(e) {
+            if($("#agree").val()!='yes'){
+                e.preventDefault();
+                $(".alert-danger").remove();
+                $("#termsModal").modal('show');
+            }
+        });
+        // Update the value of "agree" input when clicking the Agree/Disagree button
+        $('#agreeButton, #disagreeButton').on('click', function() {
+            var whichButton = $(this).attr('id');
+            if(whichButton === 'agreeButton' ){
+                $("#agree").val('yes');
+                $("#formCheckin").submit();
+            }else{
+                $('#formCheckin').bootstrapValidator('revalidateField', 'departureDate');
+            }
+        });
+        $('#termsModal').on('hide.bs.modal', function(e) {
+            $('#formCheckin').bootstrapValidator('revalidateField', 'departureDate');
+            $('#formCheckin').bootstrapValidator('revalidateField', 'bookingCode');
+        })
+
+    });
+</script>    
 </body>
 </html>
