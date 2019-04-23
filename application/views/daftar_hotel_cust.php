@@ -71,11 +71,13 @@
                     <li>
                         <p class="text-5">
                         <button class="btn btn-default" type="button" id="opendepartureDate"><span class="fas fa-calendar-week"></span></button>
-                            cek out
+                            <!-- <i class='fas fa-calendar-alt'></i> -->
+                            cek in
                         </p>
                     </li>
                     <li>
                         <input type="text" class="form-control" id="departureDate" name="departureDate" required="" data-bv-notempty-message="Required." autocomplete="off">
+                        <!-- <p class="text-4">Sat, May 18</p> -->
                     </li>
                 </ul>
             </div>

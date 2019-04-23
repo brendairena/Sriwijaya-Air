@@ -21,7 +21,14 @@ class C_Main_Page extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->model('FlightModel');
-	  }
+		$this->load->model('hotelmodel');
+	}
+
+	// function __construct(){
+	// 	parent::__construct();
+	// 	$this->load->model('hotelmodel');
+	// }
+
 	public function index()
 	{
 		$this->load->view('Main_Page_User');
