@@ -77,10 +77,19 @@ class C_Main_Page extends CI_Controller {
 		$this->load->view('daftar_hotel_admin');
 	}
 
+	public function addHotel()
+	{
+		$this->load->view('tambah_hotel_admin');
+	}
+
+	public function jadwal_penerbangan_admin()
+	{
+		$this->load->view('header');
+		$this->load->view('jadwal_penerbangan_admin');
+	}
 
 	public function addFlight()
 	{
-		//$this->load->view('header');
 		$this->load->view('tambah_penerbangan_admin');
 	}
 }
