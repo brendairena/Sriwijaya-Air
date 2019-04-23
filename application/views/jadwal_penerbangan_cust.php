@@ -424,16 +424,6 @@
     var x = document.getElementById("klik");
     x.style.display = "flex";  
     }
-
-    function klik1() {
-    var x = document.getElementById("klik1");
-    x.style.display = "flex";  
-    }
-
-    function klik2() {
-    var x = document.getElementById("klik2");
-    x.style.display = "flex";  
-    }
     </script>
    
     
