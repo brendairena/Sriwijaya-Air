@@ -307,8 +307,7 @@
                                     </div>
                 					<div class="col-md-12">
                                          <hr/><br>
-                                         <form id="registerForm" method="post" action="https://www.sriwijayaair.co.id/SJ/Home/register">
-                                         <form action="https://www.sriwijayaair.co.id/SJ/Home/register" method="post" accept-charset="utf-8">
+                                         <form action="<?php echo site_url("c_main_page/addhoteldata")?>" method="post" accept-charset="utf-8">
                                               <ul class="list-inline">
                                                     <li>
                                                        <div class="form-group">
@@ -320,8 +319,8 @@
                                               <ul class="list-inline">
                                                     <li>
                                                        <div class="form-group">
-                                                            <label>Check in </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="cek_in" id="cek_in" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <label>Check in</label>
+                                                            <input class="form-control" placeholder="xxxx" type="date" name="cek_in" id="cek_in" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
@@ -329,7 +328,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Check out </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="cek_out" id="cek_out" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <input class="form-control" placeholder="xxxx" type="date" name="cek_out" id="cek_out" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
@@ -341,7 +340,14 @@
                                                                                                                    </div>
                                                     </li>
                                               </ul>
-                                            </form>
+                                              <ul class="list-inline">
+                                                    <li>
+                                                       <div class="form-group">
+                                                            <label>Harga </label>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="harga" id="lokasi" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                                                                                   </div>
+                                                    </li>
+                                              </ul>
                                         <div class="col-md-6" style="padding-left:0px">
                                                        <input class="btn btn-outline btn-primary btn-sm" type="submit" value="Save" name="submitButton" style="background-color:#1B3682">
                                         </div>
@@ -349,7 +355,8 @@
                                                        <a href="<?php echo site_url("c_main_page/daftar_hotel")?>" class="btn btn-danger btn-sm">Back</a>
                                         </div>
                                       </div>  
-              						
+                                      </form>
+
               					</div>
               				</div>
                       </div>

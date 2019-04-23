@@ -37,6 +37,8 @@
 <br>
 
 <!-- HOTEL 1 -->
+
+<?php foreach ($data_ke_view as $data): ?>
 <div class="jumbotron">
     <!-- BARIS 1 -->
     <div class="row">
@@ -48,7 +50,7 @@
                         <img src="<?php echo base_url().'assets/AssetsHotel/luxury.png'?>" alt="" width="100px">
                     </li>
                     <li>
-                        <p class="text-3">The Trans Luxury Hotel</p>
+                        <p class="text-3"><?php echo $data['nama_hotel']?></p>
                     </li>
                 </ul>
             </div>
@@ -108,13 +110,13 @@
                         <p class="text-6">IDR 2.500.000</p>
                     </li>
                     <li>
-                        <p class="text-4">IDR 1.875.500</p>
+                        <p class="text-4">IDR <?php echo $data['harga']?></p>
                     </li>
                     <li>
-                        <i class='fas fa-map-marker-alt' class="text-7">Buah Batu, Bandung</i>
+                        <i class='fas fa-map-marker-alt' class="text-7"><?php echo $data['lokasi']?></i>
                     </li>
                     <li>
-                        <p class="text-5">Premier Room</p>
+                        <p class="text-5"><?php echo $data['jenis_kamar']?></p>
                     </li>
                     <li>
                         <input type="hidden" name="id_penerbangan" value=""/>
@@ -163,6 +165,9 @@
         </div>
     </div>
 </div>
+<?php endforeach; ?>
+
+
 
 
 <script>
