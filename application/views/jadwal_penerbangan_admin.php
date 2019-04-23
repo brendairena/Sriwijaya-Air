@@ -101,7 +101,7 @@
                                 </p>
                             </li>
                         </ul>
-                    </div>
+                </div>
         </div>
         <!-- COLUMN 5 -->
         <form method="POST" action="<?php echo site_url("c_main_page/")?>" >
