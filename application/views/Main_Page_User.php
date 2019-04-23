@@ -384,7 +384,7 @@
             </a>
         </li>
                 <li role="presentation">
-            <a href="<?php echo base_url('index.php/C_Main_Page/hotel');?>">
+            <a href="<?php echo base_url('index.php/C_Main_Page/hotelUser');?>">
                 <span><img class="round" alt="" src="https://www.sriwijayaair.co.id/SJ/assets/images/icon/hotelb.png" style="width:25px;" /></span>
                 <span>HOTEL</span>
                 <div class="arrow"></div>
@@ -524,7 +524,7 @@
                             <div class="form-group">
                             <!-- SEARCH FLIGHT BELOM ADA -->
                                     <label>&nbsp;</label>
-                                        <a href="<?php echo base_url('index.php/c_main_page/jadwal_penerbangan');?>" class="btn btn-warning btn-block" id="redeemMiles" name="redeemMiles" onClick="#"
+                                        <a href="<?php echo base_url('index.php/c_main_page/jadwal_penerbangan_user');?>" class="btn btn-warning btn-block" id="redeemMiles" name="redeemMiles" onClick="#"
                                         ><i class="fa fa-search"></i> Search</a>
                             </div>
                         </div>
