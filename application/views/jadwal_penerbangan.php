@@ -19,6 +19,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="<?php echo base_url().'assets/styleJadwal.css'?>">
     <title>Jadwal Penerbangan</title>
+    <style type="text/css">
+        .noborder table,tr,td {
+            border-style: none;
+        }
+    </style>
 </head>
 <body>
     <p class="text-1">Select Departure</p>
@@ -26,6 +31,17 @@
         <span class="glyphicon glyphicon-arrow-right"></span>
         Makassar - Sultan Hasanuddin</p>
 
+        <p>
+                    18 May 2019 for 1 Adult 0 Child 0 Infant
+                                                                            <small>
+                                                            <a class="popup-text btn btn-info" style="position:relative;left:8px;bottom:8px;" href="<?php echo site_url("c_main_page/addFlight")?>" id="cari_rute" data-effect="mfp-zoom-out" style="float: right;">
+                                                                <b style="font-size:16px;" id="changeSearch">Tambah Penerbangan</b>
+                                                            </a>
+                                                        </small>
+        </p>
+<br>
+<p class="text-2">Flights Departure
+</p>
 <!-- PENERBANGAN 1 -->
 <div class="jumbotron">
     <!-- BARIS 1 -->
@@ -88,6 +104,7 @@
                     </div>
         </div>
         <!-- COLUMN 5 -->
+        <form method="POST" action="<?php echo site_url("c_main_page/")?>" >
         <div class="col">
             <div class="kotak2">
                 <ul class="listKotak">
@@ -104,16 +121,29 @@
                         <p class="text-5">Economy Class</p>
                     </li>
                     <li>
-                        <button type="button" name="button" class="btnSelect">Select</button>
+                        <input type="hidden" name="id_penerbangan" value=""/>
+                        <input type="hidden" name="no_penerbangan" value=""/>
+                        <input type="hidden" name="no_booking" value=""/>
+
                     </li>
                 </ul>
             </div>
         </div>
+    </form>
+
+    <section class="noborder">
+    <table >
+    <tr><td><button  onclick="klik()" name="button" class="btnSelect" >Select</button></td></tr>
+    <tr><td><button name="button" class="btnSelect">Edit</button></td></tr>
+    <tr><td><button  name="button" class="btnSelect">Delete</button></td></tr>
+    </table>
+    </section>
+
     </div>
     <!-- BARIS 2 -->
     <div class="row">
         <div class="col">
-            <div class="tableSelect">
+            <div id="klik" class="tableSelect" style="display: none;">
                 <table>
                     <tr class="tr1">
                         <th>Flight No</th>
@@ -163,7 +193,7 @@
                     <li>
                         <p class="text-4">
                             <img src="<?php echo base_url().'assets/AssetsJadwal/takeoff.png'?>" alt="" style="width:32px;">
-                            21.45
+                            10.00
                         </p>
                     </li>
                     <li>
@@ -179,28 +209,29 @@
                     <li>
                         <p class="text-4">
                             <img src="<?php echo base_url().'assets/AssetsJadwal/landing.png'?>" alt="" style="width:32px;">
-                            01.05
+                            13.20
                         </p>
                     </li>
                     <li>
-                        <p class="text-5">Sun, May 19</p>
+                        <p class="text-5">Sat, May 18</p>
                     </li>
                 </ul>
             </div>
         </div>
         <!-- COLOUMN 4 -->
         <div class="col">
-            <div class="kotak2">
-                <ul class="listKotak">
-                    <li>
-                        <p class="text-4">
-                        02.20
-                        </p>
-                    </li>
-                </ul>
-            </div>
+                <div class="kotak2">
+                        <ul class="listKotak">
+                            <li>
+                                <p class="text-4">
+                                02.20
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
         </div>
         <!-- COLUMN 5 -->
+        <form method="POST" action="<?php echo site_url("c_main_page/")?>" >
         <div class="col">
             <div class="kotak2">
                 <ul class="listKotak">
@@ -217,16 +248,28 @@
                         <p class="text-5">Economy Class</p>
                     </li>
                     <li>
-                        <button type="button" name="button" class="btnSelect">Select</button>
+                        <input type="hidden" name="id_penerbangan" value=""/>
+                        <input type="hidden" name="no_penerbangan" value=""/>
+                        <input type="hidden" name="no_booking" value=""/>
                     </li>
                 </ul>
             </div>
         </div>
+    </form>
+
+    <section class="noborder">
+    <table >
+    <tr><td><button  onclick="klik1()" name="button" class="btnSelect" >Select</button></td></tr>
+    <tr><td><button name="button" class="btnSelect">Edit</button></td></tr>
+    <tr><td><button  name="button" class="btnSelect">Delete</button></td></tr>
+    </table>
+    </section>
+
     </div>
     <!-- BARIS 2 -->
     <div class="row">
         <div class="col">
-            <div class="tableSelect">
+            <div class="tableSelect" id="klik1" style="display: none;">
                 <table>
                     <tr class="tr1">
                         <th>Flight No</th>
@@ -241,8 +284,8 @@
                         <th>SJ582</th>
                         <th>18-MAY-19</th>
                         <th>CGK-UPG</th>
-                        <th>21:45</th>
-                        <th>01:05</th>
+                        <th>10:00</th>
+                        <th>13:20</th>
                         <th>02:20</th>
                         <th>0</th>
                     </tr>
@@ -252,118 +295,158 @@
     </div>
 </div>
 
-<!-- PENERBANGAN 3 -->
+<!-- PENERBANGAN 2 -->
 <div class="jumbotron">
     <!-- BARIS 1 -->
-        <div class="row">
-            <!-- COLOUMN 1 -->
-            <div class="col">
-                <div class="kotak1">
-                    <ul class="listKotak">
-                        <li>
-                            <img src="<?php echo base_url().'assets/AssetsJadwal/sj_flight_result.png'?>" alt="">
-                        </li>
-                        <li>
-                            <p class="text-3">SJ588 Non Stop</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>    
-            <!-- COLOUMN 2 -->
-            <div class="col">
-                <div class="kotak2">
-                    <ul class="listKotak">
-                        <li>
-                            <p class="text-4">
-                                <img src="<?php echo base_url().'assets/AssetsJadwal/takeoff.png'?>" alt="" style="width:32px;">
-                                18.55
-                            </p>
-                        </li>
-                        <li>
-                            <p class="text-5">Sat, May 18</p>
-                        </li>
-                    </ul>
-                </div>
+    <div class="row">
+        <!-- COLOUMN 1 -->
+        <div class="col">
+            <div class="kotak1">
+                <ul class="listKotak">
+                    <li>
+                        <img src="<?php echo base_url().'assets/AssetsJadwal/sj_flight_result.png'?>" alt="">
+                    </li>
+                    <li>
+                        <p class="text-3">SJ588 Non Stop</p>
+                    </li>
+                </ul>
             </div>
-            <!-- COLOUMN 3 -->
-            <div class="col">
-                <div class="kotak2">
-                    <ul class="listKotak">
-                        <li>
-                            <p class="text-4">
-                                <img src="<?php echo base_url().'assets/AssetsJadwal/landing.png'?>" alt="" style="width:32px;">
-                                21.15
-                            </p>
-                        </li>
-                        <li>
-                            <p class="text-5">Sat, May 18</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- COLOUMN 4 -->
-            <div class="col">
-                    <div class="kotak2">
-                            <ul class="listKotak">
-                                <li>
-                                    <p class="text-4">
-                                    02.20
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-            </div>
-            <!-- COLUMN 5 -->
-            <div class="col">
-                <div class="kotak2">
-                    <ul class="listKotak">
-                        <li>
-                            <p class="text-6">IDR 2.211.900</p>
-                        </li>
-                        <li>
-                            <p class="text-4">IDR 1.817.000</p>
-                        </li>
-                        <li>
-                            <p class="text-7">/passenger</p>
-                        </li>
-                        <li>
-                            <p class="text-5">Economy Class</p>
-                        </li>
-                        <li>
-                            <button type="button" name="button" class="btnSelect">Select</button>
-                        </li>
-                    </ul>
-                </div>
+        </div>    
+        <!-- COLOUMN 2 -->
+        <div class="col">
+            <div class="kotak2">
+                <ul class="listKotak">
+                    <li>
+                        <p class="text-4">
+                            <img src="<?php echo base_url().'assets/AssetsJadwal/takeoff.png'?>" alt="" style="width:32px;">
+                            15.30
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-5">Sat, May 18</p>
+                    </li>
+                </ul>
             </div>
         </div>
-        <!-- BARIS 2 -->
-        <div class="row">
-            <div class="col">
-                <div class="tableSelect">
-                    <table>
-                        <tr class="tr1">
-                            <th>Flight No</th>
-                            <th>Date</th>
-                            <th>Route</th>
-                            <th>STD</th>
-                            <th>STA</th>
-                            <th>Duration</th>
-                            <th>Transit</th>
-                        </tr>
-                        <tr class="tr2">
-                            <th>SJ588</th>
-                            <th>18-MAY-19</th>
-                            <th>CGK-UPG</th>
-                            <th>18:55</th>
-                            <th>21:15</th>
-                            <th>02:20</th>
-                            <th>0</th>
-                        </tr>
-                    </table>
-                </div>
+        <!-- COLOUMN 3 -->
+        <div class="col">
+            <div class="kotak2">
+                <ul class="listKotak">
+                    <li>
+                        <p class="text-4">
+                            <img src="<?php echo base_url().'assets/AssetsJadwal/landing.png'?>" alt="" style="width:32px;">
+                            18.50
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-5">Sat, May 18</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- COLOUMN 4 -->
+        <div class="col">
+                <div class="kotak2">
+                        <ul class="listKotak">
+                            <li>
+                                <p class="text-4">
+                                02.20
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+        </div>
+        <!-- COLUMN 5 -->
+        <form method="POST" action="<?php echo site_url("c_main_page/")?>" >
+        <div class="col">
+            <div class="kotak2">
+                <ul class="listKotak">
+                    <li>
+                        <p class="text-6">IDR 2.947.900</p>
+                    </li>
+                    <li>
+                        <p class="text-4">IDR 2.474.000</p>
+                    </li>
+                    <li>
+                        <p class="text-7">/passenger</p>
+                    </li>
+                    <li>
+                        <p class="text-5">Economy Class</p>
+                    </li>
+                    <li>
+                        <input type="hidden" name="id_penerbangan" value=""/>
+                        <input type="hidden" name="no_penerbangan" value=""/>
+                        <input type="hidden" name="no_booking" value=""/>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </form>
+
+    <section class="noborder">
+    <table >
+    <tr><td><button  onclick="klik2()" name="button" class="btnSelect" >Select</button></td></tr>
+    <tr><td><button  name="button" class="btnSelect">Edit</button></td></tr>
+    <tr><td><button  name="button" class="btnSelect">Delete</button></td></tr>
+    </table>
+    </section>
+    
+    </div>
+
+
+
+    <!-- BARIS 2 -->
+    <div class="row">
+        <div class="col">
+            <div id="klik2" class="tableSelect " style="display: none;">
+                <table>
+                    <tr class="tr1">
+                        <th>Flight No</th>
+                        <th>Date</th>
+                        <th>Route</th>
+                        <th>STD</th>
+                        <th>STA</th>
+                        <th>Duration</th>
+                        <th>Transit</th>
+                    </tr>
+                    <tr class="tr2">
+                        <th>SJ588</th>
+                        <th>18-MAY-19</th>
+                        <th>CGK-UPG</th>
+                        <th>15:30</th>
+                        <th>18:50</th>
+                        <th>02:20</th>
+                        <th>0</th>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
+</div>
+<script>
+    function order(){
+     
+
+
+    }
+
+    function klik() {
+    var x = document.getElementById("klik");
+    x.style.display = "flex";  
+    }
+
+    function klik1() {
+    var x = document.getElementById("klik1");
+    x.style.display = "flex";  
+    }
+
+    function klik2() {
+    var x = document.getElementById("klik2");
+    x.style.display = "flex";  
+    }
+    </script>
+   
     
     
     
