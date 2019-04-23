@@ -352,7 +352,7 @@
                                                        <input class="btn btn-outline btn-primary btn-sm" type="submit" value="Save" name="submitButton" style="background-color:#1B3682">
                                         </div>
                                         <div class="col-md-6" align="right">
-                                                       <a href="<?php echo site_url("c_main_page/daftar_hotel")?>" class="btn btn-danger btn-sm">Back</a>
+                                                       <a href="<?php echo site_url("c_main_page/hotelAdmin")?>" class="btn btn-danger btn-sm">Back</a>
                                         </div>
                                       </div>  
                                       </form>

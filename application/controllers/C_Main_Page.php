@@ -86,7 +86,7 @@ class C_Main_Page extends CI_Controller {
 		$table = 'hotel';
 		$hasil =$this->hotelmodel->get_data($table);
 		$data['data_ke_view']= $hasil;
-
+		
 		$this->load->view('daftar_hotel_admin',$data);
 	}
 
@@ -98,8 +98,6 @@ class C_Main_Page extends CI_Controller {
 	public function addhoteldata()
 	{
 		$nama_hotel = $this->input->post('nama_hotel');
-		// $cek_in = $this->input->post('cek_in');
-		// $cek_out = $this->input->post('cek_out');
 		$lokasi = $this->input->post('lokasi');
 		$harga = $this->input->post('harga');
 
@@ -146,7 +144,36 @@ class C_Main_Page extends CI_Controller {
 		$this->load->view('edit_penerbangan_admin',$data);
 
 	}
+	public function edithotel($id)
+	{
+		$table = 'hotel';
+    	$hasil = $this->hotelmodel->get_data_hotel_id($table,$id);
+    	$data['data_ke_view']= $hasil;
+		$this->load->view('edit_hotel_admin',$data);
 
+	}
+
+	public function edit_data_hotel($id){
+		$nama_hotel = $this->input->post('nama_hotel');
+		$lokasi = $this->input->post('lokasi');
+		$harga = $this->input->post('harga');
+
+		$table = "hotel";
+	
+		$data_update = array (
+			'nama_hotel' => $nama_hotel,
+			'harga' => $harga,
+			'lokasi' => $lokasi
+		);
+			$update = $this->modelhotel->update_hotel($table,$id,$data_update);
+			
+		if($update){
+		  $this->session->set_flashdata('alert', 'sukses_update');
+		  redirect(site_url('C_main_page/daftar_hotel_admin'));
+		}else{
+		  echo "<script>alert('Gagal mengupdate Data');</script>";
+		}
+		}
 	
 	public function addDataFlight()
 	{
@@ -180,14 +207,14 @@ class C_Main_Page extends CI_Controller {
     }
 	}
 	public function edit_data($id){
-    $no_penerbangan = $this->input->post('no_penerbangan');
+    	$no_penerbangan = $this->input->post('no_penerbangan');
 		$asal = $this->input->post('asal');
 		$tujuan = $this->input->post('tujuan');
-    $tgl_keberngkatan = $this->input->post('tgl_keberangkatan');
+    	$tgl_keberngkatan = $this->input->post('tgl_keberangkatan');
 		$waktu_keberangkatan = $this->input->post('waktu_keberangkatan');
 		$waktu_tiba = $this->input->post('waktu_tiba');
 		$durasi = $this->input->post('durasi');
-    $table = "penerbangan";
+    	$table = "penerbangan";
 
     $data_update = array (
 			'no_penerbangan' => $no_penerbangan,
@@ -214,4 +241,10 @@ class C_Main_Page extends CI_Controller {
     redirect(site_url('C_main_page/jadwal_penerbangan_admin'));
   }
 
+  	public function deleteDataHotel($id){
+    $table = 'hotel';
+    $this->hotelmodel->delete_data($table,$id);
+    // $this->session->set_flashdata('alert', 'sukses_delete');
+    redirect(site_url('C_main_page/hotelAdmin'));
+  }
 }

@@ -301,7 +301,7 @@
                               	<div class="col-md-12" style="padding:20px"> 
                 
                 					<div class="col-md-12">
-                                        <h3>Tambah Penerbangan</h3>
+                                        <h3>Tambah Hotel</h3>
                                         <p>You can register on this page, by joining Sriwijaya Air you can be given the easiest way to book our flight.</p>
                                         <p>You don't have to fill it again your personal data if you logged in. Enjoy your flight!</p>
                                     </div>
@@ -313,7 +313,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Nama Hotel </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="nama_hotel" id="nama_hotel" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value="Grandia Hotel"/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="nama_hotel" id="nama_hotel" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value="<?php echo $data_ke_view['nama_hotel']?>"/>
                                                                                                                    </div>
                                                     </li>	
                                               </ul>
@@ -321,7 +321,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Check in </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="cek_in" id="cek_in" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value="18 May 2019"/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="cek_in" id="cek_in" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
@@ -329,7 +329,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Check out </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="cek_out" id="cek_out" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value="19 May 2019"/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="cek_out" id="cek_out" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
@@ -337,7 +337,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Lokasi </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="lokasi" id="lokasi" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value="Cihampelas, Bandung"/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="lokasi" id="lokasi" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value="<?php echo $data_ke_view['lokasi']?>"/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
