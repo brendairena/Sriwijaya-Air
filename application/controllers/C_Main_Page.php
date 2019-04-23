@@ -102,11 +102,11 @@ class C_Main_Page extends CI_Controller {
     $data_insert = array (
       'no_penerbangan' => $no_penerbangan,
       'asal' => $asal,
-      'durasi' => $durasi,
-	  'tujuan' => $tujuan,
-	  'STA' => $waktu_keberangkatan,
-	  'STD' => $waktu_tiba,
-	  'tanggal' => $tgl_keberngkatan
+  	  'durasi' => $durasi,
+		  'tujuan' => $tujuan,
+	  	'STA' => $waktu_tiba,
+	  	'STD' => $waktu_keberangkatan,
+	  	'tanggal' => $tgl_keberngkatan
     );
 
     $insert = $this->FlightModel->input_data($table,$data_insert);

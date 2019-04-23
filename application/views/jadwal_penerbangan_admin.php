@@ -55,7 +55,7 @@
                         <img src="<?php echo base_url().'assets/AssetsJadwal/sj_flight_result.png'?>" alt="">
                     </li>
                     <li>
-                        <p class="text-3"><?php echo $data['no_penerbangan']; ?> Non Stop</p>
+                        <p class="text-3"><?php echo $data['no_penerbangan']; ?>      Non Stop</p>
                     </li>
                 </ul>
             </div>
@@ -67,11 +67,11 @@
                     <li>
                         <p class="text-4">
                             <img src="<?php echo base_url().'assets/AssetsJadwal/takeoff.png'?>" alt="" style="width:32px;">
-                            05.00
+                            <p class="text-3"><?php echo $data['STD']; ?></p>
                         </p>
                     </li>
                     <li>
-                        <p class="text-5">Sat, May 18</p>
+                        <p class="text-5"><p class="text-3"><?php echo $data['no_penerbangan']; ?>      Non Stop</p></p>
                     </li>
                 </ul>
             </div>
@@ -83,11 +83,11 @@
                     <li>
                         <p class="text-4">
                             <img src="<?php echo base_url().'assets/AssetsJadwal/landing.png'?>" alt="" style="width:32px;">
-                            08.20
+                            <p class="text-3"><?php echo $data['STA']; ?></p>
                         </p>
                     </li>
                     <li>
-                        <p class="text-5">Sat, May 18</p>
+                        <p class="text-3"><?php echo $data['tanggal']; ?></p>
                     </li>
                 </ul>
             </div>
@@ -98,7 +98,7 @@
                         <ul class="listKotak">
                             <li>
                                 <p class="text-4">
-                                02.20
+                                <p class="text-3"><?php echo $data['durasi']; ?></p>
                                 </p>
                             </li>
                         </ul>
@@ -148,33 +148,6 @@
     </table>
     </section>
 
-    </div>
-    <!-- BARIS 2 -->
-    <div class="row">
-        <div class="col">
-            <div id="klik" class="tableSelect" style="display: none;">
-                <table>
-                    <tr class="tr1">
-                        <th>Flight No</th>
-                        <th>Date</th>
-                        <th>Route</th>
-                        <th>STD</th>
-                        <th>STA</th>
-                        <th>Duration</th>
-                        <th>Transit</th>
-                    </tr>
-                    <tr class="tr2">
-                        <th>SJ590</th>
-                        <th>18-MAY-19</th>
-                        <th>CGK-UPG</th>
-                        <th>05:00</th>
-                        <th>08:20</th>
-                        <th>02:20</th>
-                        <th>0</th>
-                    </tr>
-                </table>
-            </div>
-        </div>
     </div>
 </div>
 
