@@ -71,7 +71,6 @@ class C_Main_Page extends CI_Controller {
 
 	public function addHotel()
 	{
-		$this->load->view('header');
 		$this->load->view('tambah_hotel_admin');
 	}
 
@@ -83,7 +82,6 @@ class C_Main_Page extends CI_Controller {
 
 	public function addFlight()
 	{
-		//$this->load->view('header');
 		$this->load->view('tambah_penerbangan_admin');
 	}
 }
