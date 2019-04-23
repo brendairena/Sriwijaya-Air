@@ -4,7 +4,6 @@
      <meta name="google-site-verification" content="_TeZ5Stt0VkpcVBigqBgSasaeQp9QCOZELU_K03m_bs" />
      <title>KELOMPOK BRENDA</title>
      
-         
      <link rel="shortcut icon" href="https://www.sriwijayaair.co.id/SJ/assets/images/sj_icon.png" type="image/x-icon" />
      
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -385,7 +384,7 @@
             </a>
         </li>
                 <li role="presentation">
-            <a href="http://hotel.sriwijayaair.co.id/" target="_blank">
+            <a href="<?php echo base_url('index.php/C_Main_Page/hotel');?>">
                 <span><img class="round" alt="" src="https://www.sriwijayaair.co.id/SJ/assets/images/icon/hotelb.png" style="width:25px;" /></span>
                 <span>HOTEL</span>
                 <div class="arrow"></div>
