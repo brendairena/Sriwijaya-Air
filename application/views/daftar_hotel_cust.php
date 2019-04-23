@@ -50,12 +50,14 @@
                 <ul class="listKotak">
                     <li>
                         <p class="text-5">
-                            <i class='fas fa-calendar-alt'></i>
+                        <button class="btn btn-default" type="button" id="opendepartureDate"><span class="fas fa-calendar-week"></span></button>
+                            <!-- <i class='fas fa-calendar-alt'></i> -->
                             check in
                         </p>
                     </li>
                     <li>
-                        <p class="text-4">Sat, May 18</p>
+                        <input type="text" class="form-control" id="departureDate" name="departureDate" required="" data-bv-notempty-message="Required." autocomplete="off">
+                        <!-- <p class="text-4">Sat, May 18</p> -->
                     </li>
                 </ul>
             </div>
