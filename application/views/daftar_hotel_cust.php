@@ -54,7 +54,7 @@
                         <p class="text-5">
                         <button class="btn btn-default" type="button" id="opendepartureDate"><span class="fas fa-calendar-week"></span></button>
                             <!-- <i class='fas fa-calendar-alt'></i> -->
-                            check in
+                            cek in
                         </p>
                     </li>
                     <li>
@@ -70,12 +70,12 @@
                 <ul class="listKotak">
                     <li>
                         <p class="text-5">
-                            <i class='far fa-calendar-alt'></i>
-                            check out
+                        <button class="btn btn-default" type="button" id="opendepartureDate"><span class="fas fa-calendar-week"></span></button>
+                            cek out
                         </p>
                     </li>
                     <li>
-                        <p class="text-4">Sun, May 19</p>
+                        <input type="text" class="form-control" id="departureDate" name="departureDate" required="" data-bv-notempty-message="Required." autocomplete="off">
                     </li>
                 </ul>
             </div>
@@ -148,253 +148,6 @@
                         <th><i class='fas fa-star' style='font-size:15px;color:yellow'></i>
                             <i class='fas fa-star' style='font-size:15px;color:yellow'></i>
                             <i class='fas fa-star' style='font-size:15px;color:yellow'></i>
-                            <i class='fas fa-star' style='font-size:15px;color:yellow'></i>
-                            <i class='fas fa-star' style='font-size:15px;color:yellow'></i></th>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- HOTEL 2 -->
-<div class="jumbotron">
-    <!-- BARIS 1 -->
-    <div class="row">
-        <!-- COLOUMN 1 -->
-        <div class="col">
-            <div class="kotak1">
-                <ul class="listKotak">
-                    <li>
-                        <img src="<?php echo base_url().'assets/AssetsHotel/horison.png'?>" alt="" width="100px">
-                    </li>
-                    <li>
-                        <p class="text-3">Horison Ultima Hotel</p>
-                    </li>
-                </ul>
-            </div>
-        </div>    
-        <!-- COLOUMN 2 -->
-        <div class="col">
-            <div class="kotak2">
-                <ul class="listKotak">
-                    <li>
-                        <p class="text-5">
-                            <i class='fas fa-calendar-alt'></i>
-                            check in
-                        </p>
-                    </li>
-                    <li>
-                        <p class="text-4">Sat, May 18</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- COLOUMN 3 -->
-        <div class="col">
-            <div class="kotak2">
-                <ul class="listKotak">
-                    <li>
-                        <p class="text-5">
-                            <i class='far fa-calendar-alt'></i>
-                            check out
-                        </p>
-                    </li>
-                    <li>
-                        <p class="text-4">Sun, May 19</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- COLOUMN 4 -->
-        <div class="col">
-                <div class="kotak2">
-                        <ul class="listKotak">
-                            <li>
-                                <i class='fas fa-star' style='font-size:15px;color:yellow'></i>
-                                <i class='fas fa-star' style='font-size:15px;color:yellow'></i>
-                                <i class='fas fa-star' style='font-size:15px;color:yellow'></i>
-                                <i class='fas fa-star' style='font-size:15px;color:yellow'></i>
-                            </li>
-                        </ul>
-                    </div>
-        </div>
-        <!-- COLUMN 5 -->
-        <form method="POST" action="">
-        <div class="col">
-            <div class="kotak2">
-                <ul class="listKotak">
-                    <li>
-                        <p class="text-6">IDR 1.200.000</p>
-                    </li>
-                    <li>
-                        <p class="text-4">IDR 575.000</p>
-                    </li>
-                    <li>
-                        <i class='fas fa-map-marker-alt' class="text-7">Lengkong, Bandung</i>
-                    </li>
-                    <li>
-                        <p class="text-5">Deluxe Room</p>
-                    </li>
-                    <li>
-                        <input type="hidden" name="id_penerbangan" value=""/>
-                        <input type="hidden" name="no_penerbangan" value=""/>
-                        <input type="hidden" name="no_booking" value=""/>
-
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </form>
-
-    <section class="noborder">
-    <table >
-    <tr><td><button  onclick="klik1()" name="button" class="btnSelect" >Select</button></td></tr>
-    </table>
-    </section>
-
-    </div>
-    <!-- BARIS 2 -->
-    <div class="row">
-        <div class="col">
-            <div class="tableSelect" id="klik1" style="display: none;">
-                <table>
-                    <tr class="tr1">
-                        <th>Nama Hotel</th>
-                        <th>Check in</th>
-                        <th>Check out</th>
-                        <th>Lokasi</th>
-                        <th>Rating</th>
-                    </tr>
-                    <tr class="tr2">
-                        <th>Horison Ultima Hotel</th>
-                        <th>18-MAY-19</th>
-                        <th>19-MAY-19</th>
-                        <th>Lengkong, Bandung</th>
-                        <th><i class='fas fa-star' style='font-size:15px;color:yellow'></i>
-                            <i class='fas fa-star' style='font-size:15px;color:yellow'></i>
-                            <i class='fas fa-star' style='font-size:15px;color:yellow'></i>
-                            <i class='fas fa-star' style='font-size:15px;color:yellow'></i></th>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- HOTEL 3 -->
-<div class="jumbotron">
-    <!-- BARIS 1 -->
-    <div class="row">
-        <!-- COLOUMN 1 -->
-        <div class="col">
-            <div class="kotak1">
-                <ul class="listKotak">
-                    <li>
-                        <img src="<?php echo base_url().'assets/AssetsHotel/grandia.png'?>" alt="" width="100px">
-                    </li>
-                    <li>
-                        <p class="text-3">Grandia Hotel</p>
-                    </li>
-                </ul>
-            </div>
-        </div>    
-        <!-- COLOUMN 2 -->
-        <div class="col">
-            <div class="kotak2">
-                <ul class="listKotak">
-                    <li>
-                        <p class="text-5">
-                            <i class='fas fa-calendar-alt'></i>
-                            check in
-                        </p>
-                    </li>
-                    <li>
-                        <p class="text-4">Sat, May 18</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- COLOUMN 3 -->
-        <div class="col">
-            <div class="kotak2">
-                <ul class="listKotak">
-                    <li>
-                        <p class="text-5">
-                            <i class='far fa-calendar-alt'></i>
-                            check out
-                        </p>
-                    </li>
-                    <li>
-                        <p class="text-4">Sun, May 19</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- COLOUMN 4 -->
-        <div class="col">
-                <div class="kotak2">
-                        <ul class="listKotak">
-                            <li>
-                                <i class='fas fa-star' style='font-size:15px;color:yellow'></i>
-                                <i class='fas fa-star' style='font-size:15px;color:yellow'></i>
-                                <i class='fas fa-star' style='font-size:15px;color:yellow'></i>            
-                            </li>
-                        </ul>
-                    </div>
-        </div>
-        <!-- COLUMN 5 -->
-        <form method="POST" action="">
-        <div class="col">
-            <div class="kotak2">
-                <ul class="listKotak">
-                    <li>
-                        <p class="text-6">IDR 500.000</p>
-                    </li>
-                    <li>
-                        <p class="text-4">IDR 325.500</p>
-                    </li>
-                    <li>
-                        <i class='fas fa-map-marker-alt' class="text-7">Cihampelas, Bandung</i>
-                    </li>
-                    <li>
-                        <p class="text-5">Premier Room</p>
-                    </li>
-                    <li>
-                        <input type="hidden" name="id_penerbangan" value=""/>
-                        <input type="hidden" name="no_penerbangan" value=""/>
-                        <input type="hidden" name="no_booking" value=""/>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </form>
-
-    <section class="noborder">
-    <table >
-    <tr><td><button  onclick="klik2()" name="button" class="btnSelect" >Select</button></td></tr>
-    </table>
-    </section>
-
-    </div>
-    <!-- BARIS 2 -->
-    <div class="row">
-        <div class="col">
-            <div class="tableSelect" id="klik2" style="display: none;">
-                <table>
-                    <tr class="tr1">
-                        <th>Nama Hotel</th>
-                        <th>Check in</th>
-                        <th>Check out</th>
-                        <th>Lokasi</th>
-                        <th>Rating</th>
-                    </tr>
-                    <tr class="tr2">
-                        <th>Grandia Hotel</th>
-                        <th>18-MAY-19</th>
-                        <th>19-MAY-19</th>
-                        <th>Cihampelas, Bandung</th>
-                        <th><i class='fas fa-star' style='font-size:15px;color:yellow'></i>
                             <i class='fas fa-star' style='font-size:15px;color:yellow'></i>
                             <i class='fas fa-star' style='font-size:15px;color:yellow'></i></th>
                     </tr>
