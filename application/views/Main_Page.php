@@ -4,7 +4,6 @@
      <meta name="google-site-verification" content="_TeZ5Stt0VkpcVBigqBgSasaeQp9QCOZELU_K03m_bs" />
      <title>KELOMPOK BRENDA</title>
      
-         
      <link rel="shortcut icon" href="https://www.sriwijayaair.co.id/SJ/assets/images/sj_icon.png" type="image/x-icon" />
      
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
