@@ -17,32 +17,16 @@ class FlightModel extends CI_Model{
         return $hasil->result_array();
       }
 
-
-    // public function getFlight(){
-    //     $this->db->select(*);
-    //     //$this->db->from();
-    //     //$que = $this->db->get();
-    //     return $que->result();
-    // }
-
-    //     public function addFlight(){
-
-    // }
-
-    //     public function hapusFlight($){
-
-    // }
-
-    //     public function editFlight(){
-        
-    // }
-    //     // HOTELS MODELS
-    //     public function getHotel(){
-
-    // }
-    //     public function addFlight(){
-
-    // }
+      public function update_data($table,$nim,$data){
+        $this->db->where('nim', $nim);
+        $update = $this->db->update($table,$data);
+    
+        if ($update){
+          return TRUE;
+        }else{
+          return FALSE;
+        }
+      }
 
 
 }

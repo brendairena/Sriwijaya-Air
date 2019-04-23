@@ -89,15 +89,16 @@ class C_Main_Page extends CI_Controller {
 		$this->load->view('tambah_penerbangan_admin');
 
 	}
-	public function addDataFlight(){
+	public function addDataFlight()
+	{
 		$no_penerbangan = $this->input->post('no_penerbangan');
 		$asal = $this->input->post('asal');
 		$tujuan = $this->input->post('tujuan');
-    	$tgl_keberngkatan = $this->input->post('tgl_keberangkatan');
+    $tgl_keberngkatan = $this->input->post('tgl_keberangkatan');
 		$waktu_keberangkatan = $this->input->post('waktu_keberangkatan');
 		$waktu_tiba = $this->input->post('waktu_tiba');
 		$durasi = $this->input->post('durasi');
-    	$table = "penerbangan";
+    $table = "penerbangan";
 
     $data_insert = array (
       'no_penerbangan' => $no_penerbangan,
@@ -106,7 +107,8 @@ class C_Main_Page extends CI_Controller {
 		  'tujuan' => $tujuan,
 	  	'STA' => $waktu_tiba,
 	  	'STD' => $waktu_keberangkatan,
-	  	'tanggal' => $tgl_keberngkatan
+			'tanggal' => $tgl_keberngkatan
+			// 'harga'=> $harga
     );
 
     $insert = $this->FlightModel->input_data($table,$data_insert);
@@ -118,4 +120,28 @@ class C_Main_Page extends CI_Controller {
       echo "<script>alert('Gagal Menambahkan Data');</script>";
     }
 	}
+	public function edit_data($nim){
+    $no_penerbangan = $this->input->post('no_penerbangan');
+		$asal = $this->input->post('asal');
+		$tujuan = $this->input->post('tujuan');
+    $tgl_keberngkatan = $this->input->post('tgl_keberangkatan');
+		$waktu_keberangkatan = $this->input->post('waktu_keberangkatan');
+		$waktu_tiba = $this->input->post('waktu_tiba');
+		$durasi = $this->input->post('durasi');
+    $table = "penerbangan";
+
+    $data_update = array (
+      'nama' => $nama,
+      'kelas' => $kelas,
+      'jurusan' => $jurusan
+    );
+    $update = $this->BelajarModel->update_mahasiswa($table,$nim,$data_update);
+    if($update){
+      $this->session->set_flashdata('alert', 'sukses_update');
+      redirect(site_url('BelajarController/lihat_data_view'));
+    }else{
+      echo "<script>alert('Gagal mengupdate Data');</script>";
+    }
+  }
+
 }

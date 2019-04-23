@@ -155,124 +155,7 @@
 </div>
 <form id="upldDocSJTP" name="upldDocSJTP" action="Profile/updateprofile/"></form>
 
-<script type="text/javascript">	
-
-	function signIn() {
-		$("#login-nav").bootstrapValidator().on('success.form.bv', function(e) {
-	 	    $.ajax({
-            url: 'https://www.sriwijayaair.co.id/SJ/Home/login',
-	            type: "POST",
-	            data: {
-	                USERNAME_CONTACT_DETAIL: $('#exampleInputEmail2').val(),
-	                PASSWORD_CONTACT_DETAIL: $('#exampleInputPassword2').val()
-	            },
-                success: function (data) {
-                    //console.log(data);
-		            loadingHide();
-                    
-                    //finda profile
-                    if (data.trim() == "The username or password you entered is incorrect.")
-                    {
-	                    swal('', data.trim());
-                    }else{
-                        
-                        var DATA = JSON.parse(data);
-                        if(DATA.USER_TYPE == "USER_SJTP")
-                        {
-                            if(DATA.MOTHER_NAME == "" || DATA.PHOTO_FILE_NAME == "" || DATA.IDCARD_FILE_NAME == "" || DATA.ANS_QTN == "")
-                            {
-                                swal({
-                                    title: "<font color='#800000'>Important !</font>",
-                                    text: "As a member of <b>SJ Travel Pass</b>, You will be redirect to page that you must be <b> completed the supporting document for continue you booking </b> :)",
-                                    type: "info",
-                                    showCancelButton: false,
-                                    closeOnConfirm: false,
-                                    showLoaderOnConfirm: true,
-                                    html:true
-                                },
-                                function (isConfirm) {
-                                    if (isConfirm) {
-                                        setTimeout(function () {
-                                            if(DATA.SESSION_LOGIN != "")
-                                            {
-                                                $('#upldDocSJTP').attr('action', "https://www.sriwijayaair.co.id/SJ/Profile/updateprofile/"+DATA.SESSION_LOGIN).submit();
-                                                return false;
-					}
-                                        }, 2000);
-                                    } /*else {
-                                        setTimeout(function () {
-                                            swal("Cancelled", "It's okay, you still can book in Sriwijaya Air :)");
-                                        }, 300);
-                                    }*/
-
-                                });
-                            }else{
-                                swal({
-                                    title: "Login Success!",
-                                    timer: 3000,
-                                    type: "success",
-                                    showConfirmButton: false,
-                                });
-                                window.setTimeout(function () {
-                                    location.reload();
-                                }, 2000);
-                            }
-                        }else{
-                            swal({
-                                title: "Login Success!",
-                                timer: 3000,
-                                type: "success",
-                                showConfirmButton: false,
-                            });
-                            window.setTimeout(function () {
-                                location.reload();
-                            }, 2000);
-
-                        }
-                    }
-                    
-                    
-	            },
-                error: function (jqXHR, textStatus, errorThrown) {
-	                loadingHide();
-	                /*swal('', 'fail to login');*/
-	            },
-                beforeSend: function (d) {
-// 	            	var string = $('#exampleInputEmail2').val();
-// 					var re = new RegExp("^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$");
-// 					if (re.test(string)) {
-						loadingShow();
-// 					} else {
-// 						$('#exampleInputEmail2').parents('div').addClass('has-error');
-// 					    swal('',"Invalid email address");
-// 					    return false;
-// 					}
-	            }
-	        })
-    	}).submit();
-	}
-	
-	$("#exampleInputPassword2").keypress(function (e) {
-		if (e.which == 13) {
-            signIn();
-			return false;
-		}
-		
-	});
-	
-	function loadingShow() {
-	    $('#search-dialog').hide();
-	    $('#my-modal').show();
-	    var bd = $('<div class="modal-backdrop fade in" id="backdrop"></div>');
-	    bd.appendTo(document.body);
-	}
-	
-	function loadingHide() {
-	    $('#backdrop').remove();
-	    $('#my-modal').hide();
-	    $('#search-dialog').hide();
-	}	
-</script>		
+<	
 		<div class="gap"></div>
 		<div class="container container-fluid" style="margin-top: 50px;">
 			<div class="row">
@@ -312,7 +195,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Nomor Penerbangan </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="no_penerbangan" id="No_Penerbangan" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="no_penerbangan" id="No_Penerbangan" value=""/>
                                                                                                                    </div>
                                                     </li>	
                                               </ul>
@@ -320,7 +203,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Asal </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="asal" id="Rute_Penerbangan" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="asal" id="Rute_Penerbangan" value=""/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
@@ -328,7 +211,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Tujuan </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="tujuan" id="Rute_Penerbangan" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="tujuan" id="Rute_Penerbangan" value=""/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
@@ -336,7 +219,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Tanggal Keberangkatan </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="tgl_keberangkatan" id="Tgl_Keberangkatan" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="tgl_keberangkatan" id="Tgl_Keberangkatan" value=""/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
@@ -344,26 +227,34 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Waktu Keberangkatan </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="waktu_keberangkatan" id="Waktu_Keberangkatan" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
-                                                                                                                   </div>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="waktu_keberangkatan" value=""/>
+                                                        </div>
                                                     </li>
                                               </ul>
                                               <ul class="list-inline">
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Waktu Tiba </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="waktu_tiba" id="Waktu_tiba" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
-                                                                                                                   </div>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="waktu_tiba" id="Waktu_tiba" value=""/>
+                                                        </div>
                                                     </li>
                                               </ul>
                                               <ul class="list-inline">
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Durasi </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="durasi" id="Durasi" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
-                                                                                                                   </div>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="durasi" id="Durasi" value=""/>
+                                                        </div>
                                                     </li>	
                                               </ul>
+                                              <!-- <ul class="list-inline">
+                                                    <li>
+                                                       <div class="form-group">
+                                                            <label>Harga </label>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="harga" id="Durasi" value=""/>
+                                                        </div>
+                                                    </li>	
+                                              </ul> -->
                                         <div class="col-md-6" style="padding-left:0px">
                                             <input class="btn btn-outline btn-primary btn-sm" type="submit" value="Save" name="submitButton" style="background-color:#1B3682">
                                         </div>
