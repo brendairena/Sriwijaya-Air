@@ -155,124 +155,7 @@
 </div>
 <form id="upldDocSJTP" name="upldDocSJTP" action="Profile/updateprofile/"></form>
 
-<script type="text/javascript">	
-
-	function signIn() {
-		$("#login-nav").bootstrapValidator().on('success.form.bv', function(e) {
-	 	    $.ajax({
-            url: 'https://www.sriwijayaair.co.id/SJ/Home/login',
-	            type: "POST",
-	            data: {
-	                USERNAME_CONTACT_DETAIL: $('#exampleInputEmail2').val(),
-	                PASSWORD_CONTACT_DETAIL: $('#exampleInputPassword2').val()
-	            },
-                success: function (data) {
-                    //console.log(data);
-		            loadingHide();
-                    
-                    //finda profile
-                    if (data.trim() == "The username or password you entered is incorrect.")
-                    {
-	                    swal('', data.trim());
-                    }else{
-                        
-                        var DATA = JSON.parse(data);
-                        if(DATA.USER_TYPE == "USER_SJTP")
-                        {
-                            if(DATA.MOTHER_NAME == "" || DATA.PHOTO_FILE_NAME == "" || DATA.IDCARD_FILE_NAME == "" || DATA.ANS_QTN == "")
-                            {
-                                swal({
-                                    title: "<font color='#800000'>Important !</font>",
-                                    text: "As a member of <b>SJ Travel Pass</b>, You will be redirect to page that you must be <b> completed the supporting document for continue you booking </b> :)",
-                                    type: "info",
-                                    showCancelButton: false,
-                                    closeOnConfirm: false,
-                                    showLoaderOnConfirm: true,
-                                    html:true
-                                },
-                                function (isConfirm) {
-                                    if (isConfirm) {
-                                        setTimeout(function () {
-                                            if(DATA.SESSION_LOGIN != "")
-                                            {
-                                                $('#upldDocSJTP').attr('action', "https://www.sriwijayaair.co.id/SJ/Profile/updateprofile/"+DATA.SESSION_LOGIN).submit();
-                                                return false;
-					}
-                                        }, 2000);
-                                    } /*else {
-                                        setTimeout(function () {
-                                            swal("Cancelled", "It's okay, you still can book in Sriwijaya Air :)");
-                                        }, 300);
-                                    }*/
-
-                                });
-                            }else{
-                                swal({
-                                    title: "Login Success!",
-                                    timer: 3000,
-                                    type: "success",
-                                    showConfirmButton: false,
-                                });
-                                window.setTimeout(function () {
-                                    location.reload();
-                                }, 2000);
-                            }
-                        }else{
-                            swal({
-                                title: "Login Success!",
-                                timer: 3000,
-                                type: "success",
-                                showConfirmButton: false,
-                            });
-                            window.setTimeout(function () {
-                                location.reload();
-                            }, 2000);
-
-                        }
-                    }
-                    
-                    
-	            },
-                error: function (jqXHR, textStatus, errorThrown) {
-	                loadingHide();
-	                /*swal('', 'fail to login');*/
-	            },
-                beforeSend: function (d) {
-// 	            	var string = $('#exampleInputEmail2').val();
-// 					var re = new RegExp("^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$");
-// 					if (re.test(string)) {
-						loadingShow();
-// 					} else {
-// 						$('#exampleInputEmail2').parents('div').addClass('has-error');
-// 					    swal('',"Invalid email address");
-// 					    return false;
-// 					}
-	            }
-	        })
-    	}).submit();
-	}
-	
-	$("#exampleInputPassword2").keypress(function (e) {
-		if (e.which == 13) {
-            signIn();
-			return false;
-		}
-		
-	});
-	
-	function loadingShow() {
-	    $('#search-dialog').hide();
-	    $('#my-modal').show();
-	    var bd = $('<div class="modal-backdrop fade in" id="backdrop"></div>');
-	    bd.appendTo(document.body);
-	}
-	
-	function loadingHide() {
-	    $('#backdrop').remove();
-	    $('#my-modal').hide();
-	    $('#search-dialog').hide();
-	}	
-</script>		
+<	
 		<div class="gap"></div>
 		<div class="container container-fluid" style="margin-top: 50px;">
 			<div class="row">
@@ -307,21 +190,28 @@
                                     </div>
                 					<div class="col-md-12">
                                          <hr/><br>
-                                         <form id="registerForm" method="post" action="https://www.sriwijayaair.co.id/SJ/Home/register">
-                                         <form action="https://www.sriwijayaair.co.id/SJ/Home/register" method="post" accept-charset="utf-8">
+                                         <form action="<?php echo site_url('C_main_page/addDataFlight')?> " method="post" accept-charset="utf-8">
                                               <ul class="list-inline">
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Nomor Penerbangan </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="No_Penerbangan" id="No_Penerbangan" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="no_penerbangan" id="No_Penerbangan" value=""/>
                                                                                                                    </div>
                                                     </li>	
                                               </ul>
                                               <ul class="list-inline">
                                                     <li>
                                                        <div class="form-group">
-                                                            <label>Rute Penerbangan </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="Rute_Penerbangan" id="Rute_Penerbangan" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <label>Asal </label>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="asal" id="Rute_Penerbangan" value=""/>
+                                                                                                                   </div>
+                                                    </li>
+                                              </ul>
+                                              <ul class="list-inline">
+                                                    <li>
+                                                       <div class="form-group">
+                                                            <label>Tujuan </label>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="tujuan" id="Rute_Penerbangan" value=""/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
@@ -329,7 +219,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Tanggal Keberangkatan </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="Tgl_Keberangkatan" id="Tgl_Keberangkatan" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="tgl_keberangkatan" id="Tgl_Keberangkatan" value=""/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
@@ -337,40 +227,49 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Waktu Keberangkatan </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="Waktu_Keberangkatan" id="Waktu_Keberangkatan" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
-                                                                                                                   </div>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="waktu_keberangkatan" value=""/>
+                                                        </div>
                                                     </li>
                                               </ul>
                                               <ul class="list-inline">
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Waktu Tiba </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="Waktu_tiba" id="Waktu_tiba" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
-                                                                                                                   </div>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="waktu_tiba" id="Waktu_tiba" value=""/>
+                                                        </div>
                                                     </li>
                                               </ul>
                                               <ul class="list-inline">
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Durasi </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="Durasi" id="Durasi" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
-                                                                                                                   </div>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="durasi" id="Durasi" value=""/>
+                                                        </div>
                                                     </li>	
                                               </ul>
-                                            </form>
+                                              <!-- <ul class="list-inline">
+                                                    <li>
+                                                       <div class="form-group">
+                                                            <label>Harga </label>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="harga" id="Durasi" value=""/>
+                                                        </div>
+                                                    </li>	
+                                              </ul> -->
                                         <div class="col-md-6" style="padding-left:0px">
                                             <input class="btn btn-outline btn-primary btn-sm" type="submit" value="Save" name="submitButton" style="background-color:#1B3682">
                                         </div>
                                         <div class="col-md-6" align="right">
                                             <a href="<?php echo site_url("c_main_page/jadwal_penerbangan")?>" class="btn btn-danger btn-sm">Back</a>
                                         </div>
+                                        </form>
+
                                     </div>  
               					</div>
               				</div>
                         </div>
               	</div>
 		
-<!-- <div class="container-full" style="background:#EEF1F9">
+<div class="container-full" style="background:#EEF1F9">
     <div class="container" id="main-footer">
         <br>
             <div class="col-md-12">
@@ -381,8 +280,8 @@
                                 <a href="https://www.sriwijayaair.co.id/SJ/PromoMenu/specialPricePromo">Promotion</a><br />
                                 <a href="https://www.sriwijayaair.co.id/SJ/Services/Cargo">Services</a><br />
                                 <a href="https://www.sriwijayaair.co.id/SJ/TravelInfo/Destination">Travel Info</a><br/>
-                                <!--<a onClick="getHeader('Events');" style="cursor:pointer">News</a><br/>
-                                <!-- <a onClick="getHeader('Career');" style="cursor:pointer">Career</a><br/>-->
+                                <a onClick="getHeader('Events');" style="cursor:pointer">News</a><br/>
+                                <a onClick="getHeader('Career');" style="cursor:pointer">Career</a><br/>
                                 <a href="https://www.sriwijayaair.co.id/SJ/News/NewsHeader/Events">News</a><br/>
                                 <a href="https://sriwijayaair.co.id/career/Resume">Career</a><br/>
                                 <a href="https://www.sriwijayaair.co.id/SJ/TravelInfo/Guide">Help</a><br/>
@@ -409,7 +308,7 @@
                                             <label><small>Enter your E-mail Address</small></label>
                                             <i class="input-icon fa fa-envelope"></i>
                                             <input type="email" name="email_s" id="email_s" class="form-control" data-bv-notempty="true" data-bv-notempty-message="Email address is required">
-                                            <!--<p class="mt5"><small>*We Never Send Spam</small></p>-->
+                                            <!--<p class="mt5"><small>*We Never Send Spam</small></p> -->
                                         </div>
                                         <div class="form-group">
                                             <input type="button" onclick="subscribe();" name="btnSubscribe" id="btnSubscribe" class="btn btn-info" value="Subscribe" />
