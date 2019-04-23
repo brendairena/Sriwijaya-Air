@@ -20,19 +20,11 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link rel="stylesheet" href="<?php echo base_url().'assets/styleHotel.css'?>">
-    <title>Jadwal Penerbangan</title>
+    <title>Daftar Hotel</title>
 </head>
 <body>
     <p class="text-1">Select Hotel</p>
     <p class="text-2">Hotel in Bandung, Indonesia</p>
-        <p>
-                                                                                                                                                              
-                                                                            <small>
-                                                            <a class="popup-text btn btn-info" style="position:relative;left:8px;bottom:8px;" href="<?php echo site_url("c_main_page/addHotel")?>" id="cari_rute" data-effect="mfp-zoom-out" style="float: right;">
-                                                                <b style="font-size:16px;" id="changeSearch">Tambah Hotel</b>
-                                                            </a>
-                                                        </small>
-        </p>
 <br>
 
 <!-- HOTEL 1 -->
@@ -128,8 +120,6 @@
     <section class="noborder">
     <table >
     <tr><td><button  onclick="klik()" name="button" class="btnSelect" >Select</button></td></tr>
-    <tr><td><button name="button" class="btnSelect">Edit</button></td></tr>
-    <tr><td><button  name="button" class="btnSelect">Delete</button></td></tr>
     </table>
     </section>
 
@@ -256,8 +246,6 @@
     <section class="noborder">
     <table >
     <tr><td><button  onclick="klik1()" name="button" class="btnSelect" >Select</button></td></tr>
-    <tr><td><button name="button" class="btnSelect">Edit</button></td></tr>
-    <tr><td><button  name="button" class="btnSelect">Delete</button></td></tr>
     </table>
     </section>
 
@@ -381,8 +369,6 @@
     <section class="noborder">
     <table >
     <tr><td><button  onclick="klik2()" name="button" class="btnSelect" >Select</button></td></tr>
-    <tr><td><button name="button" class="btnSelect">Edit</button></td></tr>
-    <tr><td><button  name="button" class="btnSelect">Delete</button></td></tr>
     </table>
     </section>
 
@@ -424,18 +410,7 @@
     var x = document.getElementById("klik");
     x.style.display = "flex";  
     }
-
-    function klik1() {
-    var x = document.getElementById("klik1");
-    x.style.display = "flex";  
-    }
-
-    function klik2() {
-    var x = document.getElementById("klik2");
-    x.style.display = "flex";  
-    }
-    </script>
-   
+</script>
     
     
     
