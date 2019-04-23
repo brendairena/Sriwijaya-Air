@@ -136,8 +136,8 @@
     <section class="noborder">
     <table >
     <tr><td><button  onclick="klik()" name="button" class="btnSelect" >Select</button></td></tr>
-    <tr><td><button onClick="<?php echo site_url("c_main_page/jadwal_penerbangan")?>" name="button" class="btnSelect">Edit</button></td></tr>
-    <tr><td><button  name="button" class="btnSelect">Delete</button></td></tr>
+    <tr><td><button  onClick='window.location.replace("<?php echo site_url("c_main_page/editflight/").$data['id_penerbangan']?>")' name="button" class="btnSelect">Edit</button></td></tr>
+    <tr><td><button  onClick='window.location.replace("<?php echo site_url("c_main_page/deleteData/").$data['id_penerbangan']?>")'name="button" class="btnSelect">Delete</button></td></tr>
     </table>
     </section>
 

@@ -137,6 +137,17 @@ class C_Main_Page extends CI_Controller {
 		$this->load->view('tambah_penerbangan_admin');
 
 	}
+
+	public function editflight($id)
+	{
+		$table = 'penerbangan';
+    $hasil =$this->FlightModel->get_data_id($table,$id);
+    $data['data_ke_view']= $hasil;
+		$this->load->view('edit_penerbangan_admin',$data);
+
+	}
+
+	
 	public function addDataFlight()
 	{
 		$no_penerbangan = $this->input->post('no_penerbangan');
@@ -168,7 +179,7 @@ class C_Main_Page extends CI_Controller {
       echo "<script>alert('Gagal Menambahkan Data');</script>";
     }
 	}
-	public function edit_data($nim){
+	public function edit_data($id){
     $no_penerbangan = $this->input->post('no_penerbangan');
 		$asal = $this->input->post('asal');
 		$tujuan = $this->input->post('tujuan');
@@ -179,17 +190,28 @@ class C_Main_Page extends CI_Controller {
     $table = "penerbangan";
 
     $data_update = array (
-      'nama' => $nama,
-      'kelas' => $kelas,
-      'jurusan' => $jurusan
+			'no_penerbangan' => $no_penerbangan,
+      'asal' => $asal,
+  	  'durasi' => $durasi,
+		  'tujuan' => $tujuan,
+	  	'STA' => $waktu_tiba,
+	  	'STD' => $waktu_keberangkatan,
+			'tanggal' => $tgl_keberngkatan
     );
-    $update = $this->BelajarModel->update_mahasiswa($table,$nim,$data_update);
+		$update = $this->FlihgtModel->update_penerbangan($table,$id,$data_update);
+		
     if($update){
       $this->session->set_flashdata('alert', 'sukses_update');
-      redirect(site_url('BelajarController/lihat_data_view'));
+      redirect(site_url('C_main_page/jadwal_penerbangan_admin'));
     }else{
       echo "<script>alert('Gagal mengupdate Data');</script>";
     }
+	}
+	public function deleteData($id){
+    $table = 'penerbangan';
+    $this->FlightModel->delete_data($table,$id);
+    // $this->session->set_flashdata('alert', 'sukses_delete');
+    redirect(site_url('C_main_page/jadwal_penerbangan_admin'));
   }
 
 }
