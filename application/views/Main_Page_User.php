@@ -154,7 +154,7 @@
              
              <!-- form class="navbar-form">-->
                  <div class="news">
-                     <marquee>MAIN PAGE USER                    </marquee>
+                     <marquee>MAIN PAGE USER</marquee>
                 </div>
              <!--</form -->
          </div>
