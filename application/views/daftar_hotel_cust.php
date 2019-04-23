@@ -50,7 +50,8 @@
                 <ul class="listKotak">
                     <li>
                         <p class="text-5">
-                            <i class='fas fa-calendar-alt'></i>
+                        <button class="btn btn-default" type="button" id="opendepartureDate"><span class="fas fa-calendar-week"></span></button>
+                            <!-- <i class='fas fa-calendar-alt'></i> -->
                             check in
                         </p>
                     </li>
