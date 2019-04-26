@@ -107,9 +107,6 @@
             <div class="kotak2">
                 <ul class="listKotak">
                     <li>
-                        <p class="text-6">IDR 2.500.000</p>
-                    </li>
-                    <li>
                         <p class="text-4">IDR <?php echo $data['harga']?></p>
                     </li>
                     <li>
@@ -131,8 +128,8 @@
     <section class="noborder">
     <table >
     <tr><td><button  onclick="klik()" name="button" class="btnSelect" >Select</button></td></tr>
-    <tr><td><button name="button" class="btnSelect">Edit</button></td></tr>
-    <tr><td><button  name="button" class="btnSelect">Delete</button></td></tr>
+    <tr><td><button onClick='window.location.replace("<?php echo site_url("c_main_page/edithotel/").$data['id_hotel']?>")'name="button" class="btnSelect">Edit</button></td></tr>
+    <tr><td><button onClick='window.location.replace("<?php echo site_url("c_main_page/deleteDataHotel/").$data['id_hotel']?>")' name="button" class="btnSelect">Delete</button></td></tr>
     </table>
     </section>
 
