@@ -83,6 +83,7 @@ class C_Main_Page extends CI_Controller {
 
 	public function hotelAdmin()
 	{	
+		$this->load->view('header');
 		$table = 'hotel';
 		$hasil =$this->hotelmodel->get_data($table);
 		$data['data_ke_view']= $hasil;
@@ -92,6 +93,7 @@ class C_Main_Page extends CI_Controller {
 
 	public function addHotel()
 	{
+		
 		$this->load->view('tambah_hotel_admin');
 	}
 
@@ -243,7 +245,7 @@ class C_Main_Page extends CI_Controller {
 
   	public function deleteDataHotel($id){
     $table = 'hotel';
-    $this->hotelmodel->delete_data($table,$id);
+    $this->hotelmodel->delete_data_hotel($table,$id);
     // $this->session->set_flashdata('alert', 'sukses_delete');
     redirect(site_url('C_main_page/hotelAdmin'));
   }

@@ -36,7 +36,7 @@ class hotelmodel extends CI_Model{
       }
 
       
-      public function delete_data($table,$id){
+      public function delete_data_hotel($table,$id){
         $this->db->where('id_hotel', $id);
         $delete = $this->db->delete($table);
     
