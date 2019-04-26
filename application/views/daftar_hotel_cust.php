@@ -26,7 +26,6 @@
 </head>
 <body>
     <p class="text-1">Select Hotel</p>
-    <p class="text-2">Hotel in Bandung, Indonesia</p>
 <br>
 
 <?php foreach($data_ke_view as $data):?>
