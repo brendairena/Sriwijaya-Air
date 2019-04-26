@@ -87,7 +87,6 @@ class C_Main_Page extends CI_Controller {
 		$table = 'hotel';
 		$hasil =$this->hotelmodel->get_data($table);
 		$data['data_ke_view']= $hasil;
-		
 		$this->load->view('daftar_hotel_admin',$data);
 	}
 
@@ -99,7 +98,7 @@ class C_Main_Page extends CI_Controller {
 
 	public function addhoteldata()
 	{
-		$nama_hotel = $this->input->post('nama_hotel');
+		$nama_hotel = $this->input->post('nama_hotel');	
 		$lokasi = $this->input->post('lokasi');
 		$harga = $this->input->post('harga');
 
