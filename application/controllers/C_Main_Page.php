@@ -147,8 +147,8 @@ class C_Main_Page extends CI_Controller {
 	public function edithotel($id)
 	{
 		$table = 'hotel';
-    	$hasil = $this->hotelmodel->get_data_hotel_id($table,$id);
-    	$data['data_ke_view']= $hasil;
+    $hasil = $this->hotelmodel->get_data_hotel_id($table,$id);
+    $data['data_ke_view']= $hasil;
 		$this->load->view('edit_hotel_admin',$data);
 
 	}
@@ -207,14 +207,14 @@ class C_Main_Page extends CI_Controller {
     }
 	}
 	public function edit_data($id){
-    	$no_penerbangan = $this->input->post('no_penerbangan');
+    $no_penerbangan = $this->input->post('no_penerbangan');
 		$asal = $this->input->post('asal');
 		$tujuan = $this->input->post('tujuan');
-    	$tgl_keberngkatan = $this->input->post('tgl_keberangkatan');
+    $tgl_keberngkatan = $this->input->post('tgl_keberangkatan');
 		$waktu_keberangkatan = $this->input->post('waktu_keberangkatan');
 		$waktu_tiba = $this->input->post('waktu_tiba');
 		$durasi = $this->input->post('durasi');
-    	$table = "penerbangan";
+    $table = "penerbangan";
 
     $data_update = array (
 			'no_penerbangan' => $no_penerbangan,
