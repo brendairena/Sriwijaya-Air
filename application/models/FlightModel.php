@@ -10,7 +10,7 @@ class FlightModel extends CI_Model{
         }else{
           return FALSE;
         }
-      }
+    }
 
       public function get_data($table){
         $hasil = $this->db->get($table);
