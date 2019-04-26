@@ -293,7 +293,7 @@
 <script src="https://www.sriwijayaair.co.id/SJ/assets/js/jaktutorial.js"></script>
             		<div class="panel panel-info shadow" style="border-color:#1B3682">
                 	<div class="panel-heading" style="background-color:#1B3682;color:#FFF">
-                          <h3 class="panel-title">Join Sriwijaya Air Group</h3>
+                          <h3 class="panel-title">Hotels</h3>
                      </div>
                      
                       <div class="panel-body">
@@ -302,8 +302,7 @@
                 
                 					<div class="col-md-12">
                                         <h3>Tambah Hotel</h3>
-                                        <p>You can register on this page, by joining Sriwijaya Air you can be given the easiest way to book our flight.</p>
-                                        <p>You don't have to fill it again your personal data if you logged in. Enjoy your flight!</p>
+                                        <p>You can add the hotel's information on this page, and give the newest information to the customer!</p>
                                     </div>
                 					<div class="col-md-12">
                                          <hr/><br>
@@ -312,31 +311,15 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Nama Hotel </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="nama_hotel" id="nama_hotel" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="nama_hotel" id="nama_hotel" value=""/>
                                                                                                                    </div>
                                                     </li>	
                                               </ul>
                                               <ul class="list-inline">
                                                     <li>
                                                        <div class="form-group">
-                                                            <label>Check in</label>
-                                                            <input class="form-control" placeholder="xxxx" type="date" name="cek_in" id="cek_in" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
-                                                                                                                   </div>
-                                                    </li>
-                                              </ul>
-                                              <ul class="list-inline">
-                                                    <li>
-                                                       <div class="form-group">
-                                                            <label>Check out </label>
-                                                            <input class="form-control" placeholder="xxxx" type="date" name="cek_out" id="cek_out" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
-                                                                                                                   </div>
-                                                    </li>
-                                              </ul>
-                                              <ul class="list-inline">
-                                                    <li>
-                                                       <div class="form-group">
                                                             <label>Lokasi </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="lokasi" id="lokasi" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="lokasi" id="lokasi" value=""/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
@@ -344,7 +327,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Harga </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="harga" id="lokasi" onKeyUP="this.value = this.value.toUpperCase();" data-bv-notempty="true" data-bv-notempty-message="The last name is required" maxlength="50" onkeypress="return onlyAlphabets(event);" value=""/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="harga" id="harga" value=""/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
@@ -465,89 +448,6 @@
 	        </div>-->
 	</div>
 </footer>
-
-<script type="text/javascript">
-    function subscribe() {
-    	$("#newsltr").bootstrapValidator().on('success.form.bv', function(e) {		
-    		e.preventDefault();
-        	e.stopImmediatePropagation();	
-	    	$.ajax({
-	        	url: 'https://www.sriwijayaair.co.id/SJ/Newsletter',
-	            type: "POST",
-	            data: {
-	            	EMAIL: $('#email_s').val()
-				},
-				success: function(data) {
-	                loadingHideSubs();
-					if (typeof data !== 'undefined') {
-						$('#email_s').parents('div').removeClass('has-error');
-						$('#email_s').val('');
-	                   	swal('',data);
-					} else {
-	                   	swal('','fail to subscribe');
-					}
-				},
-				error: function(jqXHR, textStatus, errorThrown) {
-	                loadingHideSubs();
-					swal('','fail to subscribe');
-				},
-				beforeSend: function(d) {
-// 					var string = $('#email_s').val();
-// 					var re = new RegExp("^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$");
-// 					if (re.test(string)) {
-						loadingShowSubs();
-// 					} else {
-// 						$('#email_s').parents('div').addClass('has-error');
-// 					    swal('',"Invalid email address");
-// 					    return false;
-// 					}
-				}
-	 		});
-    	}).submit();
-	}
-    
-
-    function loadingShowSubs() {
-        $('#search-dialog').hide();
-        $('#my-modal').show();
-        var bd = $('<div class="modal-backdrop fade in" id="backdrop"></div>');
-        bd.appendTo(document.body);
-    }
-
-    function loadingHideSubs() {
-        $('#backdrop').remove();
-        $('#my-modal').hide();
-        $('#search-dialog').hide();
-    }
-	
-	function getHeader(V1){
-		gotoheader.call(this, V1);
-	}
-	
-	var gotoheader = function (rowid) {
-		keys = ['id'];
-		values = [rowid];
-		openWindowWithPost('https://www.sriwijayaair.co.id/SJ/News/NewsHeader','',keys,values)
-	};
-	
-	function openWindowWithPost(url,name,keys,values)
-	{
-		var html = "";
-		html += "<html><head></head><body><form id='formid' method='post' action='" + url + "'>";
-		if (keys && values && (keys.length == values.length))
-		for (var i=0; i < keys.length; i++)
-		html += "<input type='hidden' name='id' value='" + values[i] + "'/>";
-		html += "<input type='hidden' name='action' value='NewsHeader'/>";
-		html += "</form><script type='text/javascript'>document.getElementById(\"formid\").submit()</" + "script></body></html>";
-		$('#goto').html(html);
-	
-	}
-	
-	
-	
-</script>
-
-
 
 	</body>
 </html>
