@@ -259,7 +259,7 @@
                                             <input class="btn btn-outline btn-primary btn-sm" type="submit" value="Save" name="submitButton" style="background-color:#1B3682">
                                         </div>
                                         <div class="col-md-6" align="right">
-                                            <a href="<?php echo site_url("c_main_page/jadwal_penerbangan")?>" class="btn btn-danger btn-sm">Back</a>
+                                            <a href="<?php echo site_url("c_main_page/jadwal_penerbangan_admin")?>" class="btn btn-danger btn-sm">Back</a>
                                         </div>
                                         </form>
 
@@ -367,84 +367,5 @@
 	        </div>-->
 	</div>
 </footer>
-
-<script type="text/javascript">
-    function subscribe() {
-    	$("#newsltr").bootstrapValidator().on('success.form.bv', function(e) {		
-    		e.preventDefault();
-        	e.stopImmediatePropagation();	
-	    	$.ajax({
-	        	url: 'https://www.sriwijayaair.co.id/SJ/Newsletter',
-	            type: "POST",
-	            data: {
-	            	EMAIL: $('#email_s').val()
-				},
-				success: function(data) {
-	                loadingHideSubs();
-					if (typeof data !== 'undefined') {
-						$('#email_s').parents('div').removeClass('has-error');
-						$('#email_s').val('');
-	                   	swal('',data);
-					} else {
-	                   	swal('','fail to subscribe');
-					}
-				},
-				error: function(jqXHR, textStatus, errorThrown) {
-	                loadingHideSubs();
-					swal('','fail to subscribe');
-				},
-				beforeSend: function(d) {
-// 					var string = $('#email_s').val();
-// 					var re = new RegExp("^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$");
-// 					if (re.test(string)) {
-						loadingShowSubs();
-// 					} else {
-// 						$('#email_s').parents('div').addClass('has-error');
-// 					    swal('',"Invalid email address");
-// 					    return false;
-// 					}
-				}
-	 		});
-    	}).submit();
-	}
-    
-
-    function loadingShowSubs() {
-        $('#search-dialog').hide();
-        $('#my-modal').show();
-        var bd = $('<div class="modal-backdrop fade in" id="backdrop"></div>');
-        bd.appendTo(document.body);
-    }
-
-    function loadingHideSubs() {
-        $('#backdrop').remove();
-        $('#my-modal').hide();
-        $('#search-dialog').hide();
-    }
-	
-	function getHeader(V1){
-		gotoheader.call(this, V1);
-	}
-	
-	var gotoheader = function (rowid) {
-		keys = ['id'];
-		values = [rowid];
-		openWindowWithPost('https://www.sriwijayaair.co.id/SJ/News/NewsHeader','',keys,values)
-	};
-	
-	function openWindowWithPost(url,name,keys,values)
-	{
-		var html = "";
-		html += "<html><head></head><body><form id='formid' method='post' action='" + url + "'>";
-		if (keys && values && (keys.length == values.length))
-		for (var i=0; i < keys.length; i++)
-		html += "<input type='hidden' name='id' value='" + values[i] + "'/>";
-		html += "<input type='hidden' name='action' value='NewsHeader'/>";
-		html += "</form><script type='text/javascript'>document.getElementById(\"formid\").submit()</" + "script></body></html>";
-		$('#goto').html(html);
-	
-	}
-
-</script>
 	</body>
 </html>

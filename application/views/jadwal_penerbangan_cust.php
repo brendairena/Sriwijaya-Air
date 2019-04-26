@@ -104,9 +104,6 @@
             <div class="kotak2">
                 <ul class="listKotak">
                     <li>
-                        <p class="text-6">IDR 2.211.900</p>
-                    </li>
-                    <li>
                         <p class="text-4">IDR 1.817.000</p>
                     </li>
                     <li>

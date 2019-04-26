@@ -25,14 +25,12 @@
 <body>
     <div class="container-fluid">
     <p class="text-1">Select Hotel</p>
-    <p class="text-2">Hotel in Bandung, Indonesia</p>
         <p>
-                                                                                                                                                              
-                                                                            <small>
-                                                            <a class="popup-text btn btn-info" style="position:relative;left:8px;bottom:8px;" href="<?php echo site_url("c_main_page/addHotel")?>" id="cari_rute" data-effect="mfp-zoom-out" style="float: right;">
-                                                                <b style="font-size:16px;" id="changeSearch">Tambah Hotel</b>
-                                                            </a>
-                                                        </small>
+            <small>
+            <a class="popup-text btn btn-info" style="position:relative;left:8px;bottom:8px;" href="<?php echo site_url("c_main_page/addHotel")?>" id="cari_rute" data-effect="mfp-zoom-out" style="float: right;">
+            <b style="font-size:16px;" id="changeSearch">Tambah Hotel</b>
+            </a>
+            </small>
         </p>
 <br>
 
@@ -107,9 +105,6 @@
             <div class="kotak2">
                 <ul class="listKotak">
                     <li>
-                        <p class="text-6">IDR 2.500.000</p>
-                    </li>
-                    <li>
                         <p class="text-4">IDR <?php echo $data['harga']?></p>
                     </li>
                     <li>
@@ -118,11 +113,11 @@
                     <li>
                         <p class="text-5"><?php echo $data['jenis_kamar']?></p>
                     </li>
-                    <li>
+                    <!-- <li>
                         <input type="hidden" name="id_penerbangan" value=""/>
                         <input type="hidden" name="no_penerbangan" value=""/>
                         <input type="hidden" name="no_booking" value=""/>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -131,8 +126,8 @@
     <section class="noborder">
     <table >
     <tr><td><button  onclick="klik()" name="button" class="btnSelect" >Select</button></td></tr>
-    <tr><td><button name="button" class="btnSelect">Edit</button></td></tr>
-    <tr><td><button  name="button" class="btnSelect">Delete</button></td></tr>
+    <tr><td><button onClick='window.location.replace("<?php echo site_url("c_main_page/edithotel/").$data['id_hotel']?>")'name="button" class="btnSelect">Edit</button></td></tr>
+    <tr><td><button onClick='window.location.replace("<?php echo site_url("c_main_page/deleteDataHotel/").$data['id_hotel']?>")' name="button" class="btnSelect">Delete</button></td></tr>
     </table>
     </section>
 
@@ -171,11 +166,6 @@
 
 
 <script>
-    function order(){
-     
-
-
-    }
     function klik() {
     var x = document.getElementById("klik");
     x.style.display = "flex";  
@@ -190,10 +180,6 @@
     var x = document.getElementById("klik2");
     x.style.display = "flex";  
     }
-    </script>
-   
-    
-    
-    
+</script>   
 </body>
 </html>

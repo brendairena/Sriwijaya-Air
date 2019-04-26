@@ -55,13 +55,13 @@
                 <ul class="listKotak">
                     <li>
                         <p class="text-5">
-                        <button class="btn btn-default" type="button" id="opendepartureDate"><span class="fas fa-calendar-week"></span></button>
+                        <button class="btn btn-default" type="button" id="cekin"><span class="fas fa-calendar-week"></span></button>
                             <!-- <i class='fas fa-calendar-alt'></i> -->
                             cek in
                         </p>
                     </li>
                     <li>
-                        <input type="text" class="form-control" id="departureDate" name="departureDate" required="" data-bv-notempty-message="Required." autocomplete="off">
+                        <input type="text" class="form-control" id="cekindate" name="departureDate" required="" data-bv-notempty-message="Required." autocomplete="off">
                         <!-- <p class="text-4">Sat, May 18</p> -->
                     </li>
                 </ul>
@@ -106,9 +106,6 @@
             <div class="kotak2">
                 <ul class="listKotak">
                     <li>
-                        <p class="text-6">IDR 2.500.000</p>
-                    </li>
-                    <li>
                         <p class="text-4">IDR 1.875.500</p>
                     </li>
                     <li>
@@ -128,7 +125,7 @@
 
     <section class="noborder">
     <table >
-    <tr><td><button name="button" class="btnSelect" >Select</button></td></tr>
+    <tr><td><button name="button" href="#" class="btnSelect" >Select</button></td></tr>
 
     </table>
     </section>
@@ -180,7 +177,7 @@
     
     <script type="text/javascript" language="javascript" src="https://webcheckin.sriwijayaair.co.id/webcheckin/assets/js/jquery.datetimepicker.js"></script>
     <script type="text/javascript">
-        $('#departureDate').datetimepicker({
+        $('#cekindate').datetimepicker({
             timepicker:false,
             format:'d-m-Y'
         });
@@ -191,104 +188,13 @@
         });
 
 
-        $('#opendepartureDate').click(function(){
-            $('#departureDate').datetimepicker('show');
+        $('#cekin').click(function(){
+            $('#cekindate').datetimepicker('show');
         });
 
         $('#checkout').click(function(){
             $('#checkoutdate').datetimepicker('show');
         });
-        $(document).ready(function() {
-            /*window.setTimeout(function() {
-                $(".alert-danger").slideUp(500, function(){
-                    $(this).remove();
-                });
-            }, 3000);*/
-            $('#departureDate').change(function() {
-                $('#formCheckin').bootstrapValidator('revalidateField', 'departureDate');
-            });
-
-
-            $('#formCheckin').bootstrapValidator({
-                message : 'This value is not valid',
-                feedbackIcons : {
-                    valid : 'glyphicon glyphicon-ok',
-                    invalid : 'glyphicon glyphicon-remove',
-                    validating : 'glyphicon glyphicon-refresh'
-                },
-                submitButtons: 'button[type="submit"]',
-                fields : {
-                    departureDate : {
-                        validators : {
-                            validators: {
-                                date: {
-                                    format: 'DD-MM-YYYY',
-                                    message: 'The format is dd-mm-yyyy.'
-                                }
-                            }
-                        }
-                    },
-                    bookingCode : {
-                        validators : {
-                            callback : {
-                                callback : function(value, validator, $field) {
-                                    if (value.length != 6) {
-                                        return {
-                                            valid: false,
-                                            message: '6 Digits Alphabets.'
-                                    }
-                                }else{
-                                    return true;
-                                }
-                            }
-                        }
-                    }
-                },
-                agree: {
-                    validators : {
-                        callback : {
-                            callback : function(value, validator, $field) {
-                                alert(value.val());
-                                if (value.val() != 'yes') {
-                                    return {
-                                        valid: false
-                                    }
-                                }else{
-                                    return true;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }).on('status.field.bv', function(e, data) {
-
-            data.bv.disableSubmitButtons(false);
-
-
-        }).on('success.form.bv', function(e) {
-            if($("#agree").val()!='yes'){
-                e.preventDefault();
-                $(".alert-danger").remove();
-                $("#termsModal").modal('show');
-            }
-        });
-        // Update the value of "agree" input when clicking the Agree/Disagree button
-        $('#agreeButton, #disagreeButton').on('click', function() {
-            var whichButton = $(this).attr('id');
-            if(whichButton === 'agreeButton' ){
-                $("#agree").val('yes');
-                $("#formCheckin").submit();
-            }else{
-                $('#formCheckin').bootstrapValidator('revalidateField', 'departureDate');
-            }
-        });
-        $('#termsModal').on('hide.bs.modal', function(e) {
-            $('#formCheckin').bootstrapValidator('revalidateField', 'departureDate');
-            $('#formCheckin').bootstrapValidator('revalidateField', 'bookingCode');
-        })
-
-    });
 </script>    
 </body>
 </html>
