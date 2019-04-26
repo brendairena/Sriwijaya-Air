@@ -443,9 +443,6 @@
 	            &copy; 2019 Sriwijaya Air. All Rights Reserved.
 	        </div>
         </div>
-	        <!--<div class="col-lg-6 col-lg-offset-3 text-center">
-	            5.02MB 0.0961
-	        </div>-->
 	</div>
 </footer>
 
