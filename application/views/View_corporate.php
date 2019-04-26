@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <!-- saved from url=(0037)https://sriwijayaair.co.id/corporate/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Sriwijaya Air</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
 
         <!-- Google Fonts -->
-        <link href="<?php echo base_url('assets/AssetsCoorporate/css');?>"
-        rel="stylesheet">
+        <link href="<?php echo base_url('assets/AssetsCoorporate/css');?>"rel="stylesheet">
 
         <!-- Bootstrap CSS File -->
         <link href="<?php echo base_url('assets/AssetsCoorporate/bootstrap.min.css');?>" rel="stylesheet">
@@ -23,14 +23,12 @@
     </head>
 
     <body><button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>
-        <!--==========================
-        Header
-        ============================-->
+        <!--========================== Header ============================-->
         <header id="header">
             <div class="container">
  
                 <div id="logo" class="pull-left">
-                    <a href="https://sriwijayaair.co.id/corporate/#hero"> <img src="<?php echo base_url('assets/AssetsCoorporate/LOGOSJHORIZONTALWHITE1.png');?>" alt="" title=""></a>
+                    <a href="<?php echo site_url('c_main_page/main_page_admin'); ?>"> <img src="<?php echo base_url('assets/AssetsCoorporate/LOGOSJHORIZONTALWHITE1.png');?>" alt="" title=""></a>
                     <!-- Uncomment below if you prefer to use a text logo -->
                     <!--<h1><a href="#hero">Regna</a></h1>-->
                 </div> 

@@ -72,6 +72,7 @@
                     </li>
                     <li>
                         <p class="text-5"><p class="text-3"><?php echo $data['no_penerbangan']; ?>      Non Stop</p></p>
+                        <p class="text-3">Asal :<?php echo $data['asal']; ?>
                     </li>
                 </ul>
             </div>
@@ -88,6 +89,7 @@
                     </li>
                     <li>
                         <p class="text-3"><?php echo $data['tanggal']; ?></p>
+                        <p class="text-3"> Tujan : <?php echo $data['tujuan']; ?></p>
                     </li>
                 </ul>
             </div>
@@ -98,7 +100,8 @@
                         <ul class="listKotak">
                             <li>
                                 <p class="text-4">
-                                <p class="text-3"><?php echo $data['durasi']; ?></p>
+                                <p class="text-3"><?php echo $data['durasi']; ?>
+                                </p>
                                 </p>
                             </li>
                         </ul>
@@ -109,9 +112,6 @@
         <div class="col">
             <div class="kotak2">
                 <ul class="listKotak">
-                    <li>
-                        <p class="text-6">IDR 2.211.900</p>
-                    </li>
                     <li>
                         <p class="text-4">IDR 1.817.000</p>
                     </li>
@@ -125,14 +125,11 @@
                         <input type="hidden" name="id_penerbangan" value=""/>
                         <input type="hidden" name="no_penerbangan" value=""/>
                         <input type="hidden" name="no_booking" value=""/>
-
                     </li>
                 </ul>
             </div>
         </div>
-    
     </form>
-
     <section class="noborder">
     <table >
     <tr><td><button  onclick="klik()" name="button" class="btnSelect" >Select</button></td></tr>
@@ -143,10 +140,7 @@
 
     </div>
 </div>
-
     <?php endforeach;?>
-
-
 <script>
     function order(){
      
