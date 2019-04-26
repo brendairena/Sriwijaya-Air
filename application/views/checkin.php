@@ -1,59 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<head>
 
+<html lang="en">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
+<head>
     <title>Web-Checkin</title>
 
-    <link type="image/x-icon" href="https://webcheckin.sriwijayaair.co.id/webcheckin/assets/images/fluteweb_favicon_0.png" rel="shortcut icon">
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    
     <link href="https://webcheckin.sriwijayaair.co.id/webcheckin/assets/css/bootstrap.min.css" rel="stylesheet">
+    
     <!-- Custom CSS -->
     <link href="https://webcheckin.sriwijayaair.co.id/webcheckin/assets/css/sb-admin.css" rel="stylesheet">
-    <!-- Morris Charts CSS -->
-    <link href="https://webcheckin.sriwijayaair.co.id/webcheckin/assets/css/plugins/morris.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="https://webcheckin.sriwijayaair.co.id/webcheckin/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://webcheckin.sriwijayaair.co.id/webcheckin/assets/css/bootstrapValidator.min.css">
-    <link rel="stylesheet" href="https://webcheckin.sriwijayaair.co.id/webcheckin/assets/css/jquery.datetimepicker.css">
+    
 
 <style type="text/css">
     body {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    .navbar {
-        margin-bottom: 20px;
-    }
-    .tab-pane {
-        height:400px;
-        overflow:auto;
-    }
-    #termsModal .modal-dialog{
-        width: 90%; /* desired relative width */
-        margin-left:auto;
-        margin-right:auto;
-        overflow:hidden;
-    }
-    .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
-        background-color: transparent;
-    }
-    .nav  > li > a:focus, .nav  > li  > a:hover {
-        background-color: transparent;
-    }
-    .navbar-default {
-        background-color:transparent;
-        border-color:transparent;
-    }
 </style>
-
-
 </head>
 
 <body>
@@ -160,106 +125,7 @@
             </div>
         </div>
     </div>
-
-        <script type="text/javascript" language="javascript" src="https://webcheckin.sriwijayaair.co.id/webcheckin/assets/js/jquery.datetimepicker.js"></script>
-    <script type="text/javascript">
-        $('#departureDate').datetimepicker({
-            timepicker:false,
-            format:'d-m-Y'
-        });
-        $('#opendepartureDate').click(function(){
-            $('#departureDate').datetimepicker('show');
-        });
-
-        $(document).ready(function() {
-            /*window.setTimeout(function() {
-                $(".alert-danger").slideUp(500, function(){
-                    $(this).remove();
-                });
-            }, 3000);*/
-            $('#departureDate').change(function() {
-                $('#formCheckin').bootstrapValidator('revalidateField', 'departureDate');
-            });
-
-
-            $('#formCheckin').bootstrapValidator({
-                message : 'This value is not valid',
-                feedbackIcons : {
-                    valid : 'glyphicon glyphicon-ok',
-                    invalid : 'glyphicon glyphicon-remove',
-                    validating : 'glyphicon glyphicon-refresh'
-                },
-                submitButtons: 'button[type="submit"]',
-                fields : {
-                    departureDate : {
-                        validators : {
-                            validators: {
-                                date: {
-                                    format: 'DD-MM-YYYY',
-                                    message: 'The format is dd-mm-yyyy.'
-                                }
-                            }
-                        }
-                    },
-                    bookingCode : {
-                        validators : {
-                            callback : {
-                                callback : function(value, validator, $field) {
-                                    if (value.length != 6) {
-                                        return {
-                                            valid: false,
-                                            message: '6 Digits Alphabets.'
-                                    }
-                                }else{
-                                    return true;
-                                }
-                            }
-                        }
-                    }
-                },
-                agree: {
-                    validators : {
-                        callback : {
-                            callback : function(value, validator, $field) {
-                                alert(value.val());
-                                if (value.val() != 'yes') {
-                                    return {
-                                        valid: false
-                                    }
-                                }else{
-                                    return true;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }).on('status.field.bv', function(e, data) {
-
-            data.bv.disableSubmitButtons(false);
-
-
-        }).on('success.form.bv', function(e) {
-            if($("#agree").val()!='yes'){
-                e.preventDefault();
-                $(".alert-danger").remove();
-                $("#termsModal").modal('show');
-            }
-        });
-        // Update the value of "agree" input when clicking the Agree/Disagree button
-        $('#agreeButton, #disagreeButton').on('click', function() {
-            var whichButton = $(this).attr('id');
-            if(whichButton === 'agreeButton' ){
-                $("#agree").val('yes');
-                $("#formCheckin").submit();
-            }else{
-                $('#formCheckin').bootstrapValidator('revalidateField', 'departureDate');
-            }
-        });
-        $('#termsModal').on('hide.bs.modal', function(e) {
-            $('#formCheckin').bootstrapValidator('revalidateField', 'departureDate');
-            $('#formCheckin').bootstrapValidator('revalidateField', 'bookingCode');
-        })
-
-    });
-</script>
+</style>
+</body>
+</html>
+ 
