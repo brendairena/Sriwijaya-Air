@@ -52,7 +52,12 @@ class C_Main_Page extends CI_Controller {
 
 	public function jadwal_penerbangan_user()
 	{
-		$this->load->view('jadwal_penerbangan_cust');
+		$this->load->view('header');	
+		$table = 'penerbangan';
+    $hasil =$this->FlightModel->get_data($table);
+		$data['data_ke_view']= $hasil;
+		$this->load->view('jadwal_penerbangan_cust', $data);
+		// $this->load->view('jadwal_penerbangan_admin',$data);
 	}
 	public function indexFlight()
 	{

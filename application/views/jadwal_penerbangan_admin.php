@@ -27,12 +27,9 @@
 </head>
 <body>
     <p class="text-1">Select Departure</p>
-    <p class="text-2">Jakarta (CGK) / Soekarno Hatta International Airport  Ujung Pandang (UPG) 
-        <span class="glyphicon glyphicon-arrow-right"></span>
-        Makassar - Sultan Hasanuddin</p>
-
+    
         <p>
-                    18 May 2019 for 1 Adult 0 Child 0 Infant
+
                                                                             <small>
                                                             <a class="popup-text btn btn-info" style="position:relative;left:8px;bottom:8px;" href="<?php echo site_url("c_main_page/addFlight")?>" id="cari_rute" data-effect="mfp-zoom-out" style="float: right;">
                                                                 <b style="font-size:16px;" id="changeSearch">Tambah Penerbangan</b>

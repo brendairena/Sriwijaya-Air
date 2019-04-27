@@ -27,17 +27,20 @@
 </head>
 <body>
     <p class="text-1">Select Departure</p>
-    <p class="text-2">Jakarta (CGK) / Soekarno Hatta International Airport  Ujung Pandang (UPG) 
-        <span class="glyphicon glyphicon-arrow-right"></span>
-        Makassar - Sultan Hasanuddin</p>
-
+<!--     
         <p>
-                    18 May 2019 for 1 Adult 0 Child 0 Infant
-        </p>
+
+                                                                            <small>
+                                                            <a class="popup-text btn btn-info" style="position:relative;left:8px;bottom:8px;" href="<?php echo site_url("c_main_page/addFlight")?>" id="cari_rute" data-effect="mfp-zoom-out" style="float: right;">
+                                                                <b style="font-size:16px;" id="changeSearch">Tambah Penerbangan</b>
+                                                            </a>
+                                                        </small>
+        </p> -->
 <br>
 <p class="text-2">Flights Departure
 </p>
 <!-- PENERBANGAN 1 -->
+<?php foreach ($data_ke_view as $data): ?>
 <div class="jumbotron">
     <!-- BARIS 1 -->
     <div class="row">
@@ -49,7 +52,7 @@
                         <img src="<?php echo base_url().'assets/AssetsJadwal/sj_flight_result.png'?>" alt="">
                     </li>
                     <li>
-                        <p class="text-3">SJ590 Non Stop</p>
+                        <p class="text-3"><?php echo $data['no_penerbangan']; ?>      Non Stop</p>
                     </li>
                 </ul>
             </div>
@@ -61,11 +64,12 @@
                     <li>
                         <p class="text-4">
                             <img src="<?php echo base_url().'assets/AssetsJadwal/takeoff.png'?>" alt="" style="width:32px;">
-                            05.00
+                            <p class="text-3"><?php echo $data['STD']; ?></p>
                         </p>
                     </li>
                     <li>
-                        <p class="text-5">Sat, May 18</p>
+                        <p class="text-5"><p class="text-3"><?php echo $data['no_penerbangan']; ?>      Non Stop</p></p>
+                        <p class="text-3">Asal : <?php echo $data['asal']; ?>
                     </li>
                 </ul>
             </div>
@@ -77,11 +81,12 @@
                     <li>
                         <p class="text-4">
                             <img src="<?php echo base_url().'assets/AssetsJadwal/landing.png'?>" alt="" style="width:32px;">
-                            08.20
+                            <p class="text-3"><?php echo $data['STA']; ?></p>
                         </p>
                     </li>
                     <li>
-                        <p class="text-5">Sat, May 18</p>
+                        <p class="text-3"><?php echo $data['tanggal']; ?></p>
+                        <p class="text-3"> Tujan : <?php echo $data['tujuan']; ?></p>
                     </li>
                 </ul>
             </div>
@@ -92,11 +97,12 @@
                         <ul class="listKotak">
                             <li>
                                 <p class="text-4">
-                                02.20
+                                <p class="text-3"><?php echo $data['durasi']; ?>
+                                </p>
                                 </p>
                             </li>
                         </ul>
-                    </div>
+                </div>
         </div>
         <!-- COLUMN 5 -->
         <form method="POST" action="<?php echo site_url("c_main_page/")?>" >
@@ -116,64 +122,22 @@
                         <input type="hidden" name="id_penerbangan" value=""/>
                         <input type="hidden" name="no_penerbangan" value=""/>
                         <input type="hidden" name="no_booking" value=""/>
-
                     </li>
                 </ul>
             </div>
         </div>
     </form>
-
     <section class="noborder">
     <table >
     <tr><td><button  onclick="klik()" name="button" class="btnSelect" >Select</button></td></tr>
+    <!-- <tr><td><button  onClick='window.location.replace("<?php echo site_url("c_main_page/editflight/").$data['id_penerbangan']?>")' name="button" class="btnSelect">Edit</button></td></tr>
+    <tr><td><button  onClick='window.location.replace("<?php echo site_url("c_main_page/deleteData/").$data['id_penerbangan']?>")'name="button" class="btnSelect">Delete</button></td></tr> -->
     </table>
     </section>
 
     </div>
-    <!-- BARIS 2 -->
-    <div class="row">
-        <div class="col">
-            <div id="klik" class="tableSelect" style="display: none;">
-                <table>
-                    <tr class="tr1">
-                        <th>Flight No</th>
-                        <th>Date</th>
-                        <th>Route</th>
-                        <th>STD</th>
-                        <th>STA</th>
-                        <th>Duration</th>
-                        <th>Transit</th>
-                    </tr>
-                    <tr class="tr2">
-                        <th>SJ590</th>
-                        <th>18-MAY-19</th>
-                        <th>CGK-UPG</th>
-                        <th>05:00</th>
-                        <th>08:20</th>
-                        <th>02:20</th>
-                        <th>0</th>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
 </div>
-
-<script>
-    function order(){
-     
-
-
-    }
-
-    function klik() {
-    var x = document.getElementById("klik");
-    x.style.display = "flex";  
-    }
-    </script>
-   
-    
-    
+    <?php endforeach;?>
     
 </body>
 </html>
