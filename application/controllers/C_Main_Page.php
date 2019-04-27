@@ -208,7 +208,7 @@ class C_Main_Page extends CI_Controller {
       echo "<script>alert('Gagal Menambahkan Data');</script>";
     }
 	}
-	public function edit_data($id){
+	public function editdataflight($id){
     $no_penerbangan = $this->input->post('no_penerbangan');
 		$asal = $this->input->post('asal');
 		$tujuan = $this->input->post('tujuan');
@@ -227,7 +227,7 @@ class C_Main_Page extends CI_Controller {
 	  	'STD' => $waktu_keberangkatan,
 			'tanggal' => $tgl_keberngkatan
     );
-		$update = $this->FlihgtModel->update_penerbangan($table,$id,$data_update);
+		$update = $this->FlightModel->update_penerbangan($table,$id,$data_update);
 		
     if($update){
       $this->session->set_flashdata('alert', 'sukses_update');

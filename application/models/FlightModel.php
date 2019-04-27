@@ -18,7 +18,7 @@ class FlightModel extends CI_Model{
       return $hasil->result_array();
     }
     
-    public function update_data($table,$nim,$data){
+    public function update_penerbangan($table,$nim,$data){
       $this->db->where('id_penerbangan', $nim);
       $update = $this->db->update($table,$data);
       if ($update){
