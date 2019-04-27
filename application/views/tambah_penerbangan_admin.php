@@ -189,7 +189,7 @@
                                     </div>
                 					<div class="col-md-12">
                                          <hr/><br>
-                                         <form action="<?php echo site_url('C_main_page/addDataFlight')?> " method="post" accept-charset="utf-8">
+                                         <form action="<?php echo site_url('C_main_page/addDataFlight')?>" method="post" accept-charset="utf-8">
                                               <ul class="list-inline">
                                                     <li>
                                                        <div class="form-group">
