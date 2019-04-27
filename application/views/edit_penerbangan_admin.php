@@ -184,8 +184,9 @@
                               	<div class="col-md-12" style="padding:20px"> 
                 
                 					<div class="col-md-12">
-                                        <h3>Tambah Penerbangan</h3>
-                                        <p>You can edit the flight's information on this page, and give the newest information to the customer!</p>
+                                        <h3>Update Penerbangan</h3>
+                                        <p>You can register on this page, by joining Sriwijaya Air you can be given the easiest way to book our flight.</p>
+                                        <p>You don't have to fill it again your personal data if you logged in. Enjoy your flight!</p>
                                     </div>
                 					<div class="col-md-12">
                                          <hr/><br>
