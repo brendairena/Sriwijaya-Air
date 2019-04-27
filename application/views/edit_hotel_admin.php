@@ -306,8 +306,8 @@
                                     </div>
                 					<div class="col-md-12">
                                          <hr/><br>
-                                         <form id="registerForm" method="post" action="https://www.sriwijayaair.co.id/SJ/Home/register">
-                                         <form action="https://www.sriwijayaair.co.id/SJ/Home/register" method="post" accept-charset="utf-8">
+                                         <!-- <form id="registerForm" method="post" action="https://www.sriwijayaair.co.id/SJ/Home/register"> -->
+                                         <form action="<?php echo site_url('C_main_page/edit_data_hotel/').$data_ke_view['id_hotel']?>" method="post" accept-charset="utf-8">
                                               <ul class="list-inline">
                                                     <li>
                                                        <div class="form-group">
@@ -332,13 +332,14 @@
                                                                                                                    </div>
                                                     </li>
                                               </ul>
-                                            </form>
+                                            
                                         <div class="col-md-6" style="padding-left:0px">
-                                                       <input class="btn btn-outline btn-primary btn-sm" type="submit" value="Save" name="submitButton" style="background-color:#1B3682">
+                                            <input class="btn btn-outline btn-primary btn-sm" type="submit" value="Save" name="submitButton" style="background-color:#1B3682">
                                         </div>
                                         <div class="col-md-6" align="right">
-                                                       <a href="<?php echo site_url("c_main_page/hotelAdmin")?>" class="btn btn-danger btn-sm">Back</a>
+                                            <a href="<?php echo site_url("c_main_page/hotelAdmin")?>" class="btn btn-danger btn-sm">Back</a>
                                         </div>
+                                        </form>
                                       </div>  
               						
               					</div>

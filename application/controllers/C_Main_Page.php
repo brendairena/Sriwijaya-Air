@@ -159,7 +159,6 @@ class C_Main_Page extends CI_Controller {
 		$nama_hotel = $this->input->post('nama_hotel');
 		$lokasi = $this->input->post('lokasi');
 		$harga = $this->input->post('harga');
-
 		$table = "hotel";
 	
 		$data_update = array (
@@ -167,11 +166,11 @@ class C_Main_Page extends CI_Controller {
 			'harga' => $harga,
 			'lokasi' => $lokasi
 		);
-			$update = $this->modelhotel->update_hotel($table,$id,$data_update);
+			$update = $this->hotelmodel->update_hotel($table,$id,$data_update);
 			
 		if($update){
 		  $this->session->set_flashdata('alert', 'sukses_update');
-		  redirect(site_url('C_main_page/daftar_hotel_admin'));
+		  redirect(site_url('C_main_page/hotelAdmin'));
 		}else{
 		  echo "<script>alert('Gagal mengupdate Data');</script>";
 		}
