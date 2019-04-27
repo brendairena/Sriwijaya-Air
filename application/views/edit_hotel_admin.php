@@ -106,11 +106,11 @@
                                     <table width="100%">
                                         <tr>
                                             <td>
-                                                <a class="btn btn-block btn-danger" href="https://www.sriwijayaair.co.id/SJ/Home/register">Join Us</a>
+                                                <a class="btn btn-block btn-danger" href="<?php echo base_url('index.php/C_Main_Page/regist'); ?>">Register</a>
                                             </td>
                                             <td>&nbsp;</td>
                                             <td>
-                                                <a class="btn btn-block btn-warning" href="https://member.sriwijayaair.co.id/user/RegisBenefit">SJ Travel Pass</a>
+                                                <a class="btn btn-block btn-warning" href="<?php echo base_url('index.php/C_Main_Page/index');?>">User</a>
                                             </td>
                                         </tr>
                                     </table>
@@ -306,8 +306,8 @@
                                     </div>
                 					<div class="col-md-12">
                                          <hr/><br>
-                                         <form id="registerForm" method="post" action="https://www.sriwijayaair.co.id/SJ/Home/register">
-                                         <form action="https://www.sriwijayaair.co.id/SJ/Home/register" method="post" accept-charset="utf-8">
+                                         <!-- <form id="registerForm" method="post" action="https://www.sriwijayaair.co.id/SJ/Home/register">
+                                         <form action="https://www.sriwijayaair.co.id/SJ/Home/register" method="post" accept-charset="utf-8"> -->
                                               <ul class="list-inline">
                                                     <li>
                                                        <div class="form-group">
@@ -328,7 +328,7 @@
                                                     <li>
                                                        <div class="form-group">
                                                             <label>Harga </label>
-                                                            <input class="form-control" placeholder="xxxx" type="text" name="harga" id="harga" value="<?php echo $data_ke_view['lokasi']?>"/>
+                                                            <input class="form-control" placeholder="xxxx" type="text" name="harga" id="harga" value="<?php echo $data_ke_view['harga']?>"/>
                                                                                                                    </div>
                                                     </li>
                                               </ul>
@@ -345,9 +345,6 @@
               				</div>
                       </div>
               	  </div>
-		
-<script type="text/javascript">			
-</script>
 				</div>
 			</div>
 		</div>

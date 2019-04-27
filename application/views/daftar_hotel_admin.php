@@ -163,8 +163,6 @@
 <?php endforeach; ?>
 
 
-
-
 <script>
     function klik() {
     var x = document.getElementById("klik");
