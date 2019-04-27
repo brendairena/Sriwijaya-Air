@@ -28,7 +28,7 @@
             <div class="container">
  
                 <div id="logo" class="pull-left">
-                    <a href="<?php echo base_url(); ?>"> <img src="<?php echo base_url('assets/AssetsCoorporate/LOGOSJHORIZONTALWHITE1.png');?>" alt="" title=""></a>
+                    <a href="<?php echo site_url('c_main_page/main_page_admin'); ?>"> <img src="<?php echo base_url('assets/AssetsCoorporate/LOGOSJHORIZONTALWHITE1.png');?>" alt="" title=""></a>
                     <!-- Uncomment below if you prefer to use a text logo -->
                     <!--<h1><a href="#hero">Regna</a></h1>-->
                 </div> 

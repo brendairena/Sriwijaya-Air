@@ -201,22 +201,6 @@
                             }
                         }
                     },
-                    bookingCode : {
-                        validators : {
-                            callback : {
-                                callback : function(value, validator, $field) {
-                                    if (value.length != 6) {
-                                        return {
-                                            valid: false,
-                                            message: '6 Digits Alphabets.'
-                                    }
-                                }else{
-                                    return true;
-                                }
-                            }
-                        }
-                    }
-                },
                 agree: {
                     validators : {
                         callback : {
@@ -246,7 +230,6 @@
                 $("#termsModal").modal('show');
             }
         });
-        // Update the value of "agree" input when clicking the Agree/Disagree button
         $('#agreeButton, #disagreeButton').on('click', function() {
             var whichButton = $(this).attr('id');
             if(whichButton === 'agreeButton' ){
