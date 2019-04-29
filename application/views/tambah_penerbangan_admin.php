@@ -64,7 +64,7 @@
                         <span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand text-hide" href="<?php echo base_url()?>" >Official Website</a>
+			<a class="navbar-brand text-hide" href="<?php echo site_url('c_main_page/main_page_admin')?>" >Official Website</a>
 		</div>
 		<div id="navbar6" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">
