@@ -301,7 +301,7 @@
                               	<div class="col-md-12" style="padding:20px"> 
                 
                 					<div class="col-md-12">
-                                        <h3>Tambah Hotel</h3>
+                                        <h3>Update Hotel</h3>
                                         <p>You can edit the hotel's information on this page, and give the newest information to the customer!</p>
                                     </div>
                 					<div class="col-md-12">
