@@ -3,7 +3,7 @@
 class hotelmodel extends CI_Model{
 
 
-    public function input_data($ta ble,$data){
+    public function input_data($table,$data){
         $insert = $this->db->insert($table, $data);
     
         if ($insert){
