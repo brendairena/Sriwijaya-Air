@@ -52,7 +52,12 @@ class C_Main_Page extends CI_Controller {
 
 	public function jadwal_penerbangan_user()
 	{
-		$this->load->view('jadwal_penerbangan_cust');
+		$this->load->view('header');	
+		$table = 'penerbangan';
+    $hasil =$this->FlightModel->get_data($table);
+		$data['data_ke_view']= $hasil;
+		$this->load->view('jadwal_penerbangan_cust', $data);
+		// $this->load->view('jadwal_penerbangan_admin',$data);
 	}
 	public function indexFlight()
 	{
@@ -159,7 +164,6 @@ class C_Main_Page extends CI_Controller {
 		$nama_hotel = $this->input->post('nama_hotel');
 		$lokasi = $this->input->post('lokasi');
 		$harga = $this->input->post('harga');
-
 		$table = "hotel";
 	
 		$data_update = array (
@@ -167,11 +171,11 @@ class C_Main_Page extends CI_Controller {
 			'harga' => $harga,
 			'lokasi' => $lokasi
 		);
-			$update = $this->modelhotel->update_hotel($table,$id,$data_update);
+			$update = $this->hotelmodel->update_hotel($table,$id,$data_update);
 			
 		if($update){
 		  $this->session->set_flashdata('alert', 'sukses_update');
-		  redirect(site_url('C_main_page/daftar_hotel_admin'));
+		  redirect(site_url('C_main_page/hotelAdmin'));
 		}else{
 		  echo "<script>alert('Gagal mengupdate Data');</script>";
 		}
@@ -208,7 +212,7 @@ class C_Main_Page extends CI_Controller {
       echo "<script>alert('Gagal Menambahkan Data');</script>";
     }
 	}
-	public function edit_data($id){
+	public function editdataflight($id){
     $no_penerbangan = $this->input->post('no_penerbangan');
 		$asal = $this->input->post('asal');
 		$tujuan = $this->input->post('tujuan');
@@ -227,7 +231,7 @@ class C_Main_Page extends CI_Controller {
 	  	'STD' => $waktu_keberangkatan,
 			'tanggal' => $tgl_keberngkatan
     );
-		$update = $this->FlihgtModel->update_penerbangan($table,$id,$data_update);
+		$update = $this->FlightModel->update_penerbangan($table,$id,$data_update);
 		
     if($update){
       $this->session->set_flashdata('alert', 'sukses_update');
